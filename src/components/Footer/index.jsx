@@ -2,20 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoAmazul from '../../assets/images/logos/logoAmazul.png';
 import Logo5s from '../../assets/images/logos/logo5s.png';
+import Title from '../Texts/Title';
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <div
-      className="footer-bg footer py-3"
+      className="footer-bg footer"
       style={{
         backgroundColor: 'var(--greenBg)',
         color: 'var(--grayTextlight)'
       }}
-      id="links-importantes"
     >
       <div className="container">
-        <h4 className="text-center lh-1">Links Importantes</h4>
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+        <Title title="Links Importantes" />
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 ">
           <div className="col mb-3 ">
             <h5>Mapa do Site</h5>
             <ul className="nav flex-column">
