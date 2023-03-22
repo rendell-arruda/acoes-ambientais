@@ -16,8 +16,6 @@ export default function Footer() {
       <div className="container">
         <h4 className="text-center lh-1">Links Importantes</h4>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
-          {/* <!-- <div className="col mb-3"></div> --> */}
-
           <div className="col mb-3 ">
             <h5>Mapa do Site</h5>
             <ul className="nav flex-column">

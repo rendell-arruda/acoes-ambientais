@@ -1,0 +1,24 @@
+.intro-conteudo {
+  background-image: url('../../assets//images/banner-perobaGrande.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.card-intro {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .card-intro {
+    border-radius: 10px;
+    display: block;
+  }
+  .intro-conteudo {
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    background: none;
+  }
+}
