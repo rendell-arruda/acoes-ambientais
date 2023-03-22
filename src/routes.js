@@ -5,3 +5,26 @@ import Fauna from './screens/Fauna';
 import Flora from './screens/Flora';
 import Arqueologia from './screens/Arqueologia';
 import Aguas from './screens/Aguas';
+import Erro from './screens/Erro';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import React from 'react';
+
+export default function RoutesApp() {
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/flora" element={<Flora />} />
+        <Route path="/fauna" element={<Fauna />} />
+        <Route path="/arqueologia" element={<Arqueologia />} />
+        <Route path="/aguas" element={<Aguas />} />
+
+        <Route path="*" element={<Erro />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+}

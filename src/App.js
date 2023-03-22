@@ -1,12 +1,10 @@
 import './App.css';
-import Home from './screens/Home';
-import Arqueologia from './screens/Arqueologia';
-
+import RoutesApp from './routes';
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <>
+      <RoutesApp />
+    </>
   );
 }
 
