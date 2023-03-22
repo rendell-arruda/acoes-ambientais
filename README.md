@@ -2,7 +2,7 @@
 
 > Este repositório contém o projeto desenvolvido para documentar e disponibilizar de fácil acesso as atividades exercídas no sítio rmb.
 
-<img src="./acoesPage.png" alt="Page inicial">
+<img src=".\capaParaReadme.jpg" alt="Page inicial">
 <h3> 📁 Conteúdo</h3>
 
 O portal ainda está em desenvolvimento e as próximas atualizações viram conforme a solicitação de inclusão de seções.
@@ -16,8 +16,6 @@ O portal ainda está em desenvolvimento e as próximas atualizações viram conf
 - [ ] Section - Mapa das matrizes;
 
 //
-
-
 
 # Getting Started with Create React App
 
