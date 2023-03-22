@@ -17,6 +17,7 @@ export default function Home(props) {
         </Title>
 
         <FeatureList title="Titulo e tal" desc="issoo ali aqui gegere here" />
+        <div className="d-flex justify-content-center gap-3 align-itens center flex-wrap "></div>
         <Title title="Fauna RMB">
           Confira as atividades desenvolvidas no sitio RMB com foco na Fauna
           local.
@@ -24,6 +25,7 @@ export default function Home(props) {
         <Title title="Arqueologia RMB">
           Conheça o Sítio arqueológico Jibóia
         </Title>
+
         <Title title="Águas RMB">Mapas dos poços e nao sei que la</Title>
       </div>
     </>
