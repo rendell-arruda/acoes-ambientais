@@ -4,8 +4,8 @@ import './Erro.css';
 
 export default function Erro() {
   return (
-    <div className="container">
-      <h2 className="py-4">Página não encontrada</h2>
+    <div className="container d-flex flex-column align-items-center ">
+      <h2>Página não encontrada</h2>
       <Link to="/">Ir para a página Inicial</Link>
     </div>
   );
