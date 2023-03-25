@@ -1,27 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BannerInitial from '../../components/BannerInitial';
-import FeatureList from '../../components/FeatureList';
 import Title from '../../components/Texts/Title';
+import FaunaSection from '../../components/InitialSections/FaunaSection';
+import FloraSection from '../../components/InitialSections/FloraSection';
 
 export default function Home(props) {
   return (
     <>
       <BannerInitial />
-      <div className="container-xl">
-        <Title title="Flora RMB">
-          <p>
-            Confira as atividades desenvolvidas no sitio RMB com foco na Flora
-            local.
-          </p>
-        </Title>
+      <div>
+        <FloraSection />
 
-        <FeatureList title="Titulo e tal" desc="issoo ali aqui gegere here" />
-        <div className="d-flex justify-content-center gap-3 align-itens center flex-wrap "></div>
-        <Title title="Fauna RMB">
-          Confira as atividades desenvolvidas no sitio RMB com foco na Fauna
-          local.
-        </Title>
+        <FaunaSection />
         <Title title="Arqueologia RMB">
           Conheça o Sítio arqueológico Jibóia
         </Title>
