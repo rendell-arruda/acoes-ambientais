@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import Peroba from '../../assets/images/bannerPeroba.jpg';
+import Peroba from '../../assets/images/banners/bannerPeroba.jpg';
 
 export default function BannerInitial() {
   return (
