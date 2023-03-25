@@ -17,29 +17,26 @@ export default function ArqueologiaSection(props) {
         </p>
       </Title>
 
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-md-7">
-            <h2 className="featurette-heading fw-normal lh-1">
-              First featurette heading.
-              <span className="text-muted">It’ll blow your mind.</span>
-            </h2>
-            <p className="lead">
-              Some great placeholder content for the first featurette here.
-              Imagine some exciting prose here.
-            </p>
+      <div className="d-flex align-items-center justify-content-between flex-wrap">
+        <div className="col-md-6">
+          <h2 className="featurette-heading fw-normal lh-1">
+            First featurette heading.
+            <span className="text-muted">It’ll blow your mind.</span>
+          </h2>
+          <p className="lead">
+            Some great placeholder content for the first featurette here.
+            Imagine some exciting prose here.
+          </p>
 
-            <BtnTooltip
-              title="Veja mais"
-              tip="Arqueologia"
-              className="align-content-end"
-              link="/arqueologia"
-            />
-          </div>
-          <div className="col-md-5">
-            <img src={CapaArq} alt="" />
-          </div>
+          <BtnTooltip
+            title="Veja mais"
+            tip="Arqueologia"
+            className="align-content-end"
+            link="/arqueologia"
+          />
         </div>
+
+        <img src={CapaArq} />
       </div>
     </Container>
   );
