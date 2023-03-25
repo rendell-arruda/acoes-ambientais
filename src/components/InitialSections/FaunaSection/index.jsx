@@ -6,11 +6,12 @@ import ImgCuica from '../../../assets/images/fauna/cuica.jpg';
 import ImgTamandua from '../../../assets/images/fauna/tamandua.jpg';
 import './FaunaSection.css';
 import SubTitle from '../../Texts/SubTitle';
+import Container from '../../Containes';
 
 export default function FaunaSection(props) {
   return (
     <div className="fauna-section-bg">
-      <div className="container-xxl">
+      <Container>
         <Title title="Fauna RMB">
           Confira as atividades desenvolvidas no sitio RMB com foco na Fauna
           local.
@@ -51,7 +52,7 @@ export default function FaunaSection(props) {
             cupins.
           </CardImgBack>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

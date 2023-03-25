@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from '../../Texts/Title';
+import Container from '../../Containes';
 import FeatureList from '../../FeatureList';
 import CardImgDesc from '../../Cards/CardImgDesc';
 import Subtitle from '../../Texts/SubTitle';
@@ -11,7 +12,7 @@ import CapaCopaiba from '../../../assets/images/flora/matrizes/copaiba/copaibaAr
 
 export default function FloraSection(props) {
   return (
-    <div className="container-xxl pb-4 d-flex flex-column">
+    <Container>
       <Title title="Flora RMB">
         <p>
           Confira as atividades desenvolvidas no sitio RMB com foco na Flora
@@ -54,6 +55,6 @@ export default function FloraSection(props) {
         className="align-content-end"
         link="/flora"
       />
-    </div>
+    </Container>
   );
 }
