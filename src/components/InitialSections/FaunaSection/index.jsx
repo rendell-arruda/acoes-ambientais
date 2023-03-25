@@ -1,12 +1,13 @@
 import React from 'react';
+import './FaunaSection.css';
 import Title from '../../Texts/Title';
+import Container from '../../Containes';
+import SubTitle from '../../Texts/SubTitle';
 import CardImgBack from '../../../components/Cards/CardImgBack';
 import ImgFimFim from '../../../assets/images/fauna/fimfimMacho.jpg';
 import ImgCuica from '../../../assets/images/fauna/cuica.jpg';
 import ImgTamandua from '../../../assets/images/fauna/tamandua.jpg';
-import './FaunaSection.css';
-import SubTitle from '../../Texts/SubTitle';
-import Container from '../../Containes';
+import ImgSaiAzul from '../../../assets/images/fauna/saiAzul.jpg';
 
 export default function FaunaSection(props) {
   return (
@@ -40,6 +41,7 @@ export default function FaunaSection(props) {
             insectívora. Frequentemente são avistadas em formações de florestas
             primárias e secundárias.
           </CardImgBack>
+
           <CardImgBack
             imgCard={ImgTamandua}
             name="Tamanduá"
@@ -50,6 +52,17 @@ export default function FaunaSection(props) {
             espécie em Vulnerabilidade pela União Internacional para a
             Conservação da Natureza. Alimenta-se exclusivamente de formigas e
             cupins.
+          </CardImgBack>
+          <CardImgBack
+            imgCard={ImgSaiAzul}
+            name="Saí Azul"
+            scientificName="Dacnis cayana."
+            reference="Fonte: WikiAves"
+          >
+            GAparece principalmente no norte e centro do Brasil. Alimenta-se de
+            néctar, insetos e frutas. Vive aos pares ou em pequenos grupos
+            procurando alimento. Costuma ter de duas a quatro ninhadas por
+            temporada.
           </CardImgBack>
         </div>
       </Container>
