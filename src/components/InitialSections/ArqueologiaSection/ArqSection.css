@@ -1,0 +1,7 @@
+@media (max-width: 980px) {
+  .containerArq,
+  .conteudoArq {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
