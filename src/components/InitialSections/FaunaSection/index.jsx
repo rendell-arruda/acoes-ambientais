@@ -3,6 +3,7 @@ import './FaunaSection.css';
 import Title from '../../Texts/Title';
 import Container from '../../Containes';
 import SubTitle from '../../Texts/SubTitle';
+import BtnTooltip from '../../Buttons/BtnTooltip';
 import CardImgBack from '../../../components/Cards/CardImgBack';
 import ImgFimFim from '../../../assets/images/fauna/fimfimMacho.jpg';
 import ImgCuica from '../../../assets/images/fauna/cuica.jpg';
@@ -64,7 +65,19 @@ export default function FaunaSection(props) {
             procurando alimento. Costuma ter de duas a quatro ninhadas por
             temporada.
           </CardImgBack>
+          <CardImgBack
+            imgCard={ImgSaiAzul}
+            name="Saí Azul"
+            scientificName="Dacnis cayana."
+            reference="Fonte: WikiAves"
+          >
+            GAparece principalmente no norte e centro do Brasil. Alimenta-se de
+            néctar, insetos e frutas. Vive aos pares ou em pequenos grupos
+            procurando alimento. Costuma ter de duas a quatro ninhadas por
+            temporada.
+          </CardImgBack>
         </div>
+        <BtnTooltip link="/fauna" tip="Fauna Page" title="Veja Mais" />
       </Container>
     </div>
   );
