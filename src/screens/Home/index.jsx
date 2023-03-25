@@ -4,6 +4,7 @@ import BannerInitial from '../../components/BannerInitial';
 import Title from '../../components/Texts/Title';
 import FaunaSection from '../../components/InitialSections/FaunaSection';
 import FloraSection from '../../components/InitialSections/FloraSection';
+import ArqueologiaSection from '../../components/InitialSections/ArqueologiaSection';
 
 export default function Home(props) {
   return (
@@ -13,9 +14,7 @@ export default function Home(props) {
         <FloraSection />
 
         <FaunaSection />
-        <Title title="Arqueologia RMB">
-          Conheça o Sítio arqueológico Jibóia
-        </Title>
+        <ArqueologiaSection />
 
         <Title title="Águas RMB">Mapas dos poços e nao sei que la</Title>
       </div>
