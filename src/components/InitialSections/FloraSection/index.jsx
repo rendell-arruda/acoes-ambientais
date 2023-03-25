@@ -3,6 +3,7 @@ import Title from '../../Texts/Title';
 import FeatureList from '../../FeatureList';
 import CardImgDesc from '../../Cards/CardImgDesc';
 import Subtitle from '../../Texts/SubTitle';
+import BtnTooltip from '../../Buttons/BtnTooltip';
 import CapaAcoita from '../../../assets/images/flora/matrizes/acoita/acoitaCapa.jpg';
 import CapaAmendoin from '../../../assets/images/flora/matrizes/amendoinBravo/amendoinBravoSemente.jpg';
 import CapaJatoba from '../../../assets/images/flora/matrizes/jatoba/jatobaArvore.JPG';
@@ -10,7 +11,7 @@ import CapaCopaiba from '../../../assets/images/flora/matrizes/copaiba/copaibaAr
 
 export default function FloraSection(props) {
   return (
-    <div className="container-xxl pb-4">
+    <div className="container-xxl pb-4 d-flex flex-column">
       <Title title="Flora RMB">
         <p>
           Confira as atividades desenvolvidas no sitio RMB com foco na Flora
@@ -47,6 +48,12 @@ export default function FloraSection(props) {
           page="/acoita"
         />
       </div>
+      <BtnTooltip
+        title="Veja mais"
+        tip="Flora Page"
+        className="align-content-end"
+        link="/flora"
+      />
     </div>
   );
 }
