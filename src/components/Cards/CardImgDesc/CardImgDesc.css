@@ -1,0 +1,65 @@
+.cardLink {
+  text-decoration: none;
+}
+.cardLong {
+  /* width: 100%; */
+  width: 290px;
+  height: 80px;
+  /* background: #353535; */
+  background: var(--greenBgContainer);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease-in-out;
+}
+
+.cardLong:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.cardLong .img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background: linear-gradient(#d7cfcf, #9198e5);
+  background-position: center;
+  background-size: cover;
+}
+
+/* .cardLong:hover > .img {
+  transition: 0.5s ease-in-out;
+  background: linear-gradient(#9198e5, #712020);
+} */
+
+.cardLong .textBox {
+  width: calc(100% - 90px);
+  margin-left: 10px;
+  color: white;
+  font-family: 'Poppins' sans-serif;
+}
+
+.cardLong .textContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .cardLong .span {
+  font-size: 10px;
+} */
+
+.cardLong .h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cardLong .p {
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+}
