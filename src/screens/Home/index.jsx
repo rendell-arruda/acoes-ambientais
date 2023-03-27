@@ -6,6 +6,7 @@ import FaunaSection from '../../components/InitialSections/FaunaSection';
 import FloraSection from '../../components/InitialSections/FloraSection';
 import ArqueologiaSection from '../../components/InitialSections/ArqueologiaSection';
 import AguasSection from '../../components/InitialSections/AguasSection';
+import InformSection from '../../components/InitialSections/InformSection';
 
 export default function Home(props) {
   return (
@@ -17,6 +18,7 @@ export default function Home(props) {
         <FaunaSection />
         <ArqueologiaSection />
         <AguasSection />
+        <InformSection />
       </div>
     </>
   );

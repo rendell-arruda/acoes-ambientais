@@ -1,5 +1,4 @@
 import React from 'react';
-import './FaunaSection.css';
 import Title from '../../Texts/Title';
 import Container from '../../Containes';
 import SubTitle from '../../Texts/SubTitle';
@@ -12,7 +11,7 @@ import ImgSaiAzul from '../../../assets/images/fauna/saiAzul.jpg';
 
 export default function FaunaSection(props) {
   return (
-    <div className="fauna-section-bg">
+    <div className="bg-green">
       <Container>
         <Title title="Fauna RMB">
           Confira as atividades desenvolvidas no sitio RMB com foco na Fauna

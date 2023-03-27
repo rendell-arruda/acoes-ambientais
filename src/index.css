@@ -20,3 +20,12 @@ code {
   --greentext: #1c261e;
   --greenCard: #d6d8d4;
 }
+
+.bg-green {
+  background-color: var(--greenBg);
+  color: var(--grayTextlight);
+}
+.bg-gray {
+  background-color: var(--greenCard);
+  color: var(--greentext);
+}
