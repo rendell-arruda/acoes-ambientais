@@ -3,17 +3,12 @@ import { Link } from 'react-router-dom';
 import LogoAmazul from '../../assets/images/logos/logoAmazul.png';
 import Logo5s from '../../assets/images/logos/logo5s.png';
 import Title from '../Texts/Title';
+import Container from '../Containes';
 
 export default function Footer(props) {
   return (
-    <div
-      className="footer-bg footer"
-      style={{
-        backgroundColor: 'var(--greenBg)',
-        color: 'var(--grayTextlight)'
-      }}
-    >
-      <div className="container-xxl">
+    <div className=" bg-green footer">
+      <Container>
         <Title title="Links Importantes" />
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 ">
           <div className="col mb-3 ">
@@ -114,7 +109,7 @@ export default function Footer(props) {
             </p>
           </div>
         </div>
-      </div>
+      </Container>
       <div className="container-fluid">
         <p className="m-0 text-secondary">
           Copyright © 2022 RLC Arruda - Todos os direitos reservados
