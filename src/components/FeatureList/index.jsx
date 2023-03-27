@@ -6,7 +6,7 @@ import IconTree from '../../assets/images/icons/icon-tree.png';
 
 export default function FeatureList(props) {
   return (
-    <div className="row g-4 py-2 row-cols-1 row-cols-lg-3">
+    <div className="row g-4 p-3 row-cols-1 row-cols-lg-3">
       <FeatureItem icon={IconTask} title="Cadastro de Matrizes">
         Paragraph of text beneath the heading to explain the heading. We'll add
         onto it with another sentence and probably just keep going until we run
