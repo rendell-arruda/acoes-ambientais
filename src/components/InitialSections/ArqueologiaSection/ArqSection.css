@@ -1,7 +1,15 @@
+.containerRow img {
+  border-radius: 5px;
+}
+
 @media (max-width: 980px) {
-  .containerArq,
-  .conteudoArq {
+  .containerRow,
+  .conteudoRow {
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+  }
+  .containerRow img {
+    order: -1;
   }
 }
