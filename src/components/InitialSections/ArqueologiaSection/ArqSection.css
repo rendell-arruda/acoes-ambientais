@@ -1,3 +1,6 @@
+.containerRow {
+  padding: 0 1rem;
+}
 .containerRow img {
   border-radius: 5px;
 }
