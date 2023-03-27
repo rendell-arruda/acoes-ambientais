@@ -19,7 +19,7 @@ export default function FaunaSection(props) {
           local.
         </Title>
         <SubTitle desc="Animais recem avistados" />
-        <div className="container-xl py-3 d-flex flex-wrap gap-3 align-items-center justify-content-center">
+        <div className="container-xl py-3 d-flex flex-wrap gap-3 align-items-center justify-content-around">
           <CardImgBack
             imgCard={ImgFimFim}
             name="Fim Fim"
@@ -53,17 +53,6 @@ export default function FaunaSection(props) {
             espécie em Vulnerabilidade pela União Internacional para a
             Conservação da Natureza. Alimenta-se exclusivamente de formigas e
             cupins.
-          </CardImgBack>
-          <CardImgBack
-            imgCard={ImgSaiAzul}
-            name="Saí Azul"
-            scientificName="Dacnis cayana."
-            reference="Fonte: WikiAves"
-          >
-            GAparece principalmente no norte e centro do Brasil. Alimenta-se de
-            néctar, insetos e frutas. Vive aos pares ou em pequenos grupos
-            procurando alimento. Costuma ter de duas a quatro ninhadas por
-            temporada.
           </CardImgBack>
           <CardImgBack
             imgCard={ImgSaiAzul}

@@ -3,7 +3,7 @@
 }
 .cardLong {
   /* width: 100%; */
-  width: 290px;
+  width: 250px;
   height: 80px;
   /* background: #353535; */
   background: var(--greenBgContainer);

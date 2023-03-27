@@ -116,7 +116,7 @@ export default function Footer(props) {
         </div>
       </div>
       <div className="container-fluid">
-        <p className="footer-p text-muted">
+        <p className="footer-p text-muted m-0 ">
           Copyright © 2022 RLC Arruda - Gerência de Implantação Amazul - Todos
           os direitos reservados
         </p>

@@ -11,5 +11,6 @@
   }
   .containerRow img {
     order: -1;
+    margin-bottom: 20px;
   }
 }

@@ -12,8 +12,7 @@ export default function AguasSection(props) {
     <Container>
       <Title title="Águas Subterrâneas e Superficiais">
         <p>
-          Confira as atividades desenvolvidas no sitio RMB com no sítio
-          Arqueológico local.
+          Confira as atividades de XXXX das águas superficiais e subterrâneas.
         </p>
       </Title>
 
