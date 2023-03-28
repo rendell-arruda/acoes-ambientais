@@ -8,6 +8,8 @@ import AcoitaSemente from '../../../assets/images/flora/matrizes/acoita/sementes
 import IconMap from '../../../assets/images/icons/iconMap.png';
 import IconSeed from '../../../assets/images/icons/icons-seed.png';
 import IconImportant from '../../../assets/images/icons/icons-important.png';
+import IconBrasil from '../../../assets/images/icons/icon-brasil.png';
+import IconMarcador from '../../../assets/images/icons/icon-marcador.png';
 export default function Acoita() {
   return (
     <>
@@ -124,7 +126,7 @@ export default function Acoita() {
               <ul className="caractIniciais-list">
                 <div className="list-item">
                   <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconMap} />
+                    <img src={IconBrasil} />
                   </div>
                   <li className="caracteristica">
                     <b>Bioma:</b> Cerrado, Mata Atlântica e Pampa
@@ -132,7 +134,7 @@ export default function Acoita() {
                 </div>
                 <div className="list-item">
                   <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconMap} />
+                    <img src={IconMarcador} />
                   </div>
                   <li className="caracteristica">
                     <b>Classe:</b> Secundária
