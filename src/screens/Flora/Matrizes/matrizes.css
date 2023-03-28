@@ -1,0 +1,65 @@
+.bg-especie {
+  background-color: var(--grayBglight);
+}
+.especie {
+  padding: 20px 0;
+}
+.slider-especie {
+  max-width: 400px;
+}
+.bg-caption {
+  background-color: rgba(0, 0, 0, 0.267);
+  border-radius: 5px;
+}
+.especie-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.caractIniciais {
+  background-color: var(--greenCard);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: inline-block;
+}
+.caractIniciais-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 20px;
+  margin: 0;
+  color: var(--greenText);
+}
+.list-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.list-item div a {
+  background-color: aqua;
+}
+
+.subtitle-especie {
+  color: var(--darkBgColor);
+}
+.acordion-especie {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .especie-conteudo,
+  .caract-gerais-conteudo {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .conteudoTextual {
+    text-align: center;
+  }
+
+  .caracteristica {
+    font-size: 14px;
+  }
+}

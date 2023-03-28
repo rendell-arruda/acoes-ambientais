@@ -11,7 +11,7 @@ export default function Footer(props) {
       <Container>
         <Title title="Links Importantes" />
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 ">
-          <div className="col mb-3 ">
+          <div className="col mb-3">
             <h5>Mapa do Site</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
@@ -111,7 +111,7 @@ export default function Footer(props) {
         </div>
       </Container>
       <div className="container-fluid">
-        <p className="m-0 text-secondary">
+        <p className="m-0 text-secondary" style={{ fontSize: '12px' }}>
           Copyright © 2022 RLC Arruda - Todos os direitos reservados
         </p>
       </div>

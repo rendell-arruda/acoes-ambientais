@@ -8,6 +8,7 @@ import Aguas from './screens/Aguas';
 import Erro from './screens/Erro';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Acoita from './screens/Flora/Matrizes/Acoita.jsx'
 
 import React from 'react';
 
@@ -21,6 +22,8 @@ export default function RoutesApp() {
         <Route path="/fauna" element={<Fauna />} />
         <Route path="/arqueologia" element={<Arqueologia />} />
         <Route path="/aguas" element={<Aguas />} />
+
+        <Route path='/acoita' element={<Acoita />} />
 
         <Route path="*" element={<Erro />} />
       </Routes>
