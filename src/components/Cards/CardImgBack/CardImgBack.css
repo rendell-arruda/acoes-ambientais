@@ -45,7 +45,7 @@
   height: 100px;
   transform: rotate(-175deg);
   border-radius: 50%;
-  box-shadow: inset 48px 48px var(--greenCard);
+  box-shadow: inset 48px 48px var(--greenDetail);
 }
 
 .card_title {

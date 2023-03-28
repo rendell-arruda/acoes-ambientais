@@ -16,6 +16,9 @@
   align-items: center;
   justify-content: space-around;
 }
+.especieText {
+  font-style: italic;
+}
 
 .caractIniciais {
   background-color: var(--greenCard);

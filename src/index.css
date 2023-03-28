@@ -7,18 +7,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.code {
+/* .code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 :root {
-  --grayBglight: #f7f6fa;
+  --grayBglight: #f9f9f9;
   --grayTextlight: #fdfff5;
   --greenBg: #1c261e;
   --greenBgContainer: #32402c;
+  --greenDetail: #9da65d;
   --greentext: #1c261e;
-  --greenCard: #d6d8d4;
+  --greenCard: #f1f9ff;
 }
 
 .bg-green {
@@ -26,6 +27,6 @@ body {
   color: var(--grayTextlight);
 }
 .bg-gray {
-  background-color: var(--greenCard);
+  background-color: var(--grayBglight);
   color: var(--greentext);
 }
