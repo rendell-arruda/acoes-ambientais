@@ -32,21 +32,24 @@
   margin: 0;
   color: var(--greenText);
 }
-.list-item {
+.caracteristica {
+  color: var(--greentext);
+}
+
+.list-item,
+.list-item a {
   display: flex;
   gap: 10px;
   align-items: center;
+  text-decoration: none;
 }
 
-.list-item div a {
-  background-color: aqua;
-}
-
-.subtitle-especie {
-  color: var(--darkBgColor);
-}
 .acordion-especie {
   padding-bottom: 20px;
+}
+
+.coleta-list {
+  list-style: none;
 }
 
 @media (max-width: 768px) {
