@@ -6,7 +6,8 @@ import AcoitaFlor from '../../../assets/images/flora/matrizes/acoita/acoitaflor.
 import AcoitaMuda from '../../../assets/images/flora/matrizes/acoita/acoitaMuda.jpg';
 import AcoitaSemente from '../../../assets/images/flora/matrizes/acoita/sementes.jpg';
 import IconMap from '../../../assets/images/icons/iconMap.png';
-import BtnTooltip from '../../../components/Buttons/BtnTooltip';
+import IconSeed from '../../../assets/images/icons/icons-seed.png';
+import IconImportant from '../../../assets/images/icons/icons-important.png';
 export default function Acoita() {
   return (
     <>
@@ -139,7 +140,7 @@ export default function Acoita() {
                 </div>
                 <div className="list-item">
                   <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconMap} />
+                    <img src={IconImportant} />
                   </div>
                   <li className="caracteristica">
                     <b>Conservação:</b> Pouco preocupante
@@ -147,7 +148,7 @@ export default function Acoita() {
                 </div>
                 <div className="list-item">
                   <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconMap} />
+                    <img src={IconSeed} />
                   </div>
                   <li className="caracteristica">
                     <b>Coleta:</b> MAI - AGO
