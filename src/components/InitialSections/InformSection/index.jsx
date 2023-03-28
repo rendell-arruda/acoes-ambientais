@@ -7,7 +7,7 @@ import Img3 from '../../../assets/images/banners/O-RMB3.png';
 
 export default function InformSection(props) {
   return (
-    <div className="bg-gray">
+    <div className="">
       <Container>
         <Title title="RMB Informa">
           Curiosidades, links e mensagem do Diretor

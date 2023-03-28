@@ -13,7 +13,7 @@ body {
 } */
 
 :root {
-  --grayBglight: #f9f9f9;
+  --grayBglight: #f9f9f6;
   --grayTextlight: #fdfff5;
   --greenBg: #1c261e;
   --greenBgContainer: #32402c;
@@ -24,6 +24,11 @@ body {
 
 .bg-green {
   background-color: var(--greenBg);
+  color: var(--grayTextlight);
+}
+
+.bg-green-ligth {
+  background-color: var(--greenBgContainer);
   color: var(--grayTextlight);
 }
 .bg-gray {

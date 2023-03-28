@@ -10,29 +10,35 @@ import CapaArq from '../../../assets/images/arqueologia/capArq.jpg';
 
 export default function ArqueologiaSection(props) {
   return (
-    <Container>
-      <Title title="Sítio Arqueológico Jibóia">
-        <p>
-          Confira as atividades desenvolvidas no sitio RMB com no sítio
-          Arqueológico local.
-        </p>
-      </Title>
+    <div className="bg-green-ligth">
+      <Container>
+        <Title title="Sítio Arqueológico Jibóia">
+          {/* <p>
+            Confira as atividades desenvolvidas no sitio RMB com no sítio
+            Arqueológico local.
+          </p> */}
+        </Title>
 
-      <div className="d-flex align-items-center containerRow ">
-        <div className="conteudoRow d-flex flex-column">
-          <h2 className="featurette-heading fw-normal lh-1">
-            First featurette heading.
-            <span className="text-muted">Itll blow your mind.</span>
-          </h2>
-          <p className="lead">
-            Some great placeholder content for the first featurette here.
-            Imagine some exciting prose here.
-          </p>
-          <BtnTooltip title="Veja mais" tip="Arqueologia" link="/arqueologia" />
+        <div className="d-flex align-items-center containerRow ">
+          <div className="conteudoRow d-flex flex-column text-center">
+            <h2 className="featurette-heading fw-normal lh-1">
+              First featurette heading.
+              <br /> <span className="text-muted">Itll blow your mind.</span>
+            </h2>
+            <p className="lead">
+              Some great placeholder content for the first featurette here.
+              Imagine some exciting prose here.
+            </p>
+            <BtnTooltip
+              title="Veja mais"
+              tip="Arqueologia"
+              link="/arqueologia"
+            />
+          </div>
+
+          <img src={CapaArq} className="img-fluid mx-auto" />
         </div>
-
-        <img src={CapaArq} className="img-fluid mx-auto" />
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 }
