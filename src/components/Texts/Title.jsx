@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Title(props) {
   return (
-    <div className="">
-      <h4 class=" text-center border-bottom fs-3 ">{props.title}</h4>
-      <p class=" text-center pt-2">{props.children}</p>
+    <div>
+      <h4 className=" text-center border-bottom fs-3 ">{props.title}</h4>
+      <span className=" text-center pt-2">{props.children}</span>
     </div>
   );
 }

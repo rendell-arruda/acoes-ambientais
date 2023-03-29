@@ -12,7 +12,7 @@ import IconBrasil from '../../../assets/images/icons/icon-brasil.png';
 import IconMarcador from '../../../assets/images/icons/icon-marcador.png';
 export default function Acoita() {
   return (
-    <>
+    <div>
       <Container>
         <div className="especie-conteudo">
           <div className="slider-especie">
@@ -338,6 +338,6 @@ export default function Acoita() {
           </section>
         </Container>
       </div>
-    </>
+    </div>
   );
 }

@@ -1,5 +1,22 @@
 import React from 'react';
+import CarouselHeader from '../../components/Carousels/CarouselHeader';
 
 export default function Arqueologia() {
-  return <div>Arqueologia</div>;
+  return (
+    <div>
+      <h1>Arqueologia</h1>
+      <CarouselHeader
+        // img1={Img1}
+        // img2={Img2}
+        // img3={Img3}
+        title="Faunda RMB"
+        subtitle="  Descriçao breve do que seria essa pagina da flora com algumas
+              atividades."
+        desc1="  Descriçao breve do que seria essa pagina da flora com algumas
+    atividades."
+        desc2=" Some representative placeholder content for the third slide of
+    this carousel."
+      />
+    </div>
+  );
 }
