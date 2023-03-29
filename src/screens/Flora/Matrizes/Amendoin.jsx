@@ -1,16 +1,15 @@
 import React from 'react';
 import Container from '../../../components/Containes';
 import './matrizes.css';
-import AcoitaArvore from '../../../assets/images/flora/matrizes/acoita/acoitaArvore.jpg';
-import AcoitaFlor from '../../../assets/images/flora/matrizes/acoita/acoitaflor.jpg';
-import AcoitaMuda from '../../../assets/images/flora/matrizes/acoita/acoitaMuda.jpg';
-import AcoitaSemente from '../../../assets/images/flora/matrizes/acoita/sementes.jpg';
+import AmendoinSemente from '../../../assets/images/flora/matrizes/amendoinBravo/amendoinBravoSemente.jpg';
+import AmendoinMuda from '../../../assets/images/flora/matrizes/amendoinBravo/amendoinBravoMudas.JPG';
 import IconMap from '../../../assets/images/icons/iconMap.png';
 import IconSeed from '../../../assets/images/icons/icons-seed.png';
 import IconImportant from '../../../assets/images/icons/icons-important.png';
 import IconBrasil from '../../../assets/images/icons/icon-brasil.png';
 import IconMarcador from '../../../assets/images/icons/icon-marcador.png';
-export default function Acoita() {
+
+export default function Amendoin() {
   return (
     <>
       <Container>
@@ -48,16 +47,16 @@ export default function Acoita() {
               <div className="carousel-inner">
                 <div className="carousel-item active semente ">
                   <img
-                    src={AcoitaSemente}
+                    src={AmendoinSemente}
                     className="d-block w-100"
-                    alt="Sementes de Açoita cavalo"
+                    alt="Sementes de Amendoin Bravo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Sementes de Açoita Cavalo</h5>
-                    <p>Podem ter cerca de 1 cm.</p>
+                    <h5>Sementes de Amendoin Bravo</h5>
+                    <p>Podem ter cerca de 3 cm.</p>
                   </div>
                 </div>
-                <div className="carousel-item flor">
+                {/* <div className="carousel-item flor">
                   <img
                     src={AcoitaFlor}
                     className="d-block w-100"
@@ -67,19 +66,19 @@ export default function Acoita() {
                     <h5>Flor do Açoita cavalo</h5>
                     <p>Floresce no Periodo de Maio a Agosto.</p>
                   </div>
-                </div>
+                </div> */}
                 <div className="carousel-item muda">
                   <img
-                    src={AcoitaMuda}
+                    src={AmendoinMuda}
                     className="d-block w-100"
-                    alt="Muda de açoita cavalo"
+                    alt="Muda de Amendoin Bravo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Mudas de Açoita Cavalo</h5>
-                    <p>Atinge Porte médio adequado em 6 meses .</p>
+                    <h5>Mudas de Amendoin Bravo</h5>
+                    <p>Emergência entre 15 -25 dias .</p>
                   </div>
                 </div>
-                <div className="carousel-item arvore">
+                {/* <div className="carousel-item arvore">
                   <img
                     src={AcoitaArvore}
                     className="d-block w-100"
@@ -89,7 +88,7 @@ export default function Acoita() {
                     <h5>Árvores de Açoita Cavalo</h5>
                     <p>Podem ter cerca de 30 m.</p>
                   </div>
-                </div>
+                </div> */}
               </div>
               <button
                 className="carousel-control-prev"
@@ -119,8 +118,8 @@ export default function Acoita() {
           </div>
           <div className="conteudoTextual">
             <div>
-              <h3 className="pt-2">Açoita Cavalo</h3>
-              <p className="especieText">Luehea divaricata Mart & Zucc.</p>
+              <h3 className="pt-2">Amendoin Bravo</h3>
+              <p className="especieText">Platypodium elegans Vog.</p>
             </div>
             <div className="caractIniciais">
               <ul className="caractIniciais-list">
@@ -129,7 +128,7 @@ export default function Acoita() {
                     <img src={IconBrasil} />
                   </div>
                   <li className="caracteristica">
-                    <b>Bioma:</b> Cerrado, Mata Atlântica e Pampa
+                    <b>Bioma:</b> Cerrado e Pantanal
                   </li>
                 </div>
                 <div className="list-item">
@@ -153,7 +152,7 @@ export default function Acoita() {
                     <img src={IconSeed} />
                   </div>
                   <li className="caracteristica">
-                    <b>Coleta:</b> MAI - AGO
+                    <b>Coleta:</b> SET - NOV
                   </li>
                 </div>
                 <div className="list-item">
@@ -208,29 +207,12 @@ export default function Acoita() {
                           <b>- Síndrome de Dispersão de Semente:</b> Anemocórica
                         </li>
                         <li>
-                          - As sementes podem ser plantadas diretamente em
-                          sementeiras (canteiros) sem tratamento, ou podem ser
-                          preparadas deixando-as 2h em água gelada antes do
-                          plantio.
+                          - Colher os frutos diretamente das árvores quando
+                          iniciarem queda espontânea ou recolhe-los do chão após
+                          a queda.
                         </li>
-                        <li>
-                          - Após germinação (4-8 semanas) devem ser repicadas
-                          para recipientes individuais
-                        </li>
-                        <li>- Possui preferência por substrato argiloso</li>
-                        <li>- Emergência entre 8-74 dias</li>
-                        <li>
-                          - Taxa de germinação variável e irregular entre 20% e
-                          85%
-                        </li>
-                        <li>
-                          - As mudas atingem porte adequado para plantio após 6
-                          meses da semeadura.
-                        </li>
-                        <li>
-                          - Não possui preferência de tipo de solo, se adaptando
-                          bem a solos secos e úmidos, argilosos ou arenosos
-                        </li>
+                        <li>- Podem ser diretamente semeados.</li>
+                        <li>- Período reprodutivos – Setembro a Novembro.</li>
                       </ul>
                     </div>
                   </div>
@@ -258,22 +240,25 @@ export default function Acoita() {
                   <div className="accordion-body">
                     <ul className="coleta-list">
                       <li>
-                        <b>- Tempo mínimo em viveiro:</b> 4 meses
+                        <b>- Tempo mínimo em viveiro:</b> 6 meses
                       </li>
                       <li>
-                        - Colher os frutos diretamente das árvores quando mudam
-                        da coloração verde para marro-claro
+                        <b>- Taxa de germinação Superior a</b> 50%
                       </li>
-                      <li>- Submetê-los a secagem à sombra</li>
                       <li>
-                        - Depois de secos recomenda-se agitação dos frutos para
-                        liberação total das sementes.
+                        - Colocar as sementes para germinação sem nenhum
+                        tratamento logo que colhidas.
+                      </li>
+                      <li>- Semear em canteiros a pleno sol. .</li>
+                      <li>
+                        - Possui preferência por substrato organo-argiloso.
                       </li>
                       <li>
                         - A viabilidade da semente é variável, havendo relatos
                         de redução de viabilidade em 50% após 1 mês de coleta e
                         de 45,5% após 22 meses.
                       </li>
+                      <li>- As mudas se desenvolvem lentamente. .</li>
                       <li>- Período reprodutivos: Maio-agosto.</li>
                     </ul>
                   </div>
@@ -300,22 +285,22 @@ export default function Acoita() {
                 >
                   <div className="accordion-body">
                     <ul className="coleta-list">
-                      <li>- Médio a grande porte - Pode chegar a 30m.</li>
                       <li>
-                        - Tronco tortuoso, nodoso, forma fuste curtos e retos.
+                        - Pode chegar a ter de <b>8 a 12m.</b>
                       </li>
                       <li>
-                        - Apresenta folhas simples, alternadas, dísticas, com
-                        estípulas serreadas, áspera na face e tomentosa no
-                        dorso.
+                        - Tronco curto e cilíndrico de 40 a 50cm de diâmetro.
                       </li>
                       <li>
-                        - Madeira moderadamente pesada, resistente e
-                        extremamente flexível.
+                        - Folhas compostas pinadas, 10-20 folíolos de 2 a 4cm de
+                        comprimento.
                       </li>
                       <li>
-                        - Utilizada em confecção de móveis curvados, ripas e
-                        molduras.
+                        - Madeira moderadamente pesada, dura e tecido frouxo.
+                      </li>
+                      <li>
+                        - Utilizada em carpintaria e marcenaria, obras internas,
+                        cabos de ferramentas.
                       </li>
                     </ul>
                   </div>
