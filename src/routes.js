@@ -10,6 +10,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Acoita from './screens/Flora/Matrizes/Acoita.jsx'
 import Amendoin from './screens/Flora/Matrizes/Amendoin.jsx'
+import Jatoba from './screens/Flora/Matrizes/Jatoba.jsx'
+import Copaiba from './screens/Flora/Matrizes/Copaiba.jsx'
 
 import React from 'react';
 
@@ -26,6 +28,8 @@ export default function RoutesApp() {
 
         <Route path='/acoita' element={<Acoita />} />
         <Route path='/amendoin' element={<Amendoin />} />
+        <Route path='/jatoba' element={<Jatoba />} />
+        <Route path='/copaiba' element={<Copaiba />} />
 
         <Route path="*" element={<Erro />} />
       </Routes>

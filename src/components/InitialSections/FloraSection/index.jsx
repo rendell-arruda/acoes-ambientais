@@ -40,13 +40,13 @@ export default function FloraSection(props) {
           title="Jatobá"
           desc="Matriz : M5050"
           img={CapaJatoba}
-          page="/acoita"
+          page="/jatoba"
         />
         <CardImgDesc
           title="Copaíba"
           desc="Matriz : M5050"
           img={CapaCopaiba}
-          page="/acoita"
+          page="/copaiba"
         />
       </div>
       <BtnTooltip
