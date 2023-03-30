@@ -116,7 +116,7 @@ export default function Amendoin() {
               </button>
             </div>
           </div>
-          <div className="conteudoTextual">
+          <div className="px-4">
             <div>
               <h3 className="pt-2">Amendoin Bravo</h3>
               <p className="especieText">Platypodium elegans Vog.</p>

@@ -14,7 +14,6 @@ export default function Home(props) {
       <BannerInitial />
       <div>
         <FloraSection />
-
         <FaunaSection />
         <ArqueologiaSection />
         <AguasSection />

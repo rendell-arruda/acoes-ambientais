@@ -117,7 +117,7 @@ export default function Acoita() {
               </button>
             </div>
           </div>
-          <div className="conteudoTextual">
+          <div className="px-4">
             <div>
               <h3 className="pt-2">Açoita Cavalo</h3>
               <p className="especieText">Luehea divaricata Mart & Zucc.</p>

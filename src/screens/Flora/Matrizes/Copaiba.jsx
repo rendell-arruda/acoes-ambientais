@@ -117,7 +117,7 @@ export default function Amendoin() {
               </button>
             </div>
           </div>
-          <div className="conteudoTextual">
+          <div className="px-4">
             <div>
               <h3 className="pt-2">Copaíba</h3>
               <p className="especieText">Copaifera IBngsdorlfii Oesf.</p>

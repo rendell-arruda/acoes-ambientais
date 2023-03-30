@@ -7,7 +7,7 @@ import Container from '../Containes';
 
 export default function Footer(props) {
   return (
-    <div className=" bg-green footer">
+    <div className="bg-green footer">
       <Container>
         <Title title="Links Importantes" />
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 ">
