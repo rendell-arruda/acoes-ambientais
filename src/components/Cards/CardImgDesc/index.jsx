@@ -2,9 +2,9 @@ import React from 'react';
 import './CardImgDesc.css';
 import { Link } from 'react-router-dom';
 
-export default function CardImgDesc({ page, img, title, desc }) {
+export default function CardImgDesc({ link, img, title, desc }) {
   return (
-    <Link className="cardLink " to={page}>
+    <a className="cardLink " href={link}>
       <div className="cardLong">
         <div className="img" style={{ backgroundImage: `url(${img})` }}></div>
         <div className="textBox">
@@ -15,6 +15,6 @@ export default function CardImgDesc({ page, img, title, desc }) {
           <div></div>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }

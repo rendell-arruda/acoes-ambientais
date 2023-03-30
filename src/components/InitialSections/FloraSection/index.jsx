@@ -28,25 +28,25 @@ export default function FloraSection(props) {
           title="Açoita Cavalo"
           desc="Matriz : M5050"
           img={CapaAcoita}
-          page="/acoita"
+          link="/acoita"
         />
         <CardImgDesc
           title="Amendoin Bravo"
           img={CapaAmendoin}
           desc="Matriz : M5050"
-          page="/amendoin"
+          link="/amendoin"
         />
         <CardImgDesc
           title="Jatobá"
           desc="Matriz : M5050"
           img={CapaJatoba}
-          page="/jatoba"
+          link="/jatoba"
         />
         <CardImgDesc
           title="Copaíba"
           desc="Matriz : M5050"
           img={CapaCopaiba}
-          page="/copaiba"
+          link="/copaiba"
         />
       </div>
       <BtnTooltip
