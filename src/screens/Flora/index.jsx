@@ -1,6 +1,5 @@
 import React from 'react';
 import CarouselHeader from '../../components/Carousels/CarouselHeader';
-import Container from '../../components/Containes/index';
 import ImgBanner1 from '../../assets/images/flora/carousel/banner1920x480TestSquosh.jpg';
 import ImgBanner2 from '../../assets/images/flora/carousel/banner1920x480.jpg';
 import ImgBanner3 from '../../assets/images/flora/carousel/img1.png';

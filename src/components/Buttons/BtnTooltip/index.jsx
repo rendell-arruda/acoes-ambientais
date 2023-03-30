@@ -1,14 +1,14 @@
 import React from 'react';
-import './BtnTooltip.css';
 import { Link } from 'react-router-dom';
+import './BtnTooltip.css';
 
-export default function BtnTooltip(props) {
+export default function BtnTooltip({ link, tip, title }) {
   return (
-    <Link to={props.link} className="uiverse">
+    <a href={link} className="uiverse">
       <div>
-        <span className="tooltip">{props.tip}</span>
-        <span>{props.title}</span>
+        <span className="tooltip">{tip}</span>
+        <span>{title}</span>
       </div>
-    </Link>
+    </a>
   );
 }
