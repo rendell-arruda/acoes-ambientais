@@ -1,17 +1,28 @@
 import React, { Children } from 'react';
 import './CardImgBack.css';
 
-export default function CardImgBack(props) {
+export default function CardImgBack({
+  imgCard,
+  link,
+  name,
+  scientificName,
+  children,
+  reference,
+  linkTitle
+}) {
   return (
     <div className="cardN">
       <div className="temporary_text">
-        <img src={props.imgCard} alt="Fim fim Macho" height="250" width="300" />
+        <img src={imgCard} alt="Fim fim Macho" height="250" width="300" />
       </div>
       <div className="card_content">
-        <span className="card_title">{props.name}</span>
-        <span className="card_subtitle">{props.scientificName} </span>
-        <p className="card_description">{props.children}</p>
-        <p className="card_font">{props.reference}</p>
+        <span className="card_title">{name}</span>
+        <span className="card_subtitle">{scientificName} </span>
+        <span className="card_description">{children}</span>
+        <p className="card_font">{reference}</p>
+        <a href={link} className="btn btn-link btn-sm p-0 m-0">
+          {linkTitle}
+        </a>
       </div>
     </div>
   );
