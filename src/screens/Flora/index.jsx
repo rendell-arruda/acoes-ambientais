@@ -1,14 +1,17 @@
 import React from 'react';
 import CarouselHeader from '../../components/Carousels/CarouselHeader';
+import Container from '../../components/Containes';
 import ImgBanner1 from '../../assets/images/flora/carousel/banner1920x480TestSquosh.jpg';
 import ImgBanner2 from '../../assets/images/flora/carousel/banner1920x480.jpg';
 import ImgBanner3 from '../../assets/images/flora/carousel/img1.png';
 import SubTitle from '../../components/Texts/SubTitle';
+import Title from '../../components/Texts/Title';
 import CardImgBack from '../../components/Cards/CardImgBack';
 import ImgAcoita from '../../assets/images/flora/matrizes/acoita/acoitaArvore.jpg';
 import ImgAmendoin from '../../assets/images/flora/matrizes/amendoinBravo/amendoinBravoMudas.JPG';
 import ImgJatoba from '../../assets/images/flora/matrizes/jatoba/jatobaArvore.JPG';
 import ImgCopaiba from '../../assets/images/flora/matrizes/copaiba/copaibaArvore.jpg';
+import Table from '../../components/Table';
 
 export default function Flora() {
   return (
@@ -78,6 +81,17 @@ export default function Flora() {
             comésticos.
           </CardImgBack>
         </div>
+      </div>
+      <div className="tableMatrizes">
+        <SubTitle desc="Matrizes cadastradas" />
+        <Container>
+          <Table
+            col1="Nome"
+            col2="Classe"
+            col3="Coleta de Semente"
+            col4="Link"
+          />
+        </Container>
       </div>
     </div>
   );
