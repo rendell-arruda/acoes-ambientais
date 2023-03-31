@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { TrMatrizes } from '../../screens/Flora';
 
 export default function Table({ col1, col2, col3, col4 }) {
   return (
@@ -12,16 +12,7 @@ export default function Table({ col1, col2, col3, col4 }) {
           <th scope="col">{col4}</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Açoita Cavalo</th>
-          <td>Secundária</td>
-          <td>MAI - AGO</td>
-          <td>
-            <a href="/acoita">Here</a>
-          </td>
-        </tr>
-      </tbody>
+      <TrMatrizes />
     </table>
   );
 }

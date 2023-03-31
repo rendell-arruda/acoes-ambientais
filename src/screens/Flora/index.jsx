@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import CarouselHeader from '../../components/Carousels/CarouselHeader';
 import Container from '../../components/Containes';
 import ImgBanner1 from '../../assets/images/flora/carousel/banner1920x480TestSquosh.jpg';
@@ -6,6 +6,7 @@ import ImgBanner2 from '../../assets/images/flora/carousel/banner1920x480.jpg';
 import ImgBanner3 from '../../assets/images/flora/carousel/img1.png';
 import SubTitle from '../../components/Texts/SubTitle';
 import Title from '../../components/Texts/Title';
+import cadastroMatrizes from './Matrizes/cadastroMatrizes.js';
 import CardImgBack from '../../components/Cards/CardImgBack';
 import ImgAcoita from '../../assets/images/flora/matrizes/acoita/acoitaArvore.jpg';
 import ImgAmendoin from '../../assets/images/flora/matrizes/amendoinBravo/amendoinBravoMudas.JPG';
@@ -95,4 +96,27 @@ export default function Flora() {
       </div>
     </div>
   );
+}
+
+export class TrMatrizes extends Component {
+  render() {
+    return (
+      <>
+        {cadastroMatrizes.map(item => {
+          return (
+            <tbody key={item.id}>
+              <tr>
+                <th scope="row">{item.nome}</th>
+                <td>{item.classe}</td>
+                <td>{item.coleta}</td>
+                <td>
+                  <a href={item.link}>Link</a>
+                </td>
+              </tr>
+            </tbody>
+          );
+        })}
+      </>
+    );
+  }
 }
