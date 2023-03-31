@@ -5,14 +5,12 @@ import ImgBanner1 from '../../assets/images/flora/carousel/banner1920x480TestSqu
 import ImgBanner2 from '../../assets/images/flora/carousel/banner1920x480.jpg';
 import ImgBanner3 from '../../assets/images/flora/carousel/img1.png';
 import SubTitle from '../../components/Texts/SubTitle';
-import Title from '../../components/Texts/Title';
-import cadastroMatrizes from './Matrizes/cadastroMatrizes.js';
 import CardImgBack from '../../components/Cards/CardImgBack';
 import ImgAcoita from '../../assets/images/flora/matrizes/acoita/acoitaArvore.jpg';
 import ImgAmendoin from '../../assets/images/flora/matrizes/amendoinBravo/amendoinBravoMudas.JPG';
 import ImgJatoba from '../../assets/images/flora/matrizes/jatoba/jatobaArvore.JPG';
 import ImgCopaiba from '../../assets/images/flora/matrizes/copaiba/copaibaArvore.jpg';
-import Table from '../../components/Table';
+import TableMatrizes from '../../components/TableMatrizes';
 
 export default function Flora() {
   return (
@@ -85,38 +83,15 @@ export default function Flora() {
       </div>
       <div className="tableMatrizes">
         <SubTitle desc="Matrizes cadastradas" />
-        <Container>
-          <Table
+        <div className="container-md">
+          <TableMatrizes
             col1="Nome"
             col2="Classe"
             col3="Coleta de Semente"
             col4="Link"
           />
-        </Container>
+        </div>
       </div>
     </div>
   );
-}
-
-export class TrMatrizes extends Component {
-  render() {
-    return (
-      <>
-        {cadastroMatrizes.map(item => {
-          return (
-            <tbody key={item.id}>
-              <tr>
-                <th scope="row">{item.nome}</th>
-                <td>{item.classe}</td>
-                <td>{item.coleta}</td>
-                <td>
-                  <a href={item.link}>Link</a>
-                </td>
-              </tr>
-            </tbody>
-          );
-        })}
-      </>
-    );
-  }
 }
