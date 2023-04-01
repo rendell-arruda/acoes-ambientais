@@ -18,7 +18,7 @@ export default function FaunaSection(props) {
           local.
         </Title>
         <SubTitle desc="Animais recem avistados" />
-        <div className="container-xl py-3 d-flex flex-wrap gap-3 align-items-center justify-content-around">
+        <div className="container-xl py-3 d-flex flex-wrap gap-1 align-items-center justify-content-around">
           <CardImgBack
             imgCard={ImgFimFim}
             name="Fim Fim"

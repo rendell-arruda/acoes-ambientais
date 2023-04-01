@@ -1,7 +1,7 @@
 .cardN {
   position: relative;
-  width: 240px;
-  height: 300px;
+  width: 270px;
+  height: 310px;
   color: #2e2d31;
   background: #131313;
   overflow: hidden;
@@ -27,7 +27,7 @@
   bottom: 0;
   /* edit the width to fit card */
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   /* background: #f2f2f2; */
   background: var(--grayBglight);
   border-top-left-radius: 20px;
