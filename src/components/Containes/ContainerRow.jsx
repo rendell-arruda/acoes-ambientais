@@ -13,7 +13,7 @@ export default function ContainerRow({
 }) {
   return (
     <>
-      <div className="d-flex align-items-center containerRow ">
+      <div className="d-flex align-items-center containerRow py-4">
         <div className="conteudoRow d-flex flex-column text-center">
           <h2 className="featurette-heading fw-normal lh-1">
             {title}
@@ -25,7 +25,6 @@ export default function ContainerRow({
 
         <img src={img} className="img-fluid mx-auto" />
       </div>
-      ;
     </>
   );
 }
