@@ -70,10 +70,9 @@ export default function Flora() {
         />
       </Container>
       <div
-        className=" text-light text-center "
+        className="text-light text-center"
         style={{
-          background:
-            ' linear-gradient(180deg, rgba(46,183,230,1) 70%, rgba(40,203,141,1) 90%); '
+          background: ' rgba(46,183,230,1) '
         }}
       >
         <ContainerRow
