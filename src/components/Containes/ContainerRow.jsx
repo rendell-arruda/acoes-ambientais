@@ -10,7 +10,8 @@ export default function ContainerRow({
   btnTitle,
   tip,
   btnLink,
-  target
+  target,
+  children
 }) {
   return (
     <>
@@ -21,6 +22,7 @@ export default function ContainerRow({
             <br /> <span className="text-muted">{titleMuted}</span>
           </h2>
           <p className="lead">{paragraf}</p>
+          {children}
           <BtnTooltip
             title={btnTitle}
             tip={tip}

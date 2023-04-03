@@ -11,6 +11,7 @@ import CardsFlora from './CardsFlora';
 import ContainerRow from '../../components/Containes/ContainerRow';
 import rustificacaoMap from '../../assets/images/flora/maps/rustificacaoMap.png';
 import sementeiraMap from '../../assets/images/flora/maps/sementeiraMap.png';
+import identFolhas1 from '../../assets/images/flora/curiosidades/identArvores.png';
 
 export default function Flora() {
   return (
@@ -68,6 +69,29 @@ export default function Flora() {
           target="_blank"
         />
       </Container>
+      <div
+        className=" text-light text-center "
+        style={{
+          background:
+            ' linear-gradient(180deg, rgba(46,183,230,1) 70%, rgba(40,203,141,1) 90%); '
+        }}
+      >
+        <ContainerRow
+          title="Como identificar Árvores pelo tipo de folha"
+          titleMuted="Itll blow your mind."
+          paragraf="   Some great placeholder content for the first featurette here.
+          Imagine some exciting prose here."
+          img={identFolhas1}
+          btnTitle="Visite"
+          tip="Árvore, Ser Tecnológico"
+          btnLink="https://www.facebook.com/arvoresertecnologico/photos/a.501991869943424/2079354212207174/?type=3"
+          target="_blank"
+        >
+          <span className="fs-6">
+            Fonte: Árvore, Ser Tecnológico no Facebook
+          </span>
+        </ContainerRow>
+      </div>
     </>
   );
 }
