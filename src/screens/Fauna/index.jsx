@@ -12,7 +12,7 @@ export default function Fauna() {
         // img1={Img1}
         // img2={Img2}
         // img3={Img3}
-        title="Faunda RMB"
+        title="Fauna RMB"
         subtitle="  Descriçao breve do que seria essa pagina da flora com algumas
                   atividades."
         desc1="  Descriçao breve do que seria essa pagina da flora com algumas

@@ -4,17 +4,18 @@ import Container from '../../components/Containes';
 import ImgBanner1 from '../../assets/images/flora/carousel/banner1920x480TestSquosh.jpg';
 import ImgBanner2 from '../../assets/images/flora/carousel/banner1920x480.jpg';
 import ImgBanner3 from '../../assets/images/flora/carousel/img1.png';
+import Title from '../../components/Texts/Title';
 import SubTitle from '../../components/Texts/SubTitle';
-import CardImgBack from '../../components/Cards/CardImgBack';
-import ImgAcoita from '../../assets/images/flora/matrizes/acoita/acoitaArvore.jpg';
-import ImgAmendoin from '../../assets/images/flora/matrizes/amendoinBravo/amendoinBravoMudas.JPG';
-import ImgJatoba from '../../assets/images/flora/matrizes/jatoba/jatobaArvore.JPG';
-import ImgCopaiba from '../../assets/images/flora/matrizes/copaiba/copaibaArvore.jpg';
 import TableMatrizes from '../../components/TableMatrizes';
+import CardsFlora from './CardsFlora';
+import ContainerRow from '../../components/Containes/ContainerRow';
+import rustificacaoMap from '../../assets/images/flora/maps/rustificacaoMap.png';
+import sementeiraMap from '../../assets/images/flora/maps/sementeiraMap.png';
+import identFolhas1 from '../../assets/images/flora/curiosidades/identArvores.png';
 
 export default function Flora() {
   return (
-    <div>
+    <>
       <CarouselHeader
         img1={ImgBanner1}
         img2={ImgBanner2}
@@ -27,59 +28,9 @@ export default function Flora() {
         desc2=" Some representative placeholder content for the third slide of
         this carousel."
       />
-      <div className="bg-green">
+      <div className="bg-green cards-flora">
         <SubTitle desc="Matrizes recem cadastradas" />
-        <div className="container-xl py-3 d-flex flex-wrap gap-3 align-items-center justify-content-around">
-          <CardImgBack
-            imgCard={ImgAcoita}
-            name="Açoita Cavalo"
-            scientificName="Luehea divaricata Mart & Zucc."
-            reference="Fonte: Wikipedia"
-            link="/acoita"
-            linkTitle="Ver mais"
-          >
-            Muito comum na Mata Atlântica, encontrada em capoeiras e pastagens.
-            Em tupi-guarani, <b>Ivating</b>, que significa "Fruto que aborrece".
-          </CardImgBack>
-
-          <CardImgBack
-            imgCard={ImgAmendoin}
-            name="Amendoin Bravo"
-            scientificName="Platypodium elegans Vog."
-            reference="Fonte: Agrolink"
-            link="/amendoin"
-            linkTitle="Ver mais"
-          >
-            Originaria do Brasil, também conhecida como leiteira, essa espécie é
-            tipica do Cerrado, sua florada amarela exuberante se destaca no
-            dossel da floresta.
-          </CardImgBack>
-
-          <CardImgBack
-            imgCard={ImgJatoba}
-            name="Jatobá"
-            scientificName="Hymenaea courbaril."
-            reference="Fonte: Web Ambiental"
-            link="/jatoba"
-            linkTitle="Ver mais"
-          >
-            Presente em todo território brasileiro. Além de suas propriedades
-            medicinais, sua polpa é uma rica fonte de
-            <b>Vitaminas C e minerais</b>.
-          </CardImgBack>
-          <CardImgBack
-            imgCard={ImgCopaiba}
-            name="Copaíba"
-            scientificName="Copaifera IBngsdorlfii Oesf."
-            reference="Fonte: WebAmbiental"
-            link="/copaiba"
-            linkTitle="Ver mais"
-          >
-            Seu óleo, conhecido mundialmente como o bálsamo da floresta, é
-            utilizado desde a indústria de combustíveis à fabricação de
-            comésticos.
-          </CardImgBack>
-        </div>
+        <CardsFlora />
       </div>
       <div className="tableMatrizes">
         <SubTitle desc="Matrizes cadastradas" />
@@ -92,6 +43,55 @@ export default function Flora() {
           />
         </div>
       </div>
-    </div>
+      <Container>
+        <Title title="Viveiro RMB">
+          Conheça as áreas de XXX e Rustificação do Viveiro{' '}
+        </Title>
+        <ContainerRow
+          title="Área de rustificação de mudas."
+          // titleMuted="Itll blow your mind."
+          paragraf="   Some great placeholder content for the first featurette here.
+          Imagine some exciting prose here."
+          img={rustificacaoMap}
+          btnTitle="Download"
+          tip="330k"
+          btnLink="https://drive.google.com/file/d/1EOQozKbjeocNsIi3K3YNf4Z0fnuzQhts/view"
+        />
+        <ContainerRow
+          title="Sementeira de espécies"
+          titleMuted="Itll blow your mind."
+          paragraf="   Some great placeholder content for the first featurette here.
+          Imagine some exciting prose here."
+          img={sementeiraMap}
+          btnTitle="Download"
+          tip="540k"
+          btnLink="https://drive.google.com/file/d/1irjRqrJmyrBm6qNMXhOOkfTBrJt-ohsZ/view"
+          target="_blank"
+        />
+      </Container>
+      <div
+        className=" text-light text-center "
+        style={{
+          background:
+            ' linear-gradient(180deg, rgba(46,183,230,1) 70%, rgba(40,203,141,1) 90%); '
+        }}
+      >
+        <ContainerRow
+          title="Como identificar Árvores pelo tipo de folha"
+          titleMuted="Itll blow your mind."
+          paragraf="   Some great placeholder content for the first featurette here.
+          Imagine some exciting prose here."
+          img={identFolhas1}
+          btnTitle="Visite"
+          tip="Árvore, Ser Tecnológico"
+          btnLink="https://www.facebook.com/arvoresertecnologico/photos/a.501991869943424/2079354212207174/?type=3"
+          target="_blank"
+        >
+          <span className="fs-6">
+            Fonte: Árvore, Ser Tecnológico no Facebook
+          </span>
+        </ContainerRow>
+      </div>
+    </>
   );
 }

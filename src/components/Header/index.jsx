@@ -66,6 +66,7 @@ export default function Header() {
               <ul className="dropdown-menu">
                 <li>
                   <a
+                    target="_blank"
                     className="dropdown-item"
                     href="https://drive.google.com/file/d/1irjRqrJmyrBm6qNMXhOOkfTBrJt-ohsZ/view?usp=sharing"
                   >
@@ -74,6 +75,7 @@ export default function Header() {
                 </li>
                 <li>
                   <a
+                    target="_blank"
                     className="dropdown-item"
                     href="https://drive.google.com/file/d/1EOQozKbjeocNsIi3K3YNf4Z0fnuzQhts/view?usp=sharing"
                   >
