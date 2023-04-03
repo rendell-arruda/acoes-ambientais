@@ -20,25 +20,6 @@ export default function ArqueologiaSection(props) {
           </p>
         </Title>
 
-        {/* <div className="d-flex align-items-center containerRow ">
-          <div className="conteudoRow d-flex flex-column text-center">
-            <h2 className="featurette-heading fw-normal lh-1">
-              First featurette heading.
-              <br /> <span className="text-muted">Itll blow your mind.</span>
-            </h2>
-            <p className="lead">
-              Some great placeholder content for the first featurette here.
-              Imagine some exciting prose here.
-            </p>
-            <BtnTooltip
-              title="Veja mais"
-              tip="Arqueologia"
-              link="/arqueologia"
-            />
-          </div>
-
-          <img src={CapaArq} className="img-fluid mx-auto" />
-        </div> */}
         <ContainerRow
           title="First featurette heading2."
           titleMuted="Itll blow your mind."
