@@ -9,7 +9,8 @@ export default function ContainerRow({
   img,
   btnTitle,
   tip,
-  btnLink
+  btnLink,
+  target
 }) {
   return (
     <>
@@ -20,7 +21,12 @@ export default function ContainerRow({
             <br /> <span className="text-muted">{titleMuted}</span>
           </h2>
           <p className="lead">{paragraf}</p>
-          <BtnTooltip title={btnTitle} tip={tip} link={btnLink} />
+          <BtnTooltip
+            title={btnTitle}
+            tip={tip}
+            link={btnLink}
+            target={target}
+          />
         </div>
 
         <img src={img} className="img-fluid mx-auto" />

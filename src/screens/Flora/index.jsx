@@ -51,18 +51,19 @@ export default function Flora() {
           Imagine some exciting prose here."
           img={rustificacaoMap}
           btnTitle="Download"
-          tip="Mapa"
+          tip="330k"
           btnLink="https://drive.google.com/file/d/1EOQozKbjeocNsIi3K3YNf4Z0fnuzQhts/view"
         />
         <ContainerRow
-          title="First featurette heading2."
+          title="Sementeira de espécies"
           titleMuted="Itll blow your mind."
           paragraf="   Some great placeholder content for the first featurette here.
           Imagine some exciting prose here."
           img={sementeiraMap}
           btnTitle="Download"
-          tip="Mapa"
+          tip="540k"
           btnLink="https://drive.google.com/file/d/1irjRqrJmyrBm6qNMXhOOkfTBrJt-ohsZ/view"
+          target="_blank"
         />
       </Container>
     </>

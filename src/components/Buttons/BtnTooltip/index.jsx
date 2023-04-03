@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './BtnTooltip.css';
 
-export default function BtnTooltip({ link, tip, title }) {
+export default function BtnTooltip({ link, tip, title, target }) {
   return (
-    <a href={link} className="uiverse">
+    <a href={link} className="uiverse" target={target}>
       <div>
         <span className="tooltip">{tip}</span>
         <span>{title}</span>
