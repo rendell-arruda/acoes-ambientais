@@ -6,7 +6,7 @@ import CarouselHeader from '../../components/Carousels/CarouselHeader';
 
 export default function Fauna() {
   return (
-    <div>
+    <div className="bg-primary bg-gradient">
       <h1>Fauna RMB</h1>
       <CarouselHeader
         // img1={Img1}
