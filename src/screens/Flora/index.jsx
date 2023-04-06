@@ -74,22 +74,26 @@ export default function Flora() {
           target="_blank"
         />
       </Container>
+
       <div className="bg-green-light">
-        <ContainerRow
-          title="Conheça o Bosque dos Pioneiros"
-          titleMuted="Itll blow your mind."
-          paragraf="   Some great placeholder content for the first featurette here.
+        <Container>
+          {' '}
+          <ContainerRow
+            title="Conheça o Bosque dos Pioneiros"
+            titleMuted="Itll blow your mind."
+            paragraf="   Some great placeholder content for the first featurette here.
           Imagine some exciting prose here."
-          img={BosqueImg}
-          btnTitle="Visite"
-          tip="Bosque dos Pioneiros"
-          btnLink="https://www.google.com/maps/place/RMB+-+Bosque+dos+Pioneiros/@-23.3879129,-47.6179379,15z/data=!4m2!3m1!1s0x0:0x862df6ca25dd3926?sa=X&ved=2ahUKEwj5t9GoyJX-AhWJAbkGHYJnDqYQ_BJ6BAhtEAg"
-          target="_blank"
-        >
-          <span className="fs-6">
-            Fonte: Árvore, Ser Tecnológico no Facebook
-          </span>
-        </ContainerRow>
+            img={BosqueImg}
+            btnTitle="Visite"
+            tip="Bosque dos Pioneiros"
+            btnLink="https://www.google.com/maps/place/RMB+-+Bosque+dos+Pioneiros/@-23.3879129,-47.6179379,15z/data=!4m2!3m1!1s0x0:0x862df6ca25dd3926?sa=X&ved=2ahUKEwj5t9GoyJX-AhWJAbkGHYJnDqYQ_BJ6BAhtEAg"
+            target="_blank"
+          >
+            <span className="fs-6">
+              Fonte: Árvore, Ser Tecnológico no Facebook
+            </span>
+          </ContainerRow>
+        </Container>
       </div>
       <div
         className="text-light text-center"
