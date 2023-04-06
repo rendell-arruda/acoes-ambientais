@@ -12,6 +12,7 @@ import ContainerRow from '../../components/Containes/ContainerRow';
 import rustificacaoMap from '../../assets/images/flora/maps/rustificacaoMap.png';
 import sementeiraMap from '../../assets/images/flora/maps/sementeiraMap.png';
 import identFolhas1 from '../../assets/images/flora/curiosidades/identArvores.png';
+import BosqueImg from '../../assets/images/flora/maps/pioneirosMap.png';
 
 export default function Flora() {
   return (
@@ -29,19 +30,23 @@ export default function Flora() {
         this carousel."
       />
       <div className="bg-green cards-flora">
-        <SubTitle desc="Matrizes recem cadastradas" />
-        <CardsFlora />
-      </div>
-      <div className="tableMatrizes">
-        <SubTitle desc="Matrizes cadastradas" />
-        <div className="container-md">
-          <TableMatrizes
-            col1="Nome"
-            col2="Classe"
-            col3="Coleta de Semente"
-            col4="Link"
-          />
-        </div>
+        <Container>
+          <Title title="Cadastro de Matrizes" />
+          <SubTitle desc="Matrizes recem cadastradas" />
+          <CardsFlora />
+
+          <div className="tableMatrizes">
+            <SubTitle desc=" Tabela de Matrizes Cadastradas" />
+            <div className="container-md">
+              <TableMatrizes
+                col1="Nome"
+                col2="Classe"
+                col3="Coleta de Semente"
+                col4="Link"
+              />
+            </div>
+          </div>
+        </Container>
       </div>
       <Container>
         <Title title="Viveiro RMB">
@@ -69,6 +74,23 @@ export default function Flora() {
           target="_blank"
         />
       </Container>
+      <div className="bg-green-light">
+        <ContainerRow
+          title="Conheça o Bosque dos Pioneiros"
+          titleMuted="Itll blow your mind."
+          paragraf="   Some great placeholder content for the first featurette here.
+          Imagine some exciting prose here."
+          img={BosqueImg}
+          btnTitle="Visite"
+          tip="Bosque dos Pioneiros"
+          btnLink="https://www.google.com/maps/place/RMB+-+Bosque+dos+Pioneiros/@-23.3879129,-47.6179379,15z/data=!4m2!3m1!1s0x0:0x862df6ca25dd3926?sa=X&ved=2ahUKEwj5t9GoyJX-AhWJAbkGHYJnDqYQ_BJ6BAhtEAg"
+          target="_blank"
+        >
+          <span className="fs-6">
+            Fonte: Árvore, Ser Tecnológico no Facebook
+          </span>
+        </ContainerRow>
+      </div>
       <div
         className="text-light text-center"
         style={{

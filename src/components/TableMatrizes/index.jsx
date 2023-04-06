@@ -4,7 +4,7 @@ import cadastroMatrizes from '../../screens/Flora/Matrizes/cadastroMatrizes';
 
 export default function TableMatrizes({ col1, col2, col3, col4 }) {
   return (
-    <table className="table table-hover table-md ">
+    <table className="table table-hover table-md table-light ">
       <thead className="table-primary">
         <tr>
           <th scope="col">{col1}</th>

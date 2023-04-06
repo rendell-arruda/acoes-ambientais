@@ -39,7 +39,7 @@ export default function InformSection(props) {
               </a>
               <a
                 target="_blank"
-                href="https://www.google.com/maps/place/RMB+-+Bosque+dos+Pioneiros/@-23.3881028,-47.6179412,155m/data=!3m1!1e3!4m5!3m4!1s0x0:0x862df6ca25dd3926!8m2!3d-23.3879129!4d-47.6179379"
+                href="https://www.google.com/maps/place/RMB+-+Bosque+dos+Pioneiros/@-23.3881376,-47.6198094,350m/data=!3m1!1e3!4m15!1m8!3m7!1s0x94c5efc7ecda2e37:0x862df6ca25dd3926!2sRMB+-+Bosque+dos+Pioneiros!8m2!3d-23.3879129!4d-47.6179379!10e5!16s%2Fg%2F11sgvvq__v!3m5!1s0x94c5efc7ecda2e37:0x862df6ca25dd3926!8m2!3d-23.3879129!4d-47.6179379!16s%2Fg%2F11sgvvq__v"
               >
                 <div className="carousel-item">
                   <img src={Img3} className="d-block w-100" alt="..." />

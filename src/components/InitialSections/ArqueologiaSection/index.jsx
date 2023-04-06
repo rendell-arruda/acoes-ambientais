@@ -11,7 +11,7 @@ import ContainerRow from '../../Containes/ContainerRow';
 
 export default function ArqueologiaSection(props) {
   return (
-    <div className="bg-green-ligth">
+    <div className="bg-green-light">
       <Container>
         <Title title="Sítio Arqueológico Jibóia">
           <p>

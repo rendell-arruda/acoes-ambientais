@@ -25,7 +25,7 @@ body {
   color: var(--grayTextlight);
 }
 
-.bg-green-ligth {
+.bg-green-light {
   background-color: var(--greenBgContainer);
   color: var(--grayTextlight);
 }
