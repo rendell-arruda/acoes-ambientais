@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import { Link } from 'react-router-dom';
 import BannerInitial from '../../components/BannerInitial';
 import Title from '../../components/Texts/Title';
@@ -11,6 +13,7 @@ import InformSection from '../../components/InitialSections/InformSection';
 export default function Home(props) {
   return (
     <>
+      <Header />
       <BannerInitial />
       <div>
         <FloraSection />
@@ -19,6 +22,7 @@ export default function Home(props) {
         <AguasSection />
         <InformSection />
       </div>
+      <Footer />
     </>
   );
 }

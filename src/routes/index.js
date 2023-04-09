@@ -19,7 +19,6 @@ import SignIn from '../screens/SignIn';
 export default function RoutesApp() {
   return (
     <>
-      <Header />
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route path="/home" element={<Home />} />
@@ -34,7 +33,6 @@ export default function RoutesApp() {
 
         <Route path="*" element={<Erro />} />
       </Routes>
-      <Footer />
     </>
   );
 }
