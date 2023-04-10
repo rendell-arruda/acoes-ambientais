@@ -77,7 +77,6 @@ export default function Flora() {
 
       <div className="bg-green-light">
         <Container>
-          {' '}
           <ContainerRow
             title="Conheça o Bosque dos Pioneiros"
             titleMuted="Itll blow your mind."
