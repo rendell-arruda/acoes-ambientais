@@ -1,17 +1,28 @@
 import React, { useState } from 'react';
+import { auth } from '../../firebase/firebaseConnection';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+
 import './signin.css';
 import logo from '../../assets/images/logos/favicon-rmb.png';
-// import logo from '../../assets/images/logos/logo5s.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  function handleLogin(e) {
+  const navigate = useNavigate();
+
+  async function handleLogin(e) {
     e.preventDefault();
     if (email !== '' && password !== '') {
-      alert('teste');
+      await signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+          navigate('/home', { replace: true });
+          //navegar para home
+        })
+        .catch(error => {
+          console.log('Erroo ao fazer o login ' + error);
+        });
     } else {
       alert('Preencha todos os campos');
     }
