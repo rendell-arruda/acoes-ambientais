@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Private from './Private';
 
 import Home from '../screens/Home';
 import Fauna from '../screens/Fauna';
@@ -22,17 +23,87 @@ export default function RoutesApp() {
       <Header />
       <Routes>
         <Route path="/" element={<SignIn />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/flora" element={<Flora />} />
-        <Route path="/fauna" element={<Fauna />} />
-        <Route path="/arqueologia" element={<Arqueologia />} />
-        <Route path="/aguas" element={<Aguas />} />
-        <Route path="/acoita" element={<Acoita />} />
-        <Route path="/amendoin" element={<Amendoin />} />
-        <Route path="/jatoba" element={<Jatoba />} />
-        <Route path="/copaiba" element={<Copaiba />} />
+        <Route
+          path="/home"
+          element={
+            <Private>
+              <Home />
+            </Private>
+          }
+        />
+        <Route
+          path="/flora"
+          element={
+            <Private>
+              <Flora />
+            </Private>
+          }
+        />
+        <Route
+          path="/fauna"
+          element={
+            <Private>
+              <Fauna />
+            </Private>
+          }
+        />
+        <Route
+          path="/arqueologia"
+          element={
+            <Private>
+              <Arqueologia />
+            </Private>
+          }
+        />
+        <Route
+          path="/aguas"
+          element={
+            <Private>
+              <Aguas />
+            </Private>
+          }
+        />
+        <Route
+          path="/acoita"
+          element={
+            <Private>
+              <Acoita />
+            </Private>
+          }
+        />
+        <Route
+          path="/amendoin"
+          element={
+            <Private>
+              <Amendoin />
+            </Private>
+          }
+        />
+        <Route
+          path="/jatoba"
+          element={
+            <Private>
+              <Jatoba />
+            </Private>
+          }
+        />
+        <Route
+          path="/copaiba"
+          element={
+            <Private>
+              <Copaiba />
+            </Private>
+          }
+        />
 
-        <Route path="*" element={<Erro />} />
+        <Route
+          path="*"
+          element={
+            <Private>
+              <Erro />
+            </Private>
+          }
+        />
       </Routes>
       <Footer />
     </>

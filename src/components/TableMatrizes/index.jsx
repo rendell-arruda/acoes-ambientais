@@ -23,8 +23,8 @@ export function TrMatrizes() {
     <>
       {cadastroMatrizes.map(item => {
         return (
-          <tbody>
-            <tr key={item.id}>
+          <tbody key={item.id}>
+            <tr>
               <th scope="row">{item.nome}</th>
               <td>{item.classe}</td>
               <td>{item.coleta}</td>

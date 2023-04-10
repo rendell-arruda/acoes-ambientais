@@ -1,17 +1,35 @@
 import React, { useState } from 'react';
+import { auth } from '../../firebase/firebaseConnection';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+
 import './signin.css';
 import logo from '../../assets/images/logos/favicon-rmb.png';
-// import logo from '../../assets/images/logos/logo5s.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const navigate = useNavigate();
+
+  async function handleLogin(e) {
+    e.preventDefault();
+    if (email !== '' && password !== '') {
+      await signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+          navigate('/home', { replace: true });
+          //navegar para home
+        })
+        .catch(error => {
+          console.log('Erroo ao fazer o login ' + error);
+        });
+    } else {
+      alert('Preencha todos os campos');
+    }
+  }
+
   return (
-    <div
-      className="containerCenter bg-green d-flex
- justify-content-center align-items-center "
-    >
+    <div className="containerCenter bg-green d-flex justify-content-center align-items-center">
       <div
         className="login text-center bg-gray d-flex
  justify-content-center align-items-center flex-column "
@@ -20,7 +38,7 @@ export default function SignIn() {
           <img src={logo} alt="Logo da Gerência de implatação" />
           <h5>Ações Ambientais RMB</h5>
         </div>
-        <form className="d-flex flex-column bg-gray">
+        <form className="d-flex flex-column bg-gray" onSubmit={handleLogin}>
           <h5>Login</h5>
           <input
             type="text"

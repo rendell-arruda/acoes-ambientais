@@ -11,7 +11,7 @@ export default function Header() {
       }}
     >
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/home">
           Ações Ambientais
         </Link>
 
@@ -34,7 +34,7 @@ export default function Header() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="flora">
+              <Link className="nav-link" to="/flora">
                 Flora
               </Link>
             </li>
