@@ -29,7 +29,7 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link active" aria-current="page" to="/home">
                 Home
               </Link>
             </li>
