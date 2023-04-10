@@ -32,14 +32,13 @@ export default function FaunaSection(props) {
 
           <CardImgBack
             imgCard={ImgCuica}
-            name="Fim Fim"
-            scientificName="Euphonia chlorotica."
-            reference="Fonte: WikiAves"
+            name="Cuíca"
+            scientificName="Philander opossum"
+            reference="Fonte: WikiPedia"
           >
             Também conhecida como Cuíca Graciola, é um roedor de habitos
-            noturnos, pesam de 12 a 50g, possuem uma dieta onívora e
-            insectívora. Frequentemente são avistadas em formações de florestas
-            primárias e secundárias.
+            noturnos, possuem uma dieta onívora e insectívora. Frequentemente
+            são avistadas em formações de florestas primárias e secundárias.
           </CardImgBack>
 
           <CardImgBack
@@ -59,13 +58,13 @@ export default function FaunaSection(props) {
             scientificName="Dacnis cayana."
             reference="Fonte: WikiAves"
           >
-            GAparece principalmente no norte e centro do Brasil. Alimenta-se de
+            Aparece principalmente no norte e centro do Brasil. Alimenta-se de
             néctar, insetos e frutas. Vive aos pares ou em pequenos grupos
             procurando alimento. Costuma ter de duas a quatro ninhadas por
             temporada.
           </CardImgBack>
+          <BtnTooltip link="/fauna" tip="Fauna Page" title="Veja Mais" />
         </div>
-        <BtnTooltip link="/fauna" tip="Fauna Page" title="Veja Mais" />
       </Container>
     </div>
   );

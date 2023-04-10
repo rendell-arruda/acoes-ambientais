@@ -1,4 +1,5 @@
 import React from 'react';
+import './containerRow.css';
 import BtnTooltip from '../Buttons/BtnTooltip';
 
 export default function ContainerRow({
@@ -16,7 +17,7 @@ export default function ContainerRow({
   return (
     <>
       <div className="d-flex align-items-center containerRow py-4">
-        <div className="conteudoRow d-flex flex-column text-center">
+        <div className="conteudoRow d-flex flex-column text-top ">
           <h2 className="featurette-heading fw-normal lh-1">
             {title}
             <br /> <span className="text-muted">{titleMuted}</span>

@@ -15,7 +15,7 @@ export default function Footer(props) {
             <h5>Mapa do Site</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <Link to="/" className="nav-link p-0">
+                <Link to="/home" className="nav-link p-0">
                   Home
                 </Link>
               </li>

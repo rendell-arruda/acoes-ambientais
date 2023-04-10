@@ -22,7 +22,7 @@ export default function FloraSection(props) {
 
       <FeatureList title="Titulo e tal" desc="issoo ali aqui gegere here" />
       <Subtitle desc="Matrizes Recem cadastradas" />
-      <div className="gap-4 py-4 d-flex justify-content-center flex-wrap">
+      <div className="gap-4 py-4 d-flex justify-content-center flex-wrap align-items-center">
         <CardImgDesc
           title="Açoita Cavalo"
           desc="Matriz : M5050"
@@ -47,13 +47,13 @@ export default function FloraSection(props) {
           img={CapaCopaiba}
           link="/copaiba"
         />
+        <BtnTooltip
+          title="Veja mais"
+          tip="Flora Page"
+          className="align-content-end"
+          link="/flora"
+        />
       </div>
-      <BtnTooltip
-        title="Veja mais"
-        tip="Flora Page"
-        className="align-content-end"
-        link="/flora"
-      />
     </Container>
   );
 }
