@@ -2,13 +2,13 @@ import React from 'react';
 import './arqueologiaPage.css';
 import CarouselHeader from '../../components/Carousels/CarouselHeader';
 import Container from '../../components/Containes';
-import ContainerRow from '../../components/Containes/ContainerRow';
+import ParallaxImage from '../../components/ParallaxImage';
 import Timeline from '../../components/Timeline';
 import Title from '../../components/Texts/Title';
 import FeatureItem from '../../components/FeatureList/FeatureItem';
-import img1 from '../../assets/images/arqueologia/slider1.jpg';
-import img2 from '../../assets/images/arqueologia/slider2.jpg';
-import img3 from '../../assets/images/arqueologia/slider3.jpg';
+
+import img4 from '../../assets/images/arqueologia/jiboiaCapa.jpg';
+
 import timeline1 from '../../assets/images/arqueologia/timeline1.jpg';
 import timeline2 from '../../assets/images/arqueologia/timeline2.jpg';
 import timeline3 from '../../assets/images/arqueologia/timeline3.jpg';
@@ -21,18 +21,7 @@ import icon3 from '../../assets/images/icons/icons-3.png';
 export default function Arqueologia() {
   return (
     <div>
-      <CarouselHeader
-        img1={img1}
-        img2={img2}
-        img3={img3}
-        title="Sítio Arqueológico Jibóia I"
-        subtitle="  Descriçao breve do que seria essa pagina do sitio arque com algumas
-              atividades."
-        desc1="  Descriçao breve do que seria essa pagina da flora com algumas
-    atividades."
-        desc2=" Some representative placeholder content for the third slide of
-    this carousel."
-      />
+      <ParallaxImage img={img4}>Sítio Arqueologico</ParallaxImage>
       <Container>
         <Timeline
           img1={timeline1}
