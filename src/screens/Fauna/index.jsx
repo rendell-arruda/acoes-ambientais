@@ -3,23 +3,12 @@ import React from 'react';
 // import Img2 from '../../assets/images/flora/carousel/banner1920x480.jpg';
 // import Img3 from '../../assets/images/flora/carousel/img1.png';
 import CarouselHeader from '../../components/Carousels/CarouselHeader';
+import ParallaxImage from '../../components/ParallaxImage';
 
 export default function Fauna() {
   return (
     <div className="bg-primary bg-gradient">
-      <h1>Fauna RMB</h1>
-      <CarouselHeader
-        // img1={Img1}
-        // img2={Img2}
-        // img3={Img3}
-        title="Fauna RMB"
-        subtitle="  Descriçao breve do que seria essa pagina da flora com algumas
-                  atividades."
-        desc1="  Descriçao breve do que seria essa pagina da flora com algumas
-        atividades."
-        desc2=" Some representative placeholder content for the third slide of
-        this carousel."
-      />
+      <ParallaxImage img> Fauna RMB</ParallaxImage>
     </div>
   );
 }
