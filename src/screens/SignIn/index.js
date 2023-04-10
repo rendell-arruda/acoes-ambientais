@@ -7,11 +7,18 @@ import { Link } from 'react-router-dom';
 export default function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  function handleLogin(e) {
+    e.preventDefault();
+    if (email !== '' && password !== '') {
+      alert('teste');
+    } else {
+      alert('Preencha todos os campos');
+    }
+  }
+
   return (
-    <div
-      className="containerCenter bg-green d-flex
- justify-content-center align-items-center "
-    >
+    <div className="containerCenter bg-green d-flex justify-content-center align-items-center">
       <div
         className="login text-center bg-gray d-flex
  justify-content-center align-items-center flex-column "
@@ -20,7 +27,7 @@ export default function SignIn() {
           <img src={logo} alt="Logo da Gerência de implatação" />
           <h5>Ações Ambientais RMB</h5>
         </div>
-        <form className="d-flex flex-column bg-gray">
+        <form className="d-flex flex-column bg-gray" onSubmit={handleLogin}>
           <h5>Login</h5>
           <input
             type="text"
