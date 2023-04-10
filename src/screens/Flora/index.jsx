@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import CarouselHeader from '../../components/Carousels/CarouselHeader';
 import Container from '../../components/Containes';
-import ImgBanner1 from '../../assets/images/flora/carousel/banner1920x480TestSquosh.jpg';
-import ImgBanner2 from '../../assets/images/flora/carousel/banner1920x480.jpg';
-import ImgBanner3 from '../../assets/images/flora/carousel/img1.png';
+import ImgBanner from '../../assets/images/flora/carousel/img1.png';
 import Title from '../../components/Texts/Title';
 import SubTitle from '../../components/Texts/SubTitle';
 import TableMatrizes from '../../components/TableMatrizes';
@@ -13,22 +11,12 @@ import rustificacaoMap from '../../assets/images/flora/maps/rustificacaoMap.png'
 import sementeiraMap from '../../assets/images/flora/maps/sementeiraMap.png';
 import identFolhas1 from '../../assets/images/flora/curiosidades/identArvores.png';
 import BosqueImg from '../../assets/images/flora/maps/pioneirosMap.png';
+import ParallaxImage from '../../components/ParallaxImage';
 
 export default function Flora() {
   return (
     <>
-      <CarouselHeader
-        img1={ImgBanner1}
-        img2={ImgBanner2}
-        img3={ImgBanner3}
-        title="Flora RMB"
-        subtitle="  Descriçao breve do que seria essa pagina da flora com algumas
-                  atividades."
-        desc1="  Descriçao breve do que seria essa pagina da flora com algumas
-        atividades."
-        desc2=" Some representative placeholder content for the third slide of
-        this carousel."
-      />
+      <ParallaxImage img={ImgBanner}>Flora RMB</ParallaxImage>
       <div className="bg-green cards-flora">
         <Container>
           <Title title="Cadastro de Matrizes" />
@@ -77,7 +65,6 @@ export default function Flora() {
 
       <div className="bg-green-light">
         <Container>
-          {' '}
           <ContainerRow
             title="Conheça o Bosque dos Pioneiros"
             titleMuted="Itll blow your mind."
@@ -95,27 +82,31 @@ export default function Flora() {
           </ContainerRow>
         </Container>
       </div>
+
       <div
-        className="text-light text-center"
+        className="text-light"
         style={{
           background: ' rgba(46,183,230,1) '
         }}
       >
-        <ContainerRow
-          title="Como identificar Árvores pelo tipo de folha"
-          titleMuted="Itll blow your mind."
-          paragraf="   Some great placeholder content for the first featurette here.
+        {' '}
+        <Container>
+          <ContainerRow
+            title="Como identificar Árvores pelo tipo de folha"
+            titleMuted="Itll blow your mind."
+            paragraf="   Some great placeholder content for the first featurette here.
           Imagine some exciting prose here."
-          img={identFolhas1}
-          btnTitle="Visite"
-          tip="Árvore, Ser Tecnológico"
-          btnLink="https://www.facebook.com/arvoresertecnologico/photos/a.501991869943424/2079354212207174/?type=3"
-          target="_blank"
-        >
-          <span className="fs-6">
-            Fonte: Árvore, Ser Tecnológico no Facebook
-          </span>
-        </ContainerRow>
+            img={identFolhas1}
+            btnTitle="Visite"
+            tip="Árvore, Ser Tecnológico"
+            btnLink="https://www.facebook.com/arvoresertecnologico/photos/a.501991869943424/2079354212207174/?type=3"
+            target="_blank"
+          >
+            <span className="fs-6">
+              Fonte: Árvore, Ser Tecnológico no Facebook
+            </span>
+          </ContainerRow>
+        </Container>
       </div>
     </>
   );
