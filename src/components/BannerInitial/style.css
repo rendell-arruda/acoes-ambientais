@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 500px;
+  min-height: 400px;
 }
 
 .card-intro {
@@ -12,13 +12,13 @@
 
 @media (max-width: 768px) {
   .card-intro {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: block;
   }
   .intro-conteudo {
     text-align: center;
     flex-direction: column;
     gap: 20px;
-    background: none;
+    /* background: none; */
   }
 }
