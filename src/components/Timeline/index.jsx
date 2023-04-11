@@ -19,7 +19,7 @@ export default function Timeline({ img1, img2, img3, img4 }) {
                 <p class="fs-3 font-weight-500">Jibóia I</p>
               </div>
               <div class="timeline-box one-of-two">
-                <img class="mb-1-6 rounded" src={img1} alt="..." />
+                <img class="mb-1-6 rounded img-fluid" src={img1} alt="..." />
                 <div class="content">
                   <h3 class="h4 mb-2 mb-md-3">Diagnóstico Arqueológico</h3>
                   <p class="mb-0">
@@ -32,7 +32,7 @@ export default function Timeline({ img1, img2, img3, img4 }) {
                 <div class="year">2013</div>
               </div>
               <div class="timeline-box one-of-two">
-                <img class="mb-1-6 rounded" src={img2} alt="..." />
+                <img class="mb-1-6 rounded img-fluid" src={img2} alt="..." />
                 <div class="content">
                   <h3 class="h4 mb-2 mb-md-3">
                     Increase employee by 6 members
@@ -47,7 +47,7 @@ export default function Timeline({ img1, img2, img3, img4 }) {
                 <div class="year">2019</div>
               </div>
               <div class="timeline-box one-of-two">
-                <img class="mb-1-6 rounded" src={img3} alt="..." />
+                <img class="mb-1-6 rounded img-fluid" src={img3} alt="..." />
                 <div class="content">
                   <h3 class="h4 mb-2 mb-md-3">We win the national awards</h3>
                   <p class="mb-0">
@@ -60,7 +60,7 @@ export default function Timeline({ img1, img2, img3, img4 }) {
                 <div class="year">2020</div>
               </div>
               <div class="timeline-box one-of-two">
-                <img class="mb-1-6 rounded" src={img4} alt="..." />
+                <img class="mb-1-6 rounded img-fluid" src={img4} alt="..." />
                 <div class="content">
                   <h3 class="h4 mb-2 mb-md-3">
                     Branches open in International
