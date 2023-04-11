@@ -33,7 +33,7 @@ export default function InformSection(props) {
                 href="https://www.youtube.com/watch?v=0fAJ6R4BFp8"
                 target="_blank"
               >
-                <div className="carousel-item" data-bs-interval="2000">
+                <div className="carousel-item" data-bs-interval="1400">
                   <img src={Img2} className="d-block w-100" alt="..." />
                 </div>
               </a>
