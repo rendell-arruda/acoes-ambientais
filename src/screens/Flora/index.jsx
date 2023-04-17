@@ -65,21 +65,18 @@ export default function Flora() {
 
       <div className="bg-green-light">
         <Container>
-          <ContainerRow
-            title="Conheça o Bosque dos Pioneiros"
-            titleMuted="Itll blow your mind."
-            paragraf="   Some great placeholder content for the first featurette here.
-          Imagine some exciting prose here."
-            img={BosqueImg}
-            btnTitle="Visite"
-            tip="Bosque dos Pioneiros"
-            btnLink="https://www.google.com/maps/place/RMB+-+Bosque+dos+Pioneiros/@-23.3879129,-47.6179379,15z/data=!4m2!3m1!1s0x0:0x862df6ca25dd3926?sa=X&ved=2ahUKEwj5t9GoyJX-AhWJAbkGHYJnDqYQ_BJ6BAhtEAg"
-            target="_blank"
-          >
-            <span className="fs-6">
-              Fonte: Árvore, Ser Tecnológico no Facebook
-            </span>
-          </ContainerRow>
+          <Title title="Bosque dos pioneiros">
+            <p>Conheça o bosque dos pioneiros</p>
+          </Title>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d885.6993329936776!2d-47.6179412!3d-23.3881028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5efc7ecda2e37%3A0x862df6ca25dd3926!2sRMB%20-%20Bosque%20dos%20Pioneiros!5e1!3m2!1spt-BR!2sbr!4v1681734358558!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="450"
+            // style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </Container>
       </div>
 
@@ -89,7 +86,6 @@ export default function Flora() {
           background: ' rgba(46,183,230,1) '
         }}
       >
-        {' '}
         <Container>
           <ContainerRow
             title="Como identificar Árvores pelo tipo de folha"
