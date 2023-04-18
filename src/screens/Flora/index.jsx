@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CarouselHeader from '../../components/Carousels/CarouselHeader';
 import Container from '../../components/Containes';
-import ImgBanner from '../../assets/images/flora/carousel/img1.png';
+import ImgBanner from '../../assets/images/flora/banner/img1.png';
 import Title from '../../components/Texts/Title';
 import SubTitle from '../../components/Texts/SubTitle';
 import TableMatrizes from '../../components/TableMatrizes';
@@ -10,7 +10,6 @@ import ContainerRow from '../../components/Containes/ContainerRow';
 import rustificacaoMap from '../../assets/images/flora/maps/rustificacaoMap.png';
 import sementeiraMap from '../../assets/images/flora/maps/sementeiraMap.png';
 import identFolhas1 from '../../assets/images/flora/curiosidades/identArvores.png';
-import BosqueImg from '../../assets/images/flora/maps/pioneirosMap.png';
 import ParallaxImage from '../../components/ParallaxImage';
 
 export default function Flora() {

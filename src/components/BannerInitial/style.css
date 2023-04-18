@@ -4,8 +4,13 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 400px;
+  font-family: 'Inter';
 }
-
+.intro-conteudo div h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--greentext);
+}
 .card-intro {
   display: none;
 }

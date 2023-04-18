@@ -12,7 +12,8 @@ const ParallaxImage = ({ img, children }) => {
           style={{
             color: '#fff',
             fontSize: '60px',
-            padding: '8px'
+            padding: '8px',
+            fontFamily: 'Inter'
           }}
         >
           {children}
