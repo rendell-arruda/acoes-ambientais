@@ -3,11 +3,9 @@ import './loader.css';
 
 export default function loader() {
   return (
-    <div>
+    <div className="justify-content-center d-flex">
       <div className="loader">
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
+        <div className="justify-content-center jimu-primary-loading"></div>
       </div>
     </div>
   );

@@ -1,28 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { auth } from '../../firebase/firebaseConnection';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
 import './signin.css';
 import logo from '../../assets/images/logos/favicon-rmb.png';
 import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../context/auth';
+import Loader from '../../components/Loader';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
-  const navigate = useNavigate();
+  const { signIn, loadingAuth } = useContext(AuthContext);
 
   async function handleLogin(e) {
     e.preventDefault();
     if (email !== '' && password !== '') {
-      await signInWithEmailAndPassword(auth, email, password)
-        .then(() => {
-          navigate('/home', { replace: true });
-          //navegar para home
-        })
-        .catch(error => {
-          console.log('Erroo ao fazer o login ' + error);
-        });
+      signIn(email, password);
     } else {
       alert('Preencha todos os campos');
     }
@@ -52,7 +46,7 @@ export default function SignIn() {
             value={password}
             onChange={e => setPassword(e.target.value)}
           />
-          <button type="submit">Acessar</button>
+          <button type="submit">{loadingAuth ? <Loader /> : 'Acessar'}</button>
           {/* <Link>Cadastre-se</Link> */}
         </form>
       </div>
