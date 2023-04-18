@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-
 import { auth } from '../../firebase/firebaseConnection';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
@@ -7,6 +6,7 @@ import './signin.css';
 import logo from '../../assets/images/logos/favicon-rmb.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/auth';
+import Loader from '../../components/Loader';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
@@ -46,7 +46,7 @@ export default function SignIn() {
             value={password}
             onChange={e => setPassword(e.target.value)}
           />
-          <button type="submit">{loadingAuth ? 'Carregando' : 'Acessar'}</button>
+          <button type="submit">{loadingAuth ? <Loader /> : 'Acessar'}</button>
           {/* <Link>Cadastre-se</Link> */}
         </form>
       </div>
