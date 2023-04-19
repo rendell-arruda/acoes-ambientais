@@ -1,20 +1,12 @@
 .cardN {
   position: relative;
   width: 270px;
-  height: 320px;
+  height: 310px;
   color: #2e2d31;
   background: #131313;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
-.temporary_text {
-  /* font-weight: bold;
-    font-size: 24px;
-    padding: 6px 12px;
-    color: #f8f8f8;
-    background-position: center; */
 }
 
 .card_title {
@@ -55,8 +47,8 @@
 
 .card_subtitle {
   display: block;
-  font-size: 14px;
-  /* font-weight: bold; */
+
+  font-size: 13px;
   margin-bottom: 10px;
   font-style: italic;
 }

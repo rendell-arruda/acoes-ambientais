@@ -45,7 +45,7 @@ export default function FaunaSection(props) {
             imgCard={ImgTamandua}
             name="Tamanduá"
             scientificName="Myrmecophaga tridactyla."
-            reference="Fonte: WikiAves"
+            reference="Fonte: Wikipedia"
           >
             Grande mamífero das Américas Central e do Sul. Ele esta listado com
             espécie em Vulnerabilidade pela União Internacional para a

@@ -9,9 +9,9 @@ export default function CardImgDesc({ link, img, title, desc }) {
         <div className="img" style={{ backgroundImage: `url(${img})` }}></div>
         <div className="textBox">
           <div className="textContent">
-            <p className="h1">{title}</p>
+            <p className="font-1-s">{title}</p>
           </div>
-          <p className="p">{desc}</p>
+          <p className="font-1-xs">{desc}</p>
           <div></div>
         </div>
       </div>

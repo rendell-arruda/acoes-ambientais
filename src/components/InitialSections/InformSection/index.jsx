@@ -13,7 +13,7 @@ export default function InformSection(props) {
           Curiosidades, links e mensagem do Diretor
         </Title>
 
-        <div className="row align-items-center">
+        <div className="row align-items-center pt-4">
           <div
             id="carouselExampleInterval"
             className="carousel slide col-md-7"

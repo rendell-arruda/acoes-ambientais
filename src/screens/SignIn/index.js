@@ -30,10 +30,10 @@ export default function SignIn() {
       >
         <div className="login-area bg-green-light">
           <img src={logo} alt="Logo da Gerência de implatação" />
-          <h5>Ações Ambientais RMB</h5>
+          <h6>Ações Ambientais RMB</h6>
         </div>
         <form className="d-flex flex-column bg-gray" onSubmit={handleLogin}>
-          <h5>Login</h5>
+          <h4>Login</h4>
           <input
             type="text"
             placeholder="email@email.com"

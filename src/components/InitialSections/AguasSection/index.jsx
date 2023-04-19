@@ -13,9 +13,9 @@ export default function AguasSection(props) {
     <div className="bg-gray">
       <Container>
         <Title title="Águas Subterrâneas e Superficiais">
-          {/* <p>
+          <p>
             Confira as atividades de XXXX das águas superficiais e subterrâneas.
-          </p> */}
+          </p>
         </Title>
 
         <ContainerRow

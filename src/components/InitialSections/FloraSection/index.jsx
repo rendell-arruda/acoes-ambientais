@@ -50,7 +50,7 @@ export default function FloraSection(props) {
         <BtnTooltip
           title="Veja mais"
           tip="Flora Page"
-          className="align-content-end"
+          className="align-content-end "
           link="/flora"
         />
       </div>

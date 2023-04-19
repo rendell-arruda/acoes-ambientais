@@ -8,7 +8,7 @@ export default function BannerInitial() {
     <>
       <div className="py-4 p-md-4 d-flex intro-conteudo justify-content-center ">
         <div className="col-md-6 ">
-          <h1 className="">Ações Ambientais RMB</h1>
+          <h1 className="font-1-xxl">Ações Ambientais RMB</h1>
           {/* <p className="fs-6">
             Nesta página apresentamos as iniciativas desenvolvidas no Sítio-RMB
             segundo os Planos Ambientais.
@@ -17,7 +17,7 @@ export default function BannerInitial() {
         <div className="card card-intro">
           <img className="card-img-top" src={Peroba} alt="imagem da Peroba" />
           <div className="card-body">
-            <p className="card-text">
+            <p className="card-text text-center">
               Esta é a Peroba Rosa símbolo do Sítio RMB e do Bosque dos
               Pioneiros.
             </p>

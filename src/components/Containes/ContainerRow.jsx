@@ -16,13 +16,13 @@ export default function ContainerRow({
 }) {
   return (
     <>
-      <div className="d-flex align-items-center containerRow py-4">
-        <div className="conteudoRow d-flex flex-column text-top ">
-          <h2 className="featurette-heading fw-normal lh-1">
+      <div className="d-flex align-items-center containerRow  justify-content-between py-4">
+        <div className="conteudoRow d-flex flex-column text-top  ">
+          <h2 className="featurette-heading font-1-l ">
             {title}
             <br /> <span className="text-muted">{titleMuted}</span>
           </h2>
-          <p className="lead">{paragraf}</p>
+          <p className="font-2-s">{paragraf}</p>
           {children}
           <BtnTooltip
             title={btnTitle}
@@ -32,7 +32,7 @@ export default function ContainerRow({
           />
         </div>
 
-        <img src={img} className="img-fluid mx-auto" />
+        <img src={img} className="img-fluid " />
       </div>
     </>
   );

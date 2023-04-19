@@ -5,7 +5,7 @@ import cadastroMatrizes from '../../screens/Flora/Matrizes/cadastroMatrizes';
 export default function TableMatrizes({ col1, col2, col3, col4 }) {
   return (
     <table className="table table-hover table-md table-light ">
-      <thead className="table-primary">
+      <thead className="table-primary font-2-s ">
         <tr>
           <th scope="col">{col1}</th>
           <th scope="col">{col2}</th>
@@ -24,7 +24,7 @@ export function TrMatrizes() {
       {cadastroMatrizes.map(item => {
         return (
           <tbody key={item.id}>
-            <tr>
+            <tr className="font-2-xs">
               <th scope="row">{item.nome}</th>
               <td>{item.classe}</td>
               <td>{item.coleta}</td>

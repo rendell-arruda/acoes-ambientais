@@ -17,8 +17,8 @@ export default function CardImgBack({
         <img src={imgCard} alt="Fim fim Macho" height="250" width="300" />
       </div>
       <div className="card_content">
-        <span className="card_title">{name}</span>
-        <span className="card_subtitle">{scientificName} </span>
+        <span className="card_title font-1-s">{name}</span>
+        <span className="card_subtitle ">{scientificName} </span>
         <span className="card_description">{children}</span>
         <p className="card_font">{reference}</p>
         <a href={link} className="btn btn-link btn-sm p-0 m-0">

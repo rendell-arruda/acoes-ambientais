@@ -43,7 +43,7 @@ export default function CardsFlora() {
       >
         Presente em todo território brasileiro. Além de suas propriedades
         medicinais, sua polpa é uma rica fonte de
-        <b>Vitaminas C e minerais</b>.
+        <b> Vitaminas C e minerais</b>.
       </CardImgBack>
       <CardImgBack
         imgCard={ImgCopaiba}

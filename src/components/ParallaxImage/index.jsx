@@ -10,15 +10,14 @@ const ParallaxImage = ({ img, children }) => {
       blur={{ min: -15, max: 15 }}
     >
       <div
-        className="d-flex align-items-center justify-content-center p-4"
+        className="d-flex align-items-center justify-content-center p-4 "
         style={{ height: 400 }}
       >
         <h1
+          className="font-1-xxl"
           style={{
             color: '#fff',
-            fontSize: '3.125rem',
-            fontFamily: 'Montserrat',
-            fontWeight: '600'
+            fontSize: '3.125rem'
           }}
         >
           {children}
