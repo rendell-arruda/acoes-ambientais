@@ -15,29 +15,29 @@ export default function Footer(props) {
             <h5>Mapa do Site</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <Link to="/home" className="nav-link p-0">
+                <a href="/home" className="nav-link p-0">
                   Home
-                </Link>
+                </a>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/flora" className="nav-link p-0">
+                <a href="/flora" className="nav-link p-0">
                   Flora
-                </Link>
+                </a>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/fauna" className="nav-link p-0">
+                <a href="/fauna" className="nav-link p-0">
                   Fauna
-                </Link>
+                </a>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/arqueologia" className="nav-link p-0">
+                <a href="/arqueologia" className="nav-link p-0">
                   Arqueologia
-                </Link>
+                </a>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/aguas" className="nav-link p-0">
+                <a href="/aguas" className="nav-link p-0">
                   Águas
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

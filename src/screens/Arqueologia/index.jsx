@@ -1,5 +1,7 @@
 import React from 'react';
 import './arqueologiaPage.css';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import CarouselHeader from '../../components/Carousels/CarouselHeader';
 import Container from '../../components/Containes';
 import ParallaxImage from '../../components/ParallaxImage';
@@ -21,6 +23,7 @@ import icon3 from '../../assets/images/icons/icons-3.png';
 export default function Arqueologia() {
   return (
     <div>
+      <Header />
       <ParallaxImage img={Capa}>Sítio Arqueologico</ParallaxImage>
       <Container>
         <Timeline
@@ -67,6 +70,7 @@ export default function Arqueologia() {
           </div>
         </Container>
       </Container>
+      <Footer />
     </div>
   );
 }

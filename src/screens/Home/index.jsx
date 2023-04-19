@@ -13,6 +13,7 @@ import InformSection from '../../components/InitialSections/InformSection';
 export default function Home(props) {
   return (
     <>
+      <Header />
       <BannerInitial />
       <div>
         <FloraSection />
@@ -20,6 +21,7 @@ export default function Home(props) {
         <ArqueologiaSection />
         <AguasSection />
         <InformSection />
+        <Footer />
       </div>
     </>
   );

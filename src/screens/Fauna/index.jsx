@@ -1,13 +1,19 @@
 import React from 'react';
 import Img1 from '../../assets/images/fauna/slider1.png';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 import CarouselHeader from '../../components/Carousels/CarouselHeader';
 import ParallaxImage from '../../components/ParallaxImage';
 
 export default function Fauna() {
   return (
-    <div className="bg-gray">
-      <ParallaxImage img={Img1}> Fauna RMB</ParallaxImage>
-    </div>
+    <>
+      <Header />
+      <div className="bg-gray">
+        <ParallaxImage img={Img1}> Fauna RMB</ParallaxImage>
+      </div>
+      <Footer />
+    </>
   );
 }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import CarouselHeader from '../../components/Carousels/CarouselHeader';
 import Container from '../../components/Containes';
 import ImgBanner from '../../assets/images/flora/banner/img1.png';
@@ -15,6 +17,7 @@ import ParallaxImage from '../../components/ParallaxImage';
 export default function Flora() {
   return (
     <>
+      <Header />
       <ParallaxImage img={ImgBanner}>Flora RMB</ParallaxImage>
       <div className="bg-green cards-flora">
         <Container>
@@ -103,6 +106,7 @@ export default function Flora() {
           </ContainerRow>
         </Container>
       </div>
+      <Footer />
     </>
   );
 }

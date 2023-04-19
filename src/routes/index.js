@@ -20,7 +20,6 @@ import SignIn from '../screens/SignIn';
 export default function RoutesApp() {
   return (
     <>
-      <Header />
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route
@@ -105,7 +104,6 @@ export default function RoutesApp() {
           }
         />
       </Routes>
-      <Footer />
     </>
   );
 }
