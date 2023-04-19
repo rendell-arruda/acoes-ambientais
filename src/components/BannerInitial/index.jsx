@@ -6,13 +6,13 @@ import Container from '../Containes';
 export default function BannerInitial() {
   return (
     <>
-      <div className="py-4 p-md-4 d-flex intro-conteudo justify-content-center text-center ">
-        <div className="col-md-6">
+      <div className="py-4 p-md-4 d-flex intro-conteudo justify-content-center ">
+        <div className="col-md-6 ">
           <h1 className="">Ações Ambientais RMB</h1>
-          <p className="fs-6">
+          {/* <p className="fs-6">
             Nesta página apresentamos as iniciativas desenvolvidas no Sítio-RMB
             segundo os Planos Ambientais.
-          </p>
+          </p> */}
         </div>
         <div className="card card-intro">
           <img className="card-img-top" src={Peroba} alt="imagem da Peroba" />

@@ -3,17 +3,22 @@ import { Parallax } from 'react-parallax';
 
 const ParallaxImage = ({ img, children }) => {
   return (
-    <Parallax bgImage={img} strength={200} className="background-size-cover ">
+    <Parallax
+      bgImage={img}
+      strength={200}
+      className="background-size-cover "
+      blur={{ min: -15, max: 15 }}
+    >
       <div
-        className="d-flex justify-content-center align-items-center "
+        className="d-flex align-items-center justify-content-center p-4"
         style={{ height: 400 }}
       >
         <h1
           style={{
             color: '#fff',
-            fontSize: '60px',
-            padding: '8px',
-            fontFamily: 'Inter'
+            fontSize: '3.125rem',
+            fontFamily: 'Montserrat',
+            fontWeight: '600'
           }}
         >
           {children}

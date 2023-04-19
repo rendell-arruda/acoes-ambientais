@@ -7,7 +7,7 @@ import Timeline from '../../components/Timeline';
 import Title from '../../components/Texts/Title';
 import FeatureItem from '../../components/FeatureList/FeatureItem';
 
-import img4 from '../../assets/images/arqueologia/jiboiaCapa.jpg';
+import Capa from '../../assets/images/arqueologia/Capa.jpg';
 
 import timeline1 from '../../assets/images/arqueologia/timeline1.jpg';
 import timeline2 from '../../assets/images/arqueologia/timeline2.jpg';
@@ -21,7 +21,7 @@ import icon3 from '../../assets/images/icons/icons-3.png';
 export default function Arqueologia() {
   return (
     <div>
-      <ParallaxImage img={img4}>Sítio Arqueologico</ParallaxImage>
+      <ParallaxImage img={Capa}>Sítio Arqueologico</ParallaxImage>
       <Container>
         <Timeline
           img1={timeline1}

@@ -4,12 +4,13 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 400px;
-  font-family: 'Inter';
 }
 .intro-conteudo div h1 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 700;
   color: var(--greentext);
+  font-family: 'Montserrat';
+  text-align: center;
 }
 .card-intro {
   display: none;
@@ -21,9 +22,9 @@
     display: block;
   }
   .intro-conteudo {
-    text-align: center;
     flex-direction: column;
-    gap: 20px;
-    /* background: none; */
+  }
+  .intro-conteudo h1 {
+    padding-left: 10px;
   }
 }
