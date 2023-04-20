@@ -8,10 +8,13 @@ import IconSeed from '../../../assets/images/icons/icons-seed.png';
 import IconImportant from '../../../assets/images/icons/icons-important.png';
 import IconBrasil from '../../../assets/images/icons/icon-brasil.png';
 import IconMarcador from '../../../assets/images/icons/icon-marcador.png';
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
 
 export default function Amendoin() {
   return (
     <>
+      <Header />
       <Container>
         <div className="especie-conteudo">
           <div className="slider-especie">
@@ -323,6 +326,7 @@ export default function Amendoin() {
           </section>
         </Container>
       </div>
+      <Footer />
     </>
   );
 }

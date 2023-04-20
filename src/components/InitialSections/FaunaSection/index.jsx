@@ -14,11 +14,10 @@ export default function FaunaSection(props) {
     <div className="bg-green">
       <Container>
         <Title title="Fauna RMB">
-          Confira as atividades desenvolvidas no sitio RMB com foco na Fauna
-          local.
+          XXXXXXXtividades desenvolvidas no sitio RMB com foco na Fauna local.
         </Title>
         <SubTitle desc="Animais recem avistados" />
-        <div className="container-xl py-3 d-flex flex-wrap gap-1 align-items-center justify-content-around">
+        <div className="container-xl py-4 d-flex flex-wrap gap-1 align-items-center justify-content-around">
           <CardImgBack
             imgCard={ImgFimFim}
             name="Fim Fim"
@@ -63,6 +62,8 @@ export default function FaunaSection(props) {
             procurando alimento. Costuma ter de duas a quatro ninhadas por
             temporada.
           </CardImgBack>
+        </div>
+        <div className=" align-self-center">
           <BtnTooltip link="/fauna" tip="Fauna Page" title="Veja Mais" />
         </div>
       </Container>

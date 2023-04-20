@@ -14,14 +14,11 @@ export default function FloraSection(props) {
   return (
     <Container>
       <Title title="Flora RMB">
-        <p>
-          Confira as atividades desenvolvidas no sitio RMB com foco na Flora
-          local.
-        </p>
+        <p>XXXXXXdades desenvolvidas no sitio RMB com foco na Flora local.</p>
       </Title>
-
       <FeatureList title="Titulo e tal" desc="issoo ali aqui gegere here" />
-      <Subtitle desc="Matrizes Recem cadastradas" />
+
+      <Subtitle desc="Matrizes em Destaque" />
       <div className="gap-4 py-4 d-flex justify-content-center flex-wrap align-items-center">
         <CardImgDesc
           title="Açoita Cavalo"
@@ -47,6 +44,8 @@ export default function FloraSection(props) {
           img={CapaCopaiba}
           link="/copaiba"
         />
+      </div>
+      <div className="align-self-center">
         <BtnTooltip
           title="Veja mais"
           tip="Flora Page"

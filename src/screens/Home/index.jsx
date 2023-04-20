@@ -15,6 +15,7 @@ export default function Home(props) {
     <>
       <Header />
       <BannerInitial />
+
       <div>
         <FloraSection />
         <FaunaSection />
