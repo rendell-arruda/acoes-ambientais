@@ -14,7 +14,10 @@ export default function FloraSection(props) {
   return (
     <Container>
       <Title title="Flora RMB">
-        <p>XXXXXXdades desenvolvidas no sitio RMB com foco na Flora local.</p>
+        <p>
+          Atividades desenvolvidas no âmbito dos programas de Monitoramento e
+          Conservação de Flora.
+        </p>
       </Title>
       <FeatureList title="Titulo e tal" desc="issoo ali aqui gegere here" />
 

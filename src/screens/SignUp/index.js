@@ -8,18 +8,22 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/auth';
 import Loader from '../../components/Loader';
 
-export default function SignIn() {
+export default function SignUp() {
   const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
   const [password, setPassword] = useState('');
-  const { signIn, loadingAuth } = useContext(AuthContext);
+  const { signUp, loadingAuth } = useContext(AuthContext);
 
-  async function handleSignIn(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     if (email !== '' && password !== '') {
-      await signIn(email, password);
+      await signUp(name, email, password);
     } else {
       alert('Preencha todos os campos');
     }
+    setEmail('');
+    setPassword('');
+    setName('');
   }
 
   return (
@@ -32,8 +36,14 @@ export default function SignIn() {
           <img src={logo} alt="Logo da Gerência de implatação" />
           <h6>Ações Ambientais RMB</h6>
         </div>
-        <form className="d-flex flex-column bg-gray" onSubmit={handleSignIn}>
-          <h4>Login</h4>
+        <form className="d-flex flex-column bg-gray" onSubmit={handleSubmit}>
+          <h4>Cadastre-se</h4>
+          <input
+            type="text"
+            placeholder="Seu nome"
+            value={name}
+            onChange={e => setName(e.target.value)}
+          />
           <input
             type="text"
             placeholder="email@email.com"
@@ -46,8 +56,10 @@ export default function SignIn() {
             value={password}
             onChange={e => setPassword(e.target.value)}
           />
-          <button type="submit">{loadingAuth ? <Loader /> : 'Acessar'}</button>
-          {/* <Link>Cadastre-se</Link> */}
+          <button type="submit">
+            {loadingAuth ? <Loader /> : 'Cadastrar'}
+          </button>
+          <Link to="/">Faça seu login</Link>
         </form>
       </div>
     </div>

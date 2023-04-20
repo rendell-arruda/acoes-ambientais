@@ -15,8 +15,8 @@ export default function ArqueologiaSection(props) {
       <Container>
         <Title title="Sítio Arqueológico Jibóia">
           <p>
-            XXXXXXXdes desenvolvidas no sitio RMB com no sítio Arqueológico
-            local.
+            Pesquisa Arqueológica realizada na ADA - Área Diretamente Afetada
+            pelo empreendimento.
           </p>
         </Title>
 

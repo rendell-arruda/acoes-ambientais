@@ -14,9 +14,10 @@ export default function FaunaSection(props) {
     <div className="bg-green">
       <Container>
         <Title title="Fauna RMB">
-          XXXXXXXtividades desenvolvidas no sitio RMB com foco na Fauna local.
+          Atividades desenvolvidas no âmbito dos programas de Monitoramento e
+          Conservação de Fauna.
         </Title>
-        <SubTitle desc="Animais recem avistados" />
+        <SubTitle desc="População de animais do sítio" />
         <div className="container-xl py-4 d-flex flex-wrap gap-1 align-items-center justify-content-around">
           <CardImgBack
             imgCard={ImgFimFim}

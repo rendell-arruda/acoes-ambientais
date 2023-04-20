@@ -25,7 +25,7 @@ export default function FeatureList(props) {
       <FeatureItem
         icon={IconTree}
         title="Viveiro Piloto"
-        desc=" Tem o objetivo de produzir mudas nativas para o projeto de reflorestamento, recuperação de áreas degradadas e demais atividades do Programa de Conservação de Flora. O espaço te tomado forma com a experiência de reprodução de espécies cadastradas no sítio do RMB e também de sementes coletadas no entorno próximo, em especial as cercanias da floresta nacional de Ipanema."
+        desc=" Tem o objetivo de produzir mudas nativas para o projeto de reflorestamento, recuperação de áreas degradadas e demais atividades do Programa de Conservação de Flora. O espaço tem tomado forma com a experiência de reprodução de espécies cadastradas no sítio do RMB além de sementes coletadas no entorno próximo, em especial as cercanias da floresta nacional de Ipanema."
       >
         {/* <Spline scene="https://prod.spline.design/W9pKunxaP9I8sK7F/scene.splinecode" /> */}
       </FeatureItem>

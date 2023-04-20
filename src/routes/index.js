@@ -16,12 +16,14 @@ import Copaiba from '../screens/Flora/Matrizes/Copaiba.jsx';
 
 import React from 'react';
 import SignIn from '../screens/SignIn';
+import SignUp from '../screens/SignUp';
 
 export default function RoutesApp() {
   return (
     <>
       <Routes>
         <Route path="/" element={<SignIn />} />
+        <Route path="/register" element={<SignUp />} />
         <Route
           path="/home"
           element={
