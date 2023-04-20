@@ -10,7 +10,7 @@
   .conteudoRow {
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
   }
   .containerRow img {
     order: -1;

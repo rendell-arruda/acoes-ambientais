@@ -6,7 +6,7 @@ import FeatureList from '../../FeatureList';
 import CardImgDesc from '../../Cards/CardImgDesc';
 import Subtitle from '../../Texts/SubTitle';
 import BtnTooltip from '../../Buttons/BtnTooltip';
-import CapaArq from '../../../assets/images/arqueologia/capArq.jpg';
+import CapaArq from '../../../assets/images/arqueologia/capArq.png';
 import ContainerRow from '../../Containes/ContainerRow';
 
 export default function ArqueologiaSection(props) {
@@ -15,16 +15,17 @@ export default function ArqueologiaSection(props) {
       <Container>
         <Title title="Sítio Arqueológico Jibóia">
           <p>
-            Confira as atividades desenvolvidas no sitio RMB com no sítio
-            Arqueológico local.
+            XXXXXXXdes desenvolvidas no sitio RMB com no sítio Arqueológico
+            local.
           </p>
         </Title>
 
         <ContainerRow
-          title="First featurette heading2."
-          titleMuted="Itll blow your mind."
-          paragraf="   Some great placeholder content for the first featurette here.
-          Imagine some exciting prose here."
+          title="O patrimônio arqueológico, "
+          titleMuted="entendido como um bem da sociedade nacional"
+          paragraf="  é protegido pela Constituição Federal e por leis específicas como a Lei nº 3.924/61, que assegura sua preservação antes de qualquer obra que possa vir a danificá-lo.
+          O empreendimento RMB está projetado em uma área com potencial arqueológico, segundo dados históricos e etno-históricos, já executa importantes etapas de seu PPAEP - Programa de Prospecção Arqueológica e Educação Patrimonial .
+          "
           img={CapaArq}
           btnTitle="Veja mais"
           tip="Arqueologia"

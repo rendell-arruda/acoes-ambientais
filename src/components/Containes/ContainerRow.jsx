@@ -16,22 +16,23 @@ export default function ContainerRow({
 }) {
   return (
     <>
-      <div className="d-flex align-items-center containerRow  justify-content-between py-4">
-        <div className="conteudoRow d-flex flex-column text-top  ">
-          <h2 className="featurette-heading font-1-l ">
-            {title}
-            <br /> <span className="text-muted">{titleMuted}</span>
-          </h2>
-          <p className="font-2-s">{paragraf}</p>
-          {children}
-          <BtnTooltip
-            title={btnTitle}
-            tip={tip}
-            link={btnLink}
-            target={target}
-          />
+      <div className="d-flex align-items-center containerRow justify-content-between py-4 gap-4">
+        <div className="conteudoRow d-flex flex-column text-top">
+          <div>
+            <h2 className="featurette-heading font-1-l ">
+              {title}
+              <br /> <span className="">{titleMuted}</span>
+            </h2>
+            <p className="font-2-s">{paragraf}</p>
+            {children}
+            <BtnTooltip
+              title={btnTitle}
+              tip={tip}
+              link={btnLink}
+              target={target}
+            />
+          </div>
         </div>
-
         <img src={img} className="img-fluid " />
       </div>
     </>

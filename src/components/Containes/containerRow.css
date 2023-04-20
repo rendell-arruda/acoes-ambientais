@@ -1,5 +1,7 @@
 @media (max-width: 980px) {
-  .conteudoRow {
-    align-items: center;
+  .conteudoRow,
+  .containerRow {
+    flex-direction: column;
+    /* align-items: center; */
   }
 }

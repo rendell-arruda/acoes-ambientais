@@ -7,7 +7,7 @@ export default function BannerInitial() {
   return (
     <>
       <div className="py-4 p-md-4 d-flex intro-conteudo justify-content-center ">
-        <div className="col-md-6 ">
+        <div className="">
           <h1 className="font-1-xxl">Ações Ambientais RMB</h1>
           {/* <p className="fs-6">
             Nesta página apresentamos as iniciativas desenvolvidas no Sítio-RMB
