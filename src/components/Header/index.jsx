@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../context/auth';
 
 export default function Header() {
+  async function handleLogout() {
+    await logout();
+  }
+  const { logout } = useContext(AuthContext);
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark"
@@ -82,12 +87,12 @@ export default function Header() {
                     Mapa da Rustificação
                   </a>
                 </li>
-                {/* <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li> */}
               </ul>
+            </li>
+            <li className="nav-item">
+              <a onClick={handleLogout} className="nav-link text-primary">
+                Sair
+              </a>
             </li>
           </ul>
         </div>

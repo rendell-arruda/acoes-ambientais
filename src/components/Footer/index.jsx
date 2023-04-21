@@ -112,7 +112,11 @@ export default function Footer(props) {
       </Container>
       <div className="container-fluid">
         <p className="m-0 text-secondary" style={{ fontSize: '12px' }}>
-          Copyright © 2022 RLC Arruda - Todos os direitos reservados
+          Copyright © 2022{' '}
+          <Link style={{ color: 'inherit' }} to="/register">
+            RLC Arruda
+          </Link>
+          - Todos os direitos reservados
         </p>
       </div>
     </div>

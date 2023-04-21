@@ -1,11 +1,12 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import {
   signInWithEmailAndPassword,
-  createUserWithEmailAndPassword
+  createUserWithEmailAndPassword,
+  signOut
 } from 'firebase/auth';
 import { auth, db } from '../firebase/firebaseConnection';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { useNavigate } from 'react-router-dom';
+import { json, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 export const AuthContext = createContext({});
@@ -14,7 +15,21 @@ function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   //coloca um loading
   const [loadingAuth, setLoandingAuth] = useState(false);
+  const [loading, setLoading] = useState(true);
+
   const navigate = useNavigate();
+
+  useEffect(() => {
+    async function loadUser() {
+      const storageUser = localStorage.getItem('@detailUser');
+      if (storageUser) {
+        setUser(JSON.parse(storageUser));
+        setLoading(false);
+      }
+      setLoading(false);
+    }
+    loadUser();
+  }, []);
 
   async function signIn(email, password) {
     setLoandingAuth(true);
@@ -79,6 +94,12 @@ function AuthProvider({ children }) {
     localStorage.setItem('@detailUser', JSON.stringify(data));
   }
 
+  async function logout() {
+    await signOut(auth);
+    localStorage.removeItem('@detailUser');
+    setUser(null);
+  }
+
   return (
     <AuthContext.Provider
       value={{
@@ -86,7 +107,9 @@ function AuthProvider({ children }) {
         user,
         signIn,
         signUp,
-        loadingAuth
+        logout,
+        loadingAuth,
+        loading
       }}
     >
       {children}

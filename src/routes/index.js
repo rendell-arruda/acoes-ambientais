@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Private from './Private';
 
 import Home from '../screens/Home';
@@ -14,7 +15,6 @@ import Amendoin from '../screens/Flora/Matrizes/Amendoin.jsx';
 import Jatoba from '../screens/Flora/Matrizes/Jatoba.jsx';
 import Copaiba from '../screens/Flora/Matrizes/Copaiba.jsx';
 
-import React from 'react';
 import SignIn from '../screens/SignIn';
 import SignUp from '../screens/SignUp';
 
@@ -23,7 +23,14 @@ export default function RoutesApp() {
     <>
       <Routes>
         <Route path="/" element={<SignIn />} />
-        <Route path="/register" element={<SignUp />} />
+        <Route
+          path="/register"
+          element={
+            <Private>
+              <SignUp />
+            </Private>
+          }
+        />
         <Route
           path="/home"
           element={
