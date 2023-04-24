@@ -9,7 +9,7 @@ export default function Footer(props) {
   return (
     <div className="bg-green footer">
       <Container>
-        <Title title="Links Importantes" />
+        <Title>Links Importantes</Title>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-5 ">
           <div className="col mb-3">
             <h5>Mapa do Site</h5>

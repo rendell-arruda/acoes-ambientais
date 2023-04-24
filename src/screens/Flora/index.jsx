@@ -10,8 +10,8 @@ import SubTitle from '../../components/Texts/SubTitle';
 import TableMatrizes from '../../components/TableMatrizes';
 import CardsFlora from './CardsFlora';
 import ContainerRow from '../../components/Containes/ContainerRow';
-import rustificacaoMap from '../../assets/images/flora/maps/rustificacaoMap.png';
-import sementeiraMap from '../../assets/images/flora/maps/sementeiraMap.png';
+import rustificacaoMap from '../../assets/images/flora/maps/rustificacaoMap245.png';
+import sementeiraMap from '../../assets/images/flora/maps/sementeiraMap245.png';
 import MapPlantio from '../../assets/images/flora/maps/mapa.png';
 import identFolhas1 from '../../assets/images/flora/curiosidades/identArvores.png';
 import ParallaxImage from '../../components/ParallaxImage';
@@ -56,9 +56,7 @@ export default function Flora() {
         />
       </Container>
       <Container>
-        <Title title="Viveiro Piloto">
-          {/* Conheça as áreas de XXX e Rustificação do Viveiro */}
-        </Title>
+        <Title title="Viveiro Piloto"></Title>,
         <ContainerRow
           title="Mapa da Área de "
           titleMuted="Rustificação de Mudas."
@@ -107,18 +105,14 @@ export default function Flora() {
         <Container>
           <ContainerRow
             title="Como identificar Árvores pelo tipo de folha"
-            titleMuted="Itll blow your mind."
-            paragraf="   A identificação de árvores baseada no tipo de folha pode ser uma tarefa desafiadora, uma vez que existem muitas variações de formas, tamanhos e texturas de folhas dentro de uma mesma espécie de árvore. No entanto, é possível identificar algumas árvores com base em características gerais das folhas. Os principais exemplos estão na figura ao lado. Ressalva: É importante lembrar que a identificação de árvores baseada apenas no tipo de folha pode não ser suficiente para identificar corretamente uma espécie, já que outras características, como a casca, as flores e os frutos, também devem ser observadas para uma identificação mais precisa."
+            // titleMuted="Itll blow your mind."
+            paragraf="   A identificação de árvores baseada no tipo de folha pode ser uma tarefa desafiadora, uma vez que existem muitas variações de formas, tamanhos e texturas de folhas dentro de uma mesma espécie de árvore. No entanto, é possível identificar algumas árvores com base em características gerais das folhas. Os principais exemplos estão na figura ao lado. Ressalva: É importante lembrar que a identificação de árvores baseada apenas no tipo de folha pode não ser suficiente para identificar corretamente uma espécie, já que outras características, como a casca, as flores e os frutos, também devem ser observadas para uma identificação mais precisa. Fonte: Árvore, Ser Tecnológico no Facebook"
             img={identFolhas1}
             btnTitle="Visite"
             tip="Árvore, Ser Tecnológico"
             btnLink="https://www.facebook.com/arvoresertecnologico/photos/a.501991869943424/2079354212207174/?type=3"
             target="_blank"
-          >
-            <span className="fs-6">
-              Fonte: Árvore, Ser Tecnológico no Facebook
-            </span>
-          </ContainerRow>
+          ></ContainerRow>
         </Container>
       </div>
       <Footer />
