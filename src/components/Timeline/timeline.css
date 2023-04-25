@@ -1,6 +1,6 @@
 .history-wrapper {
   position: relative;
-  padding: 50px 0 50px;
+  padding: 20px 0 20px;
 }
 .history-wrapper:after {
   content: '';

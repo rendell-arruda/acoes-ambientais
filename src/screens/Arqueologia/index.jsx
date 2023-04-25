@@ -13,8 +13,8 @@ import Capa from '../../assets/images/arqueologia/Capa.jpg';
 
 import timeline1 from '../../assets/images/arqueologia/timeline1.jpg';
 import timeline2 from '../../assets/images/arqueologia/timeline2.jpg';
-import timeline3 from '../../assets/images/arqueologia/timeline3.jpg';
-import timeline4 from '../../assets/images/arqueologia/timeline3.jpg';
+import timeline3 from '../../assets/images/arqueologia/timeline3.png';
+import timeline4 from '../../assets/images/arqueologia/timeline4.jpg';
 import arqueoExemple from '../../assets/images/arqueologia/arqueoExemple.png';
 import icon1 from '../../assets/images/icons/icons-1.png';
 import icon2 from '../../assets/images/icons/icons-2.png';
@@ -27,9 +27,21 @@ export default function Arqueologia() {
       <ParallaxImage img={Capa}>Sítio Arqueologico</ParallaxImage>
       <Container>
         <Timeline
+          year1="2013"
+          title1="Diagnóstico Inicial"
+          text1="A Área Diretamente Afetada (ADA) do RMB passou por Diagnóstico Arqueológico não-interventivo, localizando cinco ocorrências arqueológicas, fato que embasou a realização do Programa de Prospecção Arqueológica e de um Programa de Educação Patrimonial, da ADA do RMB."
           img1={timeline1}
+          year2="2020"
+          title2="Programas de Prospecção Arqueológica e Educação Patrimonial"
+          text2="O programa foi planejado para verificação em 200 pontos e em um caminhamento oportunistico localizou-se 49 fragmentos cerâmicos. Após o ocorrido foram realizadas mais 10 sondagens extras"
           img2={timeline2}
+          year3="2020"
+          title3="Nomeação do Sítio Arqueológico"
+          text3="Os estudos realizados fundamentaram a decisão da declaração de Sítio Arqueológico Indígena Pré-Histórico denominado Jiboia 1, e recebeu tal nome em alusão a uma cobra que foi encontrada no local durante as escavações."
           img3={timeline3}
+          year4="2020"
+          title4="Delimitação do Local"
+          text4="Uma área ao redor dos fragmentos encontrados foi isolada,  com a recomendação de atenção e monitoramento arqueológico quando houver início dos trabalhos com máquinas nesta área, a fim de verificar se há ocorrência de outros vestígios arqueológicos."
           img4={timeline4}
         />
       </Container>
@@ -51,21 +63,27 @@ export default function Arqueologia() {
               />
             </div>
             <div className="">
-              <FeatureItem icon={icon1} title="Isole a área">
-                Paragraph of text beneath the heading to explain the heading.
+              <FeatureItem
+                icon={icon1}
+                title="Isole a área"
+                desc="Paragraph of text beneath the heading to explain the heading.
                 We'll add onto it with another sentence and probably just keep
-                going until we run out of words.
-              </FeatureItem>
-              <FeatureItem icon={icon2} title="Avise ao gestor ambiental">
-                Paragraph of text beneath the heading to explain the heading.
+                going until we run out of words."
+              ></FeatureItem>
+              <FeatureItem
+                icon={icon2}
+                title="Avise ao gestor ambiental"
+                desc="Paragraph of text beneath the heading to explain the heading.
                 We'll add onto it with another sentence and probably just keep
-                going until we run out of words.
-              </FeatureItem>
-              <FeatureItem icon={icon3} title="Registre o ocorrido">
-                Paragraph of text beneath the heading to explain the heading.
+                going until we run out of words."
+              ></FeatureItem>
+              <FeatureItem
+                icon={icon3}
+                title="Registre o ocorrido"
+                desc=" Paragraph of text beneath the heading to explain the heading.
                 We'll add onto it with another sentence and probably just keep
-                going until we run out of words.
-              </FeatureItem>
+                going until we run out of words."
+              ></FeatureItem>
             </div>
           </div>
         </Container>
