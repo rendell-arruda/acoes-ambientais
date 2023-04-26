@@ -66,23 +66,17 @@ export default function Arqueologia() {
               <FeatureItem
                 icon={icon1}
                 title="Isole a área"
-                desc="Paragraph of text beneath the heading to explain the heading.
-                We'll add onto it with another sentence and probably just keep
-                going until we run out of words."
+                desc="Ao encontrar um artefato arqueológico, isole a área para que outras pessoas não possam mexer no local onde foi encontrado. Marque o local com estacas, pedras ou outros objetos para delimitar a área."
               ></FeatureItem>
               <FeatureItem
                 icon={icon2}
                 title="Avise ao gestor ambiental"
-                desc="Paragraph of text beneath the heading to explain the heading.
-                We'll add onto it with another sentence and probably just keep
-                going until we run out of words."
+                desc="De imediato entre em contato com o responsável pela fiscalização ambiental da área ou qualquer pessoa da Gerência de Implantação da Amazul. O órgão ambiental responsável pela preservação do patrimônio arqueológico da região do RMB será contatado."
               ></FeatureItem>
               <FeatureItem
                 icon={icon3}
                 title="Registre o ocorrido"
-                desc=" Paragraph of text beneath the heading to explain the heading.
-                We'll add onto it with another sentence and probably just keep
-                going until we run out of words."
+                desc=" Tire fotos do artefato e do local onde foi encontrado. Anote a data, hora e localização exata do achado. Esse registro é importante para a preservação do patrimônio, para atividades de curadoria e para continuidade na documentação histórica do sítio arqueológico Jiboia I."
               ></FeatureItem>
             </div>
           </div>
