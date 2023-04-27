@@ -20,17 +20,19 @@ export default function TableMatrizes({ col1, col2, col3, col4 }) {
   );
 }
 
-export function TrMatrizes() {
+export function TrMatrizes({ col1, col2, col3, col4 }) {
   return (
     <>
       {cadastroMatrizes.map(item => {
         return (
           <tbody key={item.id}>
             <tr className="font-2-xs">
-              <td scope="row">{item.nome}</td>
-              <td>{item.classe}</td>
-              <td>{item.coleta}</td>
-              <td>
+              <td data-label="Nome" scope="row">
+                {item.nome}
+              </td>
+              <td data-label="Classe">{item.classe}</td>
+              <td data-label="Coleta de Sementes">{item.coleta}</td>
+              <td data-label="Ficha técnica">
                 <a href={item.link}>
                   <FcInspection size={25} />
                 </a>
