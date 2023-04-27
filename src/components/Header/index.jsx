@@ -73,7 +73,7 @@ export default function Header() {
                   <a
                     target="_blank"
                     className="dropdown-item"
-                    href="https://drive.google.com/file/d/1irjRqrJmyrBm6qNMXhOOkfTBrJt-ohsZ/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1irjn2_kQmv_MAjeXKx-ygtmoGleDLJ8T/view?usp=sharing"
                   >
                     Mapa das Sementeiras
                   </a>
@@ -82,7 +82,7 @@ export default function Header() {
                   <a
                     target="_blank"
                     className="dropdown-item"
-                    href="https://drive.google.com/file/d/1EOQozKbjeocNsIi3K3YNf4Z0fnuzQhts/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1REa1xNZhPUifPW9sGeRqcESdwgIsX6wm/view?usp=sharing"
                   >
                     Mapa da Rustificação
                   </a>

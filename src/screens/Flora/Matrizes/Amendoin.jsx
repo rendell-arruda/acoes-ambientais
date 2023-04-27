@@ -158,7 +158,7 @@ export default function Amendoin() {
                     <b>Coleta:</b> SET - NOV
                   </li>
                 </div>
-                <div className="list-item">
+                {/* <div className="list-item">
                   <div className=" text-bg-primary bg-gradient rounded-3">
                     <img src={IconMap} />
                   </div>
@@ -167,10 +167,10 @@ export default function Amendoin() {
                     target="_blank"
                   >
                     <li>
-                      <b>Matriz:</b> M 2082
+                      <b>Matriz:</b> -
                     </li>
                   </a>
-                </div>
+                </div> */}
               </ul>
             </div>
           </div>

@@ -25,25 +25,25 @@ export default function FloraSection(props) {
       <div className="gap-4 py-4 d-flex justify-content-center flex-wrap align-items-center">
         <CardImgDesc
           title="Açoita Cavalo"
-          desc="Matriz : M5050"
+          desc="Matriz : M2082"
           img={CapaAcoita}
           link="/acoita"
         />
         <CardImgDesc
           title="Amendoin Bravo"
           img={CapaAmendoin}
-          desc="Matriz : M5050"
+          desc="Matriz : -"
           link="/amendoin"
         />
         <CardImgDesc
           title="Jatobá"
-          desc="Matriz : M5050"
+          desc="Matriz : M262"
           img={CapaJatoba}
           link="/jatoba"
         />
         <CardImgDesc
           title="Copaíba"
-          desc="Matriz : M5050"
+          desc="Matriz : M248"
           img={CapaCopaiba}
           link="/copaiba"
         />

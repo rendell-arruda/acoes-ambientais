@@ -4,7 +4,7 @@ import Container from '../../Containes';
 import SubTitle from '../../Texts/SubTitle';
 import BtnTooltip from '../../Buttons/BtnTooltip';
 import CardImgBack from '../../../components/Cards/CardImgBack';
-import ImgFimFim from '../../../assets/images/fauna/fimfimMacho.jpg';
+import ImgFimFim from '../../../assets/images/fauna/fimfimMacho.png';
 import ImgCuica from '../../../assets/images/fauna/cuica.jpg';
 import ImgTamandua from '../../../assets/images/fauna/tamandua.jpg';
 import ImgSaiAzul from '../../../assets/images/fauna/saiAzul.jpg';
@@ -36,9 +36,9 @@ export default function FaunaSection(props) {
             scientificName="Philander opossum"
             reference="Fonte: WikiPedia"
           >
-            Também conhecida como Cuíca Graciola, é um roedor de habitos
-            noturnos, possuem uma dieta onívora e insectívora. Frequentemente
-            são avistadas em formações de florestas primárias e secundárias.
+            Roedor de habitos noturnos, possuem uma dieta onívora e insectívora.
+            Frequentemente são avistadas em formações de florestas primárias e
+            secundárias.
           </CardImgBack>
 
           <CardImgBack
@@ -47,10 +47,9 @@ export default function FaunaSection(props) {
             scientificName="Myrmecophaga tridactyla."
             reference="Fonte: Wikipedia"
           >
-            Grande mamífero das Américas Central e do Sul. Ele esta listado com
+            Grande mamífero das Américas Central e do Sul. Esta listado com
             espécie em Vulnerabilidade pela União Internacional para a
-            Conservação da Natureza. Alimenta-se exclusivamente de formigas e
-            cupins.
+            Conservação da Natureza. Alimenta-se de formigas e cupins.
           </CardImgBack>
           <CardImgBack
             imgCard={ImgSaiAzul}
@@ -60,8 +59,7 @@ export default function FaunaSection(props) {
           >
             Aparece principalmente no norte e centro do Brasil. Alimenta-se de
             néctar, insetos e frutas. Vive aos pares ou em pequenos grupos
-            procurando alimento. Costuma ter de duas a quatro ninhadas por
-            temporada.
+            procurando alimento. .
           </CardImgBack>
         </div>
         <div className=" align-self-center">

@@ -23,14 +23,15 @@ export default function RoutesApp() {
     <>
       <Routes>
         <Route path="/" element={<SignIn />} />
-        <Route
+        {/* <Route
           path="/register"
           element={
             <Private>
               <SignUp />
+              //
             </Private>
           }
-        />
+        /> */}
         <Route
           path="/home"
           element={
