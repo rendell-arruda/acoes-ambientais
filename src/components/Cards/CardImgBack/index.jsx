@@ -14,7 +14,7 @@ export default function CardImgBack({
   return (
     <div className="cardN">
       <div className="temporary_text">
-        <img src={imgCard} alt="Fim fim Macho" height="250" width="300" />
+        <img src={imgCard} alt="Fim fim Macho" height="250" width="270" />
       </div>
       <div className="card_content">
         <span className="card_title font-1-s">{name}</span>

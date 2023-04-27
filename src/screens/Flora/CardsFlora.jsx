@@ -7,7 +7,7 @@ import ImgCopaiba from '../../assets/images/flora/matrizes/copaiba/copaibaArvore
 
 export default function CardsFlora() {
   return (
-    <div className="container-xl py-4 d-flex flex-wrap gap-2 align-items-center justify-content-around">
+    <div className="container-xl py-2 d-flex flex-wrap gap-2 align-items-center justify-content-around">
       <CardImgBack
         imgCard={ImgAcoita}
         name="Açoita Cavalo"
@@ -29,8 +29,8 @@ export default function CardsFlora() {
         linkTitle="Ver mais"
       >
         Originaria do Brasil, também conhecida como leiteira, essa espécie é
-        tipica do Cerrado, sua florada amarela exuberante se destaca no dossel
-        da floresta.
+        tipica do Cerrado, sua florada amarela exuberante se destaca na
+        floresta.
       </CardImgBack>
 
       <CardImgBack

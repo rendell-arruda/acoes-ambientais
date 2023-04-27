@@ -168,7 +168,7 @@ export default function Amendoin() {
                     target="_blank"
                   >
                     <li>
-                      <b>Matriz:</b> M 255
+                      <b>Matriz:</b> M 248
                     </li>
                   </a>
                 </div>
