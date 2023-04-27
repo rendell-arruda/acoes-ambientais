@@ -1,9 +1,16 @@
+.rowArtefato {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+}
 @media (max-width: 980px) {
   .rowArtefato {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   .containerRow img {
+    padding: 0;
     order: -1;
   }
 }

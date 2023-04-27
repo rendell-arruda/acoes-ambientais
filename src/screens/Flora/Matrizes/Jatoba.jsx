@@ -164,7 +164,7 @@ export default function Amendoin() {
                     <img src={IconMap} />
                   </div>
                   <a
-                    href="https://www.google.com.br/maps/place/23%C2%B023'17.2%22S+47%C2%B037'09.5%22W/@-23.3880778,-47.6197675,166m/data=!3m1!1e3!4m5!3m4!1s0x0:0x7aa73cbc8955f778!8m2!3d-23.3881!4d-47.6193"
+                    href="https://www.google.com.br/maps/place/23%C2%B023'00.6%22S+47%C2%B037'25.0%22W/@-23.4053256,-47.625836,17z/data=!4m4!3m3!8m2!3d-23.3835!4d-47.6236"
                     target="_blank"
                   >
                     <li>

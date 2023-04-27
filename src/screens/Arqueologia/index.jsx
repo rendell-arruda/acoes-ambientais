@@ -47,15 +47,12 @@ export default function Arqueologia() {
       </Container>
       <Container>
         <Title title="Encontrei um artefato e agora?">
-          {/* Siga esses passos ao encontrar um objeto no Sítio Arqueológico */}
+          Ao se deparar com um objeto que possa ser vestígio arqueológico tenha
+          calma e siga as instruções a seguir:
         </Title>
-        <Container>
-          <div className="d-flex rowArtefato gap-4">
+        <>
+          <div className="rowArtefato">
             <div className="">
-              <h5>
-                Ao se deparar com um objeto que possa ser vestígio arqueológico
-                tenha calma e siga as instruções a seguir.
-              </h5>
               <img
                 className="img-fluid"
                 src={arqueoExemple}
@@ -80,7 +77,7 @@ export default function Arqueologia() {
               ></FeatureItem>
             </div>
           </div>
-        </Container>
+        </>
       </Container>
       <Footer />
     </div>

@@ -158,19 +158,19 @@ export default function Amendoin() {
                     <b>Coleta:</b> SET - NOV
                   </li>
                 </div>
-                {/* <div className="list-item">
+                <div className="list-item">
                   <div className=" text-bg-primary bg-gradient rounded-3">
                     <img src={IconMap} />
                   </div>
                   <a
-                    href="https://www.google.com.br/maps/place/23%C2%B023'17.2%22S+47%C2%B037'09.5%22W/@-23.3880778,-47.6197675,166m/data=!3m1!1e3!4m5!3m4!1s0x0:0x7aa73cbc8955f778!8m2!3d-23.3881!4d-47.6193"
+                    href="https://www.google.com.br/maps/place/23%C2%B023'17.5%22S+47%C2%B037'43.3%22W/@-23.3881951,-47.6312749,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-23.3882!4d-47.6287"
                     target="_blank"
                   >
                     <li>
-                      <b>Matriz:</b> -
+                      <b>Matriz:</b> - M 909
                     </li>
                   </a>
-                </div> */}
+                </div>
               </ul>
             </div>
           </div>
