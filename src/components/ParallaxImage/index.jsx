@@ -11,7 +11,7 @@ const ParallaxImage = ({ img, children }) => {
     >
       <div
         className="d-flex align-items-center justify-content-center p-4 "
-        style={{ height: 400 }}
+        style={{ height: 500 }}
       >
         <h1
           className="font-1-xxl"
