@@ -3,25 +3,37 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 400px;
+  min-height: 500px;
 }
 .intro-conteudo div h1 {
-  color: var(--greentext);
+  color: var(--greenBgContainer);
   text-align: center;
 }
 .card-intro {
   display: none;
 }
 
+.container-logos img {
+  height: 70px;
+}
+
 @media (max-width: 768px) {
   .card-intro {
-    /* border-radius: 10px; */
     display: block;
+    border: 0;
+    padding-bottom: 0;
   }
   .intro-conteudo {
     flex-direction: column;
   }
+  .intro-textImg {
+    align-self: center;
+  }
+
   .intro-conteudo h1 {
     padding-left: 10px;
+  }
+  .container-logos img {
+    height: 35px;
   }
 }
