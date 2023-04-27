@@ -7,7 +7,7 @@ import Spline from '@splinetool/react-spline';
 
 export default function FeatureList(props) {
   return (
-    <div className="row g-5  row-cols-1 row-cols-lg-3">
+    <div className="row g-1 row-cols-1 row-cols-lg-3">
       <FeatureItem
         icon={IconTask}
         title="Cadastro de Matrizes"

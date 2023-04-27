@@ -22,7 +22,7 @@ export default function FloraSection(props) {
       <FeatureList title="Titulo e tal" desc="issoo ali aqui gegere here" />
 
       <Subtitle desc="Matrizes em Destaque" />
-      <div className="gap-4 py-4 d-flex justify-content-center flex-wrap align-items-center">
+      <div className="gap-4 py-2 d-flex justify-content-center flex-wrap align-items-center">
         <CardImgDesc
           title="Açoita Cavalo"
           desc="Matriz : M2082"
