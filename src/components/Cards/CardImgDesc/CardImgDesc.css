@@ -24,7 +24,6 @@
 .cardLong .img {
   width: 70px;
   height: 70px;
-  /* margin-left: 10px; */
   border-radius: 10px;
   background: linear-gradient(#d7cfcf, #9198e5);
   background-position: center;
@@ -33,7 +32,7 @@
 
 .cardLong .textBox {
   width: calc(100% - 90px);
-  margin-left: 10px;
+  margin-left: 20px;
   color: white;
 }
 
@@ -41,4 +40,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .cardLong {
+    width: 300px;
+  }
 }
