@@ -1,6 +1,3 @@
-.containerRow {
-  /* padding: 0 1rem; */
-}
 .containerRow img {
   border-radius: 5px;
 }
@@ -10,10 +7,8 @@
   .conteudoRow {
     flex-wrap: wrap;
     justify-content: center;
-    /* text-align: center; */
   }
   .containerRow img {
     order: -1;
-    margin-bottom: 20px;
   }
 }

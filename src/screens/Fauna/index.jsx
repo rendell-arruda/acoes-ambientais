@@ -1,5 +1,5 @@
 import React from 'react';
-import Img1 from '../../assets/images/fauna/slider1.png';
+import Img1 from '../../assets/images/fauna/Capa1.jpg';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 

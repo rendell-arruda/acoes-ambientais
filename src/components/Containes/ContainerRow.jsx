@@ -33,7 +33,7 @@ export default function ContainerRow({
             />
           </div>
         </div>
-        <img src={img} className="img-fluid " />
+        <img src={img} className="img-fluid" />
       </div>
     </>
   );
