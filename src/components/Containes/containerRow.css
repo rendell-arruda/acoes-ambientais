@@ -1,7 +1,11 @@
-@media (max-width: 980px) {
+.containerRow {
+  gap: 3rem;
+}
+@media screen and (max-width: 980px) {
   .conteudoRow,
   .containerRow {
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
+    gap: 1rem;
   }
 }

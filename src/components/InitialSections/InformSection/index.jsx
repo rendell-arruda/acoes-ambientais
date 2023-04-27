@@ -9,9 +9,7 @@ export default function InformSection(props) {
   return (
     <div className="">
       <Container>
-        <Title title="RMB Informa">
-          Curiosidades, links e mensagem do Diretor
-        </Title>
+        <Title title="RMB Informa">Curiosidades e links</Title>
 
         <div className="row align-items-center pt-4">
           <div
@@ -71,11 +69,11 @@ export default function InformSection(props) {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-5 py-4">
             <p>
-              " Nossa função é transformar<b> Ciência em Tecnologia</b>,
+              " Nossa função é transformar <b>Ciência em Tecnologia </b>
               desenvolver protótipos e instalações pilotos, e nós temos que
-              manter essa competência..." <br />
+              manter essa competência..."
               <b>José Augusto Perrota - Coord. Técnico do RMB - Set/2020.</b>
             </p>
           </div>
