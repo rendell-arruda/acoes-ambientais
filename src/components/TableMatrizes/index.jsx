@@ -1,11 +1,13 @@
 import React from 'react';
+import './table.css';
 // import { TrMatrizes } from '../../screens/Flora';
 import cadastroMatrizes from '../../screens/Flora/Matrizes/cadastroMatrizes';
+import { FcInspection } from 'react-icons/fc';
 
 export default function TableMatrizes({ col1, col2, col3, col4 }) {
   return (
-    <table className="table table-hover table-md table-light ">
-      <thead className="table-primary font-2-s ">
+    <table className="table table-hover ">
+      <thead className="font-2-s ">
         <tr>
           <th scope="col">{col1}</th>
           <th scope="col">{col2}</th>
@@ -25,11 +27,13 @@ export function TrMatrizes() {
         return (
           <tbody key={item.id}>
             <tr className="font-2-xs">
-              <th scope="row">{item.nome}</th>
+              <td scope="row">{item.nome}</td>
               <td>{item.classe}</td>
               <td>{item.coleta}</td>
               <td>
-                <a href={item.link}>Link</a>
+                <a href={item.link}>
+                  <FcInspection size={25} />
+                </a>
               </td>
             </tr>
           </tbody>

@@ -34,7 +34,7 @@ export default function Flora() {
                 col1="Nome"
                 col2="Classe"
                 col3="Coleta de Semente"
-                col4="Link"
+                col4="Ficha Técnica"
               />
             </div>
           </div>
