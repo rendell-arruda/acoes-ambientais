@@ -19,7 +19,7 @@ export default function FloraSection(props) {
           Conservação de Flora.
         </p>
       </Title>
-      <FeatureList title="Titulo e tal" desc="issoo ali aqui gegere here" />
+      <FeatureList />
 
       <Subtitle desc="Matrizes em Destaque" />
       <div className="gap-4 py-2 d-flex justify-content-center flex-wrap align-items-center">

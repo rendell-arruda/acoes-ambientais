@@ -3,7 +3,6 @@ import FeatureItem from './FeatureItem';
 import IconTask from '../../assets/images/icons/icon-task.png';
 import IconMap from '../../assets/images/icons/iconMap.png';
 import IconTree from '../../assets/images/icons/icon-tree.png';
-import Spline from '@splinetool/react-spline';
 
 export default function FeatureList(props) {
   return (
