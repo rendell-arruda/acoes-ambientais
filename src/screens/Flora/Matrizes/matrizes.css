@@ -77,6 +77,10 @@
 }
 
 @media (max-width: 768px) {
+  .slider-especie {
+    max-width: 100%;
+  }
+
   .especie-conteudo {
     flex-direction: column;
     justify-content: center;
