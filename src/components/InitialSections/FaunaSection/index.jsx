@@ -18,7 +18,7 @@ export default function FaunaSection(props) {
           Conservação de Fauna.
         </Title>
         <SubTitle desc="População de animais do sítio" />
-        <div className="container-xl py-4 d-flex flex-wrap gap-1 align-items-center justify-content-around">
+        <div className="container-xl py-2 d-flex flex-wrap gap-1 align-items-center justify-content-around">
           <CardImgBack
             imgCard={ImgFimFim}
             name="Fim Fim"

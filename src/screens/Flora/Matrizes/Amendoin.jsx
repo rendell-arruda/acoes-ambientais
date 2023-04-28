@@ -52,10 +52,10 @@ export default function Amendoin() {
                   <img
                     src={AmendoinSemente}
                     className="d-block w-100"
-                    alt="Sementes de Amendoin Bravo"
+                    alt="Sementes de Amendoim Bravo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Sementes de Amendoin Bravo</h5>
+                    <h5>Sementes de Amendoim Bravo</h5>
                     <p>Podem ter cerca de 3 cm.</p>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export default function Amendoin() {
                     alt="Muda de Amendoin Bravo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Mudas de Amendoin Bravo</h5>
+                    <h5>Mudas de Amendoim Bravo</h5>
                     <p>Emergência entre 15 -25 dias .</p>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ export default function Amendoin() {
           </div>
           <div className="px-2">
             <div className='conteudoTextual'>
-              <h3 className="pt-4 font-1-xxl ">Amendoin Bravo</h3>
+              <h3 className="pt-4 font-1-xxl ">Amendoim <br />Bravo</h3>
               <p className="especieText">Platypodium elegans Vog.</p>
             </div>
             <div className="caractIniciais">
@@ -302,7 +302,7 @@ export default function Amendoin() {
               </div>
             </div>
             <div className="pt-4">
-              <p>
+              <p className='alert alert-secondary'>
                 Consulte o portal da Embrapa para pesquisa e maiores
                 informações:
                 <a

@@ -279,7 +279,7 @@ export default function Amendoin() {
               </div>
             </div>
             <div className="pt-4">
-              <p>
+              <p className='alert alert-secondary'>
                 Consulte o portal da Embrapa para pesquisa e maiores
                 informações:
                 <a
