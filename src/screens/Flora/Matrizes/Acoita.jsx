@@ -10,7 +10,7 @@ import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 import { SiGooglemaps } from "react-icons/si";
 import { TbTrees } from "react-icons/tb";
-import { FcGlobe,FcHighPriority,FcCalendar } from "react-icons/fc";
+import { FcGlobe, FcHighPriority, FcCalendar } from "react-icons/fc";
 export default function Acoita() {
   return (
     <div>
@@ -127,35 +127,35 @@ export default function Acoita() {
             <div className="caractIniciais">
               <ul className="caractIniciais-list">
                 <div className="list-item">
-                
-                  <FcGlobe size={25}/>
-              
+
+                  <FcGlobe size={25} />
+
 
                   <li className="caracteristica font-2-s">
                     <span className=''>Bioma:</span> Cerrado, Mata Atlântica e Pampa
                   </li>
                 </div>
                 <div className="list-item">
-                <TbTrees size={26} color={'var(--greenDetail)'}/>
+                  <TbTrees size={26} color={'var(--greenDetail)'} />
                   <li className="caracteristica">
                     <span>Classe:</span> Secundária
                   </li>
                 </div>
                 <div className="list-item">
-                <FcHighPriority size={25}/>
-               
+                  <FcHighPriority size={25} />
+
                   <li className="caracteristica">
                     <span>Conservação:</span> Pouco preocupante
                   </li>
                 </div>
                 <div className="list-item">
-                <FcCalendar size={25}/>
+                  <FcCalendar size={25} />
                   <li className="caracteristica">
                     <span>Coleta:</span> MAI - AGO
                   </li>
                 </div>
                 <div className="list-item">
-                <SiGooglemaps size={25} color={'#fff'}/>
+                  <SiGooglemaps size={25} color={'#fff'} />
                   <a
                     href="https://www.google.com.br/maps/place/23%C2%B023'17.2%22S+47%C2%B037'09.5%22W/@-23.3880778,-47.6197675,166m/data=!3m1!1e3!4m5!3m4!1s0x0:0x7aa73cbc8955f778!8m2!3d-23.3881!4d-47.6193"
                     target="_blank"
@@ -172,8 +172,9 @@ export default function Acoita() {
       </div>
       <div className="bg-gray">
         <Container>
-          <section className="py-4">
+          <section className="pt-4">
             <h4 className="fs-5">Caracteristicas Gerais</h4>
+
             <div className="accordion" id="accordionExample">
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
@@ -319,7 +320,7 @@ export default function Acoita() {
               </div>
             </div>
             <div className="pt-4">
-              <p>
+              <p className='alert alert-secondary'>
                 Consulte o portal da Embrapa para pesquisa e maiores
                 informações:
                 <a
@@ -332,6 +333,8 @@ export default function Acoita() {
               </p>
             </div>
           </section>
+
+
         </Container>
       </div>
       <Footer />

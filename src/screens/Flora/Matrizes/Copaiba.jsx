@@ -6,7 +6,7 @@ import CopaibaMuda from '../../../assets/images/flora/matrizes/copaiba/copaibaMu
 import CopaibaArvore from '../../../assets/images/flora/matrizes/copaiba/copaibaArvore.jpg';
 
 import { SiGooglemaps } from "react-icons/si";
-import { FcGlobe,FcHighPriority,FcCalendar } from "react-icons/fc";
+import { FcGlobe, FcHighPriority, FcCalendar } from "react-icons/fc";
 import { TbTrees } from "react-icons/tb";
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
@@ -127,31 +127,31 @@ export default function Amendoin() {
             <div className="caractIniciais">
               <ul className="caractIniciais-list">
                 <div className="list-item">
-                <FcGlobe size={25}/>
+                  <FcGlobe size={25} />
                   <li className="caracteristica">
                     <span>Bioma:</span> Cerrado, Mata Atlântica.
                   </li>
                 </div>
                 <div className="list-item">
-                <TbTrees size={26} color={'var(--greenDetail)'}/>
+                  <TbTrees size={26} color={'var(--greenDetail)'} />
                   <li className="caracteristica">
                     <span>Classe:</span> Clímax
                   </li>
                 </div>
                 <div className="list-item">
-                <FcHighPriority size={25}/>
+                  <FcHighPriority size={25} />
                   <li className="caracteristica">
                     <span>Conservação:</span> Pouco Preocupante
                   </li>
                 </div>
                 <div className="list-item">
-                <FcCalendar size={25}/>
+                  <FcCalendar size={25} />
                   <li className="caracteristica">
                     <span>Coleta:</span> AGO - SET
                   </li>
                 </div>
                 <div className="list-item">
-                <SiGooglemaps size={25} color={'#fff'}/>
+                  <SiGooglemaps size={25} color={'#fff'} />
                   <a
                     href="https://www.google.com.br/maps/place/23%C2%B023'08.9%22S+47%C2%B037'13.7%22W/@-23.3857941,-47.6230512,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-23.385799!4d-47.6204763"
                     target="_blank"
@@ -168,7 +168,7 @@ export default function Amendoin() {
       </div>
       <div className="bg-gray">
         <Container>
-          <section className="py-4">
+          <section className="pt-4">
             <h4 className="fs-5">Caracteristicas Gerais</h4>
             <div className="accordion" id="accordionExample">
               <div className="accordion-item">
