@@ -22,7 +22,7 @@ export default function CardsFlora() {
 
       <CardImgBack
         imgCard={ImgAmendoin}
-        name="Amendoin Bravo"
+        name="Amendoim Bravo"
         scientificName="Platypodium elegans Vog."
         reference="Fonte: Agrolink"
         link="/amendoin"

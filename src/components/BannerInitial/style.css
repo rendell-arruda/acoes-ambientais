@@ -5,10 +5,12 @@
   background-repeat: no-repeat;
   min-height: 500px;
 }
+
 .intro-conteudo div h1 {
   color: var(--greenBgContainer);
   text-align: center;
 }
+
 .card-intro {
   display: none;
 }
@@ -23,9 +25,11 @@
     border: 0;
     padding-bottom: 0;
   }
+
   .intro-conteudo {
     flex-direction: column;
   }
+
   .intro-textImg {
     align-self: center;
   }
@@ -33,6 +37,7 @@
   .intro-conteudo h1 {
     padding-left: 10px;
   }
+
   .container-logos img {
     height: 40px;
   }

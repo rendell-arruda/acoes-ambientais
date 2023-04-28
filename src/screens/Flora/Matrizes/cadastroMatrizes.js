@@ -12,7 +12,7 @@ const cadastroMatrizes = [
   },
   {
     id: 2,
-    nome: 'Amendoin Bravo',
+    nome: 'Amendoim Bravo',
     nomeCientifico: 'Platypodium elegans Vog.',
     bioma: 'Cerrado e Pantanal',
     conservacao: ' Pouco preocupante',

@@ -15,7 +15,7 @@ export default function Header() {
         backgroundColor: 'var(--greenBg)'
       }}
     >
-      <div className="container-fluid">
+      <div className="container-fluid ">
         <Link className="navbar-brand" to="/home">
           Ações Ambientais
         </Link>
@@ -34,7 +34,7 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/home">
+              <Link className="nav-link active " aria-current="page" to="/home">
                 Home
               </Link>
             </li>
@@ -89,8 +89,8 @@ export default function Header() {
                 </li>
               </ul>
             </li>
-            <li className="nav-item">
-              <a onClick={handleLogout} className="nav-link text-primary">
+            <li className="nav-item ">
+              <a onClick={handleLogout} className="nav-link text-primary ">
                 Sair
               </a>
             </li>

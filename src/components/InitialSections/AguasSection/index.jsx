@@ -1,10 +1,6 @@
 import React from 'react';
 import Title from '../../Texts/Title';
 import Container from '../../Containes';
-import FeatureList from '../../FeatureList';
-import CardImgDesc from '../../Cards/CardImgDesc';
-import Subtitle from '../../Texts/SubTitle';
-import BtnTooltip from '../../Buttons/BtnTooltip';
 import CapaAguas from '../../../assets/images/aguas/capaAguas.png';
 import ContainerRow from '../../Containes/ContainerRow';
 

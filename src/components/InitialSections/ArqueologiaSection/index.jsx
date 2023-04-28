@@ -2,10 +2,6 @@ import React from 'react';
 import './ArqSection.css';
 import Title from '../../Texts/Title';
 import Container from '../../Containes';
-import FeatureList from '../../FeatureList';
-import CardImgDesc from '../../Cards/CardImgDesc';
-import Subtitle from '../../Texts/SubTitle';
-import BtnTooltip from '../../Buttons/BtnTooltip';
 import CapaArq from '../../../assets/images/arqueologia/capArq.png';
 import ContainerRow from '../../Containes/ContainerRow';
 
