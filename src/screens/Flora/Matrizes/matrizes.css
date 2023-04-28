@@ -1,50 +1,71 @@
 .bg-especie {
   background-color: var(--grayBglight);
+  color: var(--black)
 }
+
 .especie {
   padding: 20px 0;
 }
+
 .slider-especie {
   max-width: 400px;
 }
+
 .bg-caption {
   background-color: rgba(0, 0, 0, 0.267);
   border-radius: 5px;
 }
+
 .especie-conteudo {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 1em 0;
 }
+
 .especieText {
   font-style: italic;
 }
 
 .caractIniciais {
-  background-color: var(--greenCard);
+  /* background-color: var(--greenBgContainer); */
+  background-color: #32402c;
+  background-image: var(--gradient);
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: inline-block;
 }
+
 .caractIniciais-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   padding: 12px 20px;
   margin: 0;
-  color: var(--greenText);
+  width: 360px;
 }
+
 .caracteristica {
-  color: var(--greentext);
+  color: var(--grayTextlight)
+}
+
+.caracteristica span {
+  font-weight: 500;
+}
+
+.list-item+.list-item {
+  /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+
 }
 
 .list-item,
 .list-item a {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
   text-decoration: none;
+  padding: 3px 0;
 }
 
 .acordion-especie {
@@ -56,16 +77,19 @@
 }
 
 @media (max-width: 768px) {
-  .especie-conteudo,
-  .caract-gerais-conteudo {
+  .especie-conteudo {
     flex-direction: column;
     justify-content: center;
+    padding: 0;
   }
+
   .conteudoTextual {
     text-align: center;
   }
 
-  .caracteristica {
-    font-size: 14px;
+  .caractIniciais-list {
+    font-size: 15px;
   }
+
+
 }

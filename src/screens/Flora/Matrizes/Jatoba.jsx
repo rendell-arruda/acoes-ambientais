@@ -4,20 +4,19 @@ import './matrizes.css';
 import JatobaSemente from '../../../assets/images/flora/matrizes/jatoba/jatobaSemente.JPG';
 import JatobaMuda from '../../../assets/images/flora/matrizes/jatoba/jatobaMuda.JPG';
 import JatobaArvore from '../../../assets/images/flora/matrizes/jatoba/jatobaArvore.JPG';
-import IconMap from '../../../assets/images/icons/iconMap.png';
-import IconSeed from '../../../assets/images/icons/icons-seed.png';
-import IconImportant from '../../../assets/images/icons/icons-important.png';
-import IconBrasil from '../../../assets/images/icons/icon-brasil.png';
-import IconMarcador from '../../../assets/images/icons/icon-marcador.png';
+
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
+import { TbTrees } from "react-icons/tb";
+import { SiGooglemaps } from "react-icons/si";
+import { FcGlobe,FcHighPriority,FcCalendar } from "react-icons/fc";
 
 export default function Amendoin() {
   return (
     <>
       <Header />
-      <Container>
-        <div className="especie-conteudo">
+      <div className='bg-light'>
+        <div className="especie-conteudo bg-especie">
           <div className="slider-especie">
             <div id="carouselExampleCaptions" className="carousel slide">
               <div className="carousel-indicators">
@@ -120,49 +119,39 @@ export default function Amendoin() {
               </button>
             </div>
           </div>
-          <div className="px-4">
-            <div>
-              <h3 className="pt-2">Jatobá</h3>
+          <div className="px-2">
+            <div className='conteudoTextual'>
+              <h3 className="pt-4 font-1-xxl">Jatobá</h3>
               <p className="especieText">Hymenaea courbaril.</p>
             </div>
             <div className="caractIniciais">
               <ul className="caractIniciais-list">
                 <div className="list-item">
-                  <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconBrasil} />
-                  </div>
+                <FcGlobe size={25}/>
                   <li className="caracteristica">
-                    <b>Bioma:</b> Cerrado, Mata Atlântica e Pampa
+                    <span>Bioma:</span> Cerrado, Mata Atlântica e Pampa
                   </li>
                 </div>
                 <div className="list-item">
-                  <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconMarcador} />
-                  </div>
+                <TbTrees size={26} color={'var(--greenDetail)'}/>
                   <li className="caracteristica">
-                    <b>Classe:</b> Secundária tardia ou Clímax
+                    <span>Classe:</span> Secundária tardia ou Clímax
                   </li>
                 </div>
                 <div className="list-item">
-                  <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconImportant} />
-                  </div>
+                <FcHighPriority size={25}/>
                   <li className="caracteristica">
-                    <b>Conservação:</b> Preocupante
+                    <span>Conservação:</span> Preocupante
                   </li>
                 </div>
                 <div className="list-item">
-                  <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconSeed} />
-                  </div>
+                <FcCalendar size={25}/>
                   <li className="caracteristica">
-                    <b>Coleta:</b> JUN - JUL
+                    <span>Coleta:</span> JUN - JUL
                   </li>
                 </div>
                 <div className="list-item">
-                  <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconMap} />
-                  </div>
+                <SiGooglemaps size={25} color={'#fff'}/>
                   <a
                     href="https://www.google.com.br/maps/place/23%C2%B023'00.6%22S+47%C2%B037'25.0%22W/@-23.4053256,-47.625836,17z/data=!4m4!3m3!8m2!3d-23.3835!4d-47.6236"
                     target="_blank"
@@ -176,7 +165,7 @@ export default function Amendoin() {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
       <div className="bg-gray">
         <Container>
           <section className="py-4">

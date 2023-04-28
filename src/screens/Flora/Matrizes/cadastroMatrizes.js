@@ -19,7 +19,7 @@ const cadastroMatrizes = [
     classe: 'Secundária',
     coleta: 'Set-Nov',
     link: '/amendoin',
-    gps: "https://www.google.com.br/maps/place/23%C2%B023'17.2%22S+47%C2%B037'09.5%22W/@-23.3880778,-47.6197675,166m/data=!3m1!1e3!4m5!3m4!1s0x0:0x7aa73cbc8955f778!8m2!3d-23.3881!4d-47.6193"
+    gps: "https://www.google.com.br/maps/place/23%C2%B023'17.5%22S+47%C2%B037'43.3%22W/@-23.3881951,-47.6312749,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-23.3882!4d-47.6287"
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const cadastroMatrizes = [
     classe: 'Clímax',
     coleta: 'Ago-Set',
     link: '/copaiba',
-    gps: "https://www.google.com.br/maps/place/23%C2%B023'01.3%22S+47%C2%B037'26.4%22W/@-23.3837,-47.6261887,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x5db578c3478374f3!8m2!3d-23.3837!4d-47.624"
+    gps: "https://www.google.com.br/maps/place/23%C2%B023'08.9%22S+47%C2%B037'13.7%22W/@-23.3857941,-47.6230512,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-23.385799!4d-47.6204763"
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const cadastroMatrizes = [
     classe: 'Secundária tardia',
     coleta: 'Jun-Jul',
     link: '/jatoba',
-    gps: ''
+    gps: "https://www.google.com.br/maps/place/23%C2%B023'00.6%22S+47%C2%B037'25.0%22W/@-23.4053256,-47.625836,17z/data=!4m4!3m3!8m2!3d-23.3835!4d-47.6236"
   }
 ];
 

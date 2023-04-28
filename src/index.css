@@ -9,14 +9,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 :root {
   --grayBglight: #eaeaec;
-  --grayTextlight: #fdfff5;
+  --grayTextlight: #f8f8ff;
   --greenBg: #1c261e;
   --greenBgContainer: #32402c;
   --greenDetail: #9da65d;
   --greentext: #1c261e;
-  --greenCard: #f1f9ff;
+  --greenCard: #f8f8ff;
+  --black: #101820;
+  --gradient: linear-gradient(45deg, #32402c 51%, #1c261e 100%);
+
 }
 
 .bg-green {
@@ -28,6 +33,7 @@ body {
   background-color: var(--greenBgContainer);
   color: var(--grayTextlight);
 }
+
 .bg-gray {
   background-color: var(--grayBglight);
   color: var(--greentext);
@@ -93,6 +99,7 @@ body {
   .font-1-xxl {
     font-size: 3rem;
   }
+
   .font-2-l,
   .font-2-l-b {
     font-size: 1.125rem;
@@ -103,10 +110,12 @@ body {
   .font-1-xxl {
     font-size: 2rem;
   }
+
   .font-1-xl,
   .font-2-xl {
     font-size: 1.5rem;
   }
+
   .font-2-m {
     font-size: 1em;
   }

@@ -5,19 +5,18 @@ import AcoitaArvore from '../../../assets/images/flora/matrizes/acoita/acoitaArv
 import AcoitaFlor from '../../../assets/images/flora/matrizes/acoita/acoitaflor.jpg';
 import AcoitaMuda from '../../../assets/images/flora/matrizes/acoita/acoitaMuda.jpg';
 import AcoitaSemente from '../../../assets/images/flora/matrizes/acoita/sementes.jpg';
-import IconMap from '../../../assets/images/icons/iconMap.png';
-import IconSeed from '../../../assets/images/icons/icons-seed.png';
-import IconImportant from '../../../assets/images/icons/icons-important.png';
-import IconBrasil from '../../../assets/images/icons/icon-brasil.png';
-import IconMarcador from '../../../assets/images/icons/icon-marcador.png';
+
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
+import { SiGooglemaps } from "react-icons/si";
+import { TbTrees } from "react-icons/tb";
+import { FcGlobe,FcHighPriority,FcCalendar } from "react-icons/fc";
 export default function Acoita() {
   return (
     <div>
       <Header />
-      <Container>
-        <div className="especie-conteudo">
+      <div className='bg-light'>
+        <div className="especie-conteudo bg-especie">
           <div className="slider-especie">
             <div id="carouselExampleCaptions" className="carousel slide">
               <div className="carousel-indicators">
@@ -52,7 +51,7 @@ export default function Acoita() {
                 <div className="carousel-item active semente ">
                   <img
                     src={AcoitaSemente}
-                    className="d-block w-100"
+                    className="d-block w-100 "
                     alt="Sementes de Açoita cavalo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
@@ -120,49 +119,43 @@ export default function Acoita() {
               </button>
             </div>
           </div>
-          <div className="px-4">
-            <div>
-              <h3 className="pt-2">Açoita Cavalo</h3>
+          <div className="px-2">
+            <div className='conteudoTextual'>
+              <h3 className="pt-4 font-1-xxl">Açoita Cavalo</h3>
               <p className="especieText">Luehea divaricata Mart & Zucc.</p>
             </div>
             <div className="caractIniciais">
               <ul className="caractIniciais-list">
                 <div className="list-item">
-                  <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconBrasil} />
-                  </div>
-                  <li className="caracteristica">
-                    <b>Bioma:</b> Cerrado, Mata Atlântica e Pampa
+                
+                  <FcGlobe size={25}/>
+              
+
+                  <li className="caracteristica font-2-s">
+                    <span className=''>Bioma:</span> Cerrado, Mata Atlântica e Pampa
                   </li>
                 </div>
                 <div className="list-item">
-                  <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconMarcador} />
-                  </div>
+                <TbTrees size={26} color={'var(--greenDetail)'}/>
                   <li className="caracteristica">
-                    <b>Classe:</b> Secundária
+                    <span>Classe:</span> Secundária
                   </li>
                 </div>
                 <div className="list-item">
-                  <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconImportant} />
-                  </div>
+                <FcHighPriority size={25}/>
+               
                   <li className="caracteristica">
-                    <b>Conservação:</b> Pouco preocupante
+                    <span>Conservação:</span> Pouco preocupante
                   </li>
                 </div>
                 <div className="list-item">
-                  <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconSeed} />
-                  </div>
+                <FcCalendar size={25}/>
                   <li className="caracteristica">
-                    <b>Coleta:</b> MAI - AGO
+                    <span>Coleta:</span> MAI - AGO
                   </li>
                 </div>
                 <div className="list-item">
-                  <div className=" text-bg-primary bg-gradient rounded-3">
-                    <img src={IconMap} />
-                  </div>
+                <SiGooglemaps size={25} color={'#fff'}/>
                   <a
                     href="https://www.google.com.br/maps/place/23%C2%B023'17.2%22S+47%C2%B037'09.5%22W/@-23.3880778,-47.6197675,166m/data=!3m1!1e3!4m5!3m4!1s0x0:0x7aa73cbc8955f778!8m2!3d-23.3881!4d-47.6193"
                     target="_blank"
@@ -176,7 +169,7 @@ export default function Acoita() {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
       <div className="bg-gray">
         <Container>
           <section className="py-4">
