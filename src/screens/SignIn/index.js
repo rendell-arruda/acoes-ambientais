@@ -8,7 +8,7 @@ import { auth } from '../../firebase/firebaseConnection';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
 import './signin.css';
-import logo from '../../assets/images/logos/favicon-rmb.png';
+import logo from '../../assets/images/logos/logoPeroba.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/auth';
 import Loader from '../../components/Loader';
