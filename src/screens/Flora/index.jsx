@@ -16,6 +16,7 @@ import MapPlantio from '../../assets/images/flora/maps/mapa.png';
 // import MapPlantio from '../../assets/images/flora/maps/mapaPlantio.png';
 import identFolhas1 from '../../assets/images/flora/curiosidades/identArvores.png';
 import ParallaxImage from '../../components/ParallaxImage';
+import { Link } from 'react-router-dom';
 
 export default function Flora() {
   return (
@@ -37,10 +38,10 @@ export default function Flora() {
                 col3="Coleta de Semente"
                 col4="Ficha Técnica"
               />
+
+              <Link to="/cadastroMatrizes">Cadastrar uma Matriz</Link>
             </div>
           </div>
-
-
         </Container>
       </div>
       <Container>
