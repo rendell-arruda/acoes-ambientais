@@ -8,14 +8,14 @@ import AcoitaSemente from '../../../assets/images/flora/matrizes/acoita/sementes
 
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
-import { SiGooglemaps } from "react-icons/si";
-import { TbTrees } from "react-icons/tb";
-import { FcGlobe, FcHighPriority, FcCalendar } from "react-icons/fc";
+import { SiGooglemaps } from 'react-icons/si';
+import { TbTrees } from 'react-icons/tb';
+import { FcGlobe, FcHighPriority, FcCalendar } from 'react-icons/fc';
 export default function Acoita() {
   return (
     <div>
       <Header />
-      <div className='bg-light'>
+      <div className="bg-light">
         <div className="especie-conteudo bg-especie">
           <div className="slider-especie">
             <div id="carouselExampleCaptions" className="carousel slide">
@@ -55,8 +55,7 @@ export default function Acoita() {
                     alt="Sementes de Açoita cavalo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Sementes de Açoita Cavalo</h5>
-                    <p>Podem ter cerca de 1 cm.</p>
+                    <h5>Sementes de Açoita Cavalo podem ter cerca de 1 cm.</h5>
                   </div>
                 </div>
                 <div className="carousel-item flor">
@@ -66,8 +65,10 @@ export default function Acoita() {
                     alt="Flor de açoita cavalo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Flor do Açoita cavalo</h5>
-                    <p>Floresce no Periodo de Maio a Agosto.</p>
+                    <h5>
+                      A Flor do Açoita cavalo floresce no periodo de Maio a
+                      Agosto.
+                    </h5>
                   </div>
                 </div>
                 <div className="carousel-item muda">
@@ -77,8 +78,10 @@ export default function Acoita() {
                     alt="Muda de açoita cavalo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Mudas de Açoita Cavalo</h5>
-                    <p>Atinge Porte médio adequado em 6 meses .</p>
+                    <h5>
+                      Mudas de Açoita Cavalo Atinge Porte médio adequado em 6
+                      meses .
+                    </h5>
                   </div>
                 </div>
                 <div className="carousel-item arvore">
@@ -88,8 +91,7 @@ export default function Acoita() {
                     alt="Árvore de Açoita Cavalo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Árvores de Açoita Cavalo</h5>
-                    <p>Podem ter cerca de 30 m.</p>
+                    <h5>Árvores de Açoita Cavalo podem ter cerca de 30 m.</h5>
                   </div>
                 </div>
               </div>
@@ -120,19 +122,21 @@ export default function Acoita() {
             </div>
           </div>
           <div className="px-2">
-            <div className='conteudoTextual'>
-              <h3 className="pt-4 font-1-xxl">Açoita <br />Cavalo</h3>
+            <div className="conteudoTextual">
+              <h3 className="pt-4 font-1-xxl">
+                Açoita <br />
+                Cavalo
+              </h3>
               <p className="especieText">Luehea divaricata Mart & Zucc.</p>
             </div>
             <div className="caractIniciais">
               <ul className="caractIniciais-list">
                 <div className="list-item">
-
                   <FcGlobe size={25} />
 
-
                   <li className="caracteristica font-2-s">
-                    <span className=''>Bioma:</span> Cerrado, Mata Atlântica e Pampa
+                    <span className="">Bioma:</span> Cerrado, Mata Atlântica e
+                    Pampa
                   </li>
                 </div>
                 <div className="list-item">
@@ -320,7 +324,7 @@ export default function Acoita() {
               </div>
             </div>
             <div className="pt-4">
-              <p className='alert alert-secondary'>
+              <p className="alert alert-secondary">
                 Consulte o portal da Embrapa para pesquisa e maiores
                 informações:
                 <a
@@ -333,8 +337,6 @@ export default function Acoita() {
               </p>
             </div>
           </section>
-
-
         </Container>
       </div>
       <Footer />

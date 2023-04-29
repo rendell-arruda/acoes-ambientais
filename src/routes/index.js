@@ -17,6 +17,7 @@ import Copaiba from '../screens/Flora/Matrizes/Copaiba.jsx';
 
 import SignIn from '../screens/SignIn';
 import SignUp from '../screens/SignUp';
+import CadastroMatrizes from '../screens/Flora/CadastroMatrizes';
 
 export default function RoutesApp() {
   return (
@@ -48,6 +49,15 @@ export default function RoutesApp() {
             </Private>
           }
         />
+        {/* <Route
+          path="/cadastroMatrizes"
+          element={
+            <Private>
+              <CadastroMatrizes />
+            </Private>
+          }
+        /> */}
+
         <Route
           path="/fauna"
           element={

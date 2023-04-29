@@ -2,7 +2,6 @@ import React, { useState, useContext } from 'react';
 import { auth } from '../../firebase/firebaseConnection';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
-import './signin.css';
 import logo from '../../assets/images/logos/favicon-rmb.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/auth';
@@ -34,7 +33,7 @@ export default function SignUp() {
       >
         <div className="login-area bg-green-light">
           <img src={logo} alt="Logo da Gerência de implatação" />
-          <h6>Ações Ambientais RMB</h6>
+          <h3>Ações Ambientais RMB</h3>
         </div>
         <form className="d-flex flex-column bg-gray" onSubmit={handleSubmit}>
           <h4>Cadastre-se</h4>
@@ -45,7 +44,7 @@ export default function SignUp() {
             onChange={e => setName(e.target.value)}
           />
           <input
-            type="text"
+            type="email"
             placeholder="email@email.com"
             value={email}
             onChange={e => setEmail(e.target.value)}
@@ -59,7 +58,9 @@ export default function SignUp() {
           <button type="submit">
             {loadingAuth ? <Loader /> : 'Cadastrar'}
           </button>
-          <Link to="/">Faça seu login</Link>
+          <Link className="pt-2" to="/">
+            Já possui Cadastro? Faça seu login.
+          </Link>
         </form>
       </div>
     </div>

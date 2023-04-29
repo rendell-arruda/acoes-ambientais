@@ -35,12 +35,12 @@ export default function SignIn() {
       >
         <div className="login-area bg-green-light">
           <img src={logo} alt="Logo da Gerência de implatação" />
-          <h5>Ações Ambientais RMB</h5>
+          <h3>Ações Ambientais RMB</h3>
         </div>
-        <form className="d-flex flex-column bg-gray" onSubmit={handleSignIn}>
-          <h6>Login</h6>
+        <form className="d-flex flex-column" onSubmit={handleSignIn}>
+          <h4>Login</h4>
           <input
-            type="text"
+            type="email"
             placeholder="email@email.com"
             value={email}
             onChange={e => setEmail(e.target.value)}

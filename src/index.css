@@ -9,19 +9,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 :root {
-  --grayBglight: #eaeaec;
+  --grayBglight: #f7f7f7;
   --grayTextlight: #f8f8ff;
   --greenBg: #1c261e;
   --greenBgContainer: #32402c;
   --greenDetail: #9da65d;
   --greentext: #1c261e;
-  --greenCard: #f8f8ff;
   --black: #101820;
   --gradient: linear-gradient(45deg, #32402c 51%, #1c261e 100%);
-
 }
 
 .bg-green {

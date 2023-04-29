@@ -7,15 +7,15 @@ import JatobaArvore from '../../../assets/images/flora/matrizes/jatoba/jatobaArv
 
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
-import { TbTrees } from "react-icons/tb";
-import { SiGooglemaps } from "react-icons/si";
-import { FcGlobe, FcHighPriority, FcCalendar } from "react-icons/fc";
+import { TbTrees } from 'react-icons/tb';
+import { SiGooglemaps } from 'react-icons/si';
+import { FcGlobe, FcHighPriority, FcCalendar } from 'react-icons/fc';
 
 export default function Amendoin() {
   return (
     <>
       <Header />
-      <div className='bg-light'>
+      <div className="bg-light">
         <div className="especie-conteudo bg-especie">
           <div className="slider-especie">
             <div id="carouselExampleCaptions" className="carousel slide">
@@ -55,8 +55,7 @@ export default function Amendoin() {
                     alt="Sementes de Jatobá"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Sementes de Jatoba</h5>
-                    <p>Podem ter cerca de 2 cm.</p>
+                    <h5>Sementes de Jatoba podem ter cerca de 2 cm.</h5>
                   </div>
                 </div>
                 {/* <div className="carousel-item flor">
@@ -66,8 +65,7 @@ export default function Amendoin() {
                     alt="Flor de açoita cavalo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Flor do Açoita cavalo</h5>
-                    <p>Floresce no Periodo de Maio a Agosto.</p>
+                    <h5>A Flor do Jatobá floresce no Periodo de Maio a Agosto.</h5>
                   </div>
                 </div> */}
                 <div className="carousel-item muda">
@@ -77,8 +75,10 @@ export default function Amendoin() {
                     alt="Muda de Jatobá"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Mudas de Jatobá</h5>
-                    <p>Atinge Porte médio adequado em 6 meses .</p>
+                    <h5>
+                      Mudas de Jatobá atingem seu Porte médio adequado em 6
+                      meses .
+                    </h5>
                   </div>
                 </div>
                 <div className="carousel-item arvore">
@@ -88,8 +88,7 @@ export default function Amendoin() {
                     alt="Árvore de Jatobá"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Árvores de Jatobá</h5>
-                    <p>Podem ter cerca de 15-20 m.</p>
+                    <h5>Árvores de Jatobá podem ter cerca de 15-20 m.</h5>
                   </div>
                 </div>
               </div>
@@ -120,7 +119,7 @@ export default function Amendoin() {
             </div>
           </div>
           <div className="px-2">
-            <div className='conteudoTextual'>
+            <div className="conteudoTextual">
               <h3 className="pt-4 font-1-xxl">Jatobá</h3>
               <p className="especieText">Hymenaea courbaril.</p>
             </div>
@@ -283,7 +282,7 @@ export default function Amendoin() {
               </div>
             </div>
             <div className="pt-4">
-              <p className='alert alert-secondary'>
+              <p className="alert alert-secondary">
                 Consulte o portal da Embrapa para pesquisa e maiores
                 informações:
                 <a

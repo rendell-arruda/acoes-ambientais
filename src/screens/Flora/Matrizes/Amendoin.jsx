@@ -4,10 +4,9 @@ import './matrizes.css';
 import AmendoinSemente from '../../../assets/images/flora/matrizes/amendoinBravo/amendoinBravoSemente.jpg';
 import AmendoinMuda from '../../../assets/images/flora/matrizes/amendoinBravo/amendoinBravoMudas.JPG';
 
-
-import { FcGlobe, FcHighPriority, FcCalendar } from "react-icons/fc";
-import { SiGooglemaps } from "react-icons/si";
-import { TbTrees } from "react-icons/tb";
+import { FcGlobe, FcHighPriority, FcCalendar } from 'react-icons/fc';
+import { SiGooglemaps } from 'react-icons/si';
+import { TbTrees } from 'react-icons/tb';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 
@@ -15,7 +14,7 @@ export default function Amendoin() {
   return (
     <>
       <Header />
-      <div className='bg-light'>
+      <div className="bg-light">
         <div className="especie-conteudo bg-especie">
           <div className="slider-especie">
             <div id="carouselExampleCaptions" className="carousel slide">
@@ -55,19 +54,17 @@ export default function Amendoin() {
                     alt="Sementes de Amendoim Bravo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Sementes de Amendoim Bravo</h5>
-                    <p>Podem ter cerca de 3 cm.</p>
+                    <h5>Sementes de Amendoim Bravo podem ter cerca de 3 cm.</h5>
                   </div>
                 </div>
                 {/* <div className="carousel-item flor">
                   <img
                     src={AcoitaFlor}
                     className="d-block w-100"
-                    alt="Flor de açoita cavalo"
+                    alt="Flor de Amendoim Bravo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Flor do Açoita cavalo</h5>
-                    <p>Floresce no Periodo de Maio a Agosto.</p>
+                     <h5>Flores de Amendoim Bravo podem ter cerca de 3 cm.</h5>
                   </div>
                 </div> */}
                 <div className="carousel-item muda">
@@ -77,8 +74,7 @@ export default function Amendoin() {
                     alt="Muda de Amendoin Bravo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Mudas de Amendoim Bravo</h5>
-                    <p>Emergência entre 15 -25 dias .</p>
+                    <h5>Mudas de Amendoim Bravo emergem entre 15 -25 dias .</h5>
                   </div>
                 </div>
                 {/* <div className="carousel-item arvore">
@@ -88,8 +84,7 @@ export default function Amendoin() {
                     alt="Árvore de Açoita Cavalo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Árvores de Açoita Cavalo</h5>
-                    <p>Podem ter cerca de 30 m.</p>
+                    <h5>Arvores de Amendoim Bravo emergem entre 15 -25 dias .</h5>
                   </div>
                 </div> */}
               </div>
@@ -120,8 +115,11 @@ export default function Amendoin() {
             </div>
           </div>
           <div className="px-2">
-            <div className='conteudoTextual'>
-              <h3 className="pt-4 font-1-xxl ">Amendoim <br />Bravo</h3>
+            <div className="conteudoTextual">
+              <h3 className="pt-4 font-1-xxl ">
+                Amendoim <br />
+                Bravo
+              </h3>
               <p className="especieText">Platypodium elegans Vog.</p>
             </div>
             <div className="caractIniciais">
@@ -302,7 +300,7 @@ export default function Amendoin() {
               </div>
             </div>
             <div className="pt-4">
-              <p className='alert alert-secondary'>
+              <p className="alert alert-secondary">
                 Consulte o portal da Embrapa para pesquisa e maiores
                 informações:
                 <a

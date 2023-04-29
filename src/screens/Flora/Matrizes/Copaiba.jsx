@@ -5,9 +5,9 @@ import CopaibaSemente from '../../../assets/images/flora/matrizes/copaiba/copaib
 import CopaibaMuda from '../../../assets/images/flora/matrizes/copaiba/copaibaMuda.JPG';
 import CopaibaArvore from '../../../assets/images/flora/matrizes/copaiba/copaibaArvore.jpg';
 
-import { SiGooglemaps } from "react-icons/si";
-import { FcGlobe, FcHighPriority, FcCalendar } from "react-icons/fc";
-import { TbTrees } from "react-icons/tb";
+import { SiGooglemaps } from 'react-icons/si';
+import { FcGlobe, FcHighPriority, FcCalendar } from 'react-icons/fc';
+import { TbTrees } from 'react-icons/tb';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 
@@ -15,7 +15,7 @@ export default function Amendoin() {
   return (
     <>
       <Header />
-      <div className='bg-light'>
+      <div className="bg-light">
         <div className="especie-conteudo bg-especie">
           <div className="slider-especie">
             <div id="carouselExampleCaptions" className="carousel slide">
@@ -55,8 +55,7 @@ export default function Amendoin() {
                     alt="Sementes de Copaíba"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Sementes de Copaiba</h5>
-                    <p>Podem ter cerca de 1 cm.</p>
+                    <h5>Sementes de Copaiba podem ter cerca de 1 cm.</h5>
                   </div>
                 </div>
                 {/* <div className="carousel-item flor">
@@ -66,8 +65,7 @@ export default function Amendoin() {
                     alt="Flor de açoita cavalo"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Flor do Açoita cavalo</h5>
-                    <p>Floresce no Periodo de Maio a Agosto.</p>
+                     <h5>Flor de Copaiba podem ter cerca de 1 cm.</h5>
                   </div>
                 </div> */}
                 <div className="carousel-item muda">
@@ -77,8 +75,9 @@ export default function Amendoin() {
                     alt="Muda de Copaíba"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Mudas de Copaíba</h5>
-                    <p>Atinge Porte médio adequado em 6 meses .</p>
+                    <h5>
+                      Mudas de Copaíba atinge Porte médio adequado em 6 meses .
+                    </h5>
                   </div>
                 </div>
                 <div className="carousel-item arvore">
@@ -88,8 +87,7 @@ export default function Amendoin() {
                     alt="Árvore de Copaíba"
                   />
                   <div className="carousel-caption d-none d-md-block bg-caption">
-                    <h5>Árvores de Copaíba</h5>
-                    <p>Podem ter cerca de 10-15 m.</p>
+                    <h5>Árvores de Copaíba podem ter cerca de 10-15 m.</h5>
                   </div>
                 </div>
               </div>
@@ -120,7 +118,7 @@ export default function Amendoin() {
             </div>
           </div>
           <div className="px-2">
-            <div className='conteudoTextual'>
+            <div className="conteudoTextual">
               <h3 className="pt-4 font-1-xxl">Copaíba</h3>
               <p className="especieText">Copaifera IBngsdorlfii Oesf.</p>
             </div>
@@ -279,7 +277,7 @@ export default function Amendoin() {
               </div>
             </div>
             <div className="pt-4">
-              <p className='alert alert-secondary'>
+              <p className="alert alert-secondary">
                 Consulte o portal da Embrapa para pesquisa e maiores
                 informações:
                 <a
