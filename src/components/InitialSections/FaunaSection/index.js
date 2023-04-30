@@ -3,7 +3,7 @@ import Title from '../../Texts/Title';
 import Container from '../../Containes';
 import SubTitle from '../../Texts/SubTitle';
 import BtnTooltip from '../../Buttons/BtnTooltip';
-import CardImgBack from '../../../components/Cards/CardImgBack';
+import CardImgBack from '../../Cards/CardImgBack';
 import ImgFimFim from '../../../assets/images/fauna/fimfimMacho.png';
 import ImgCuica from '../../../assets/images/fauna/cuica.jpg';
 import ImgTamandua from '../../../assets/images/fauna/tamandua.jpg';

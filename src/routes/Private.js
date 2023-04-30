@@ -10,7 +10,6 @@ export default function Private({ children }) {
 
   if (loading) {
     return <Loader />;
-    // return <div></div>;
   }
   if (!signed) {
     return <Navigate to="/" />;

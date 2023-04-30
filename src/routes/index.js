@@ -10,10 +10,10 @@ import Aguas from '../screens/Aguas';
 import Erro from '../screens/Erro';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Acoita from '../screens/Flora/Matrizes/Acoita.jsx';
-import Amendoin from '../screens/Flora/Matrizes/Amendoin.jsx';
-import Jatoba from '../screens/Flora/Matrizes/Jatoba.jsx';
-import Copaiba from '../screens/Flora/Matrizes/Copaiba.jsx';
+import Acoita from '../screens/Flora/Matrizes/Acoita.js';
+import Amendoin from '../screens/Flora/Matrizes/Amendoin.js';
+import Jatoba from '../screens/Flora/Matrizes/Jatoba.js';
+import Copaiba from '../screens/Flora/Matrizes/Copaiba.js';
 
 import SignIn from '../screens/SignIn';
 import SignUp from '../screens/SignUp';
