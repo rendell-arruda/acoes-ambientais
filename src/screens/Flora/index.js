@@ -88,6 +88,7 @@ export default function Flora() {
           <Title title="Bosque dos pioneiros">
             <p>Conheça o bosque dos pioneiros</p>
           </Title>
+
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d885.6993329936776!2d-47.6179412!3d-23.3881028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5efc7ecda2e37%3A0x862df6ca25dd3926!2sRMB%20-%20Bosque%20dos%20Pioneiros!5e1!3m2!1spt-BR!2sbr!4v1681734358558!5m2!1spt-BR!2sbr"
             width="100%"

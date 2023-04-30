@@ -22,50 +22,62 @@ export default function Timeline({
   return (
     <>
       <section>
-        <div class="container-fluid">
-          <div class="section-heading wow fadeIn">
-            {/* <h2> Sítio Arqueológico</h2> */}
-            {/* <div class="heading-separator"></div> */}
-          </div>
-          <div class="row">
-            <div class="history-wrapper">
-              <div class="title-wrap text-center one-of-two">
-                <h2 class="h1 text-secondary mb-0 text-uppercase">
+        <div className="container-fluid">
+          <div className="section-heading wow fadeIn"></div>
+          <div className="row">
+            <div className="history-wrapper">
+              <div className="title-wrap text-center one-of-two">
+                <h2 className="h1 text-secondary mb-0 text-uppercase">
                   Breve Histórico
                 </h2>
-                {/* <p class="fs-3 font-weight-500">Jibóia I</p> */}
               </div>
-              <div class="timeline-box one-of-two">
-                <img class="mb-1-6 rounded img-fluid" src={img1} alt="..." />
-                <div class="content">
-                  <h3 class="h4 mb-2 mb-md-3">{title1}</h3>
-                  <p class="mb-0">{text1}</p>
+              <div className="timeline-box one-of-two">
+                <img
+                  className="mb-1-6 rounded img-fluid"
+                  src={img1}
+                  alt="..."
+                />
+                <div className="content">
+                  <h3 className="h4 mb-2 mb-md-3">{title1}</h3>
+                  <p className="mb-0">{text1}</p>
                 </div>
-                <div class="year">{year1}</div>
+                <div className="year">{year1}</div>
               </div>
-              <div class="timeline-box one-of-two">
-                <img class="mb-1-6 rounded img-fluid" src={img2} alt="..." />
-                <div class="content">
-                  <h3 class="h4 mb-2 mb-md-3">{title2}</h3>
-                  <p class="mb-0">{text2}</p>
+              <div className="timeline-box one-of-two">
+                <img
+                  className="mb-1-6 rounded img-fluid"
+                  src={img2}
+                  alt="..."
+                />
+                <div className="content">
+                  <h3 className="h4 mb-2 mb-md-3">{title2}</h3>
+                  <p className="mb-0">{text2}</p>
                 </div>
-                <div class="year">{year2}</div>
+                <div className="year">{year2}</div>
               </div>
-              <div class="timeline-box one-of-two">
-                <img class="mb-1-6 rounded img-fluid" src={img3} alt="..." />
-                <div class="content">
-                  <h3 class="h4 mb-2 mb-md-3">{title3}</h3>
-                  <p class="mb-0">{text3}</p>
+              <div className="timeline-box one-of-two">
+                <img
+                  className="mb-1-6 rounded img-fluid"
+                  src={img3}
+                  alt="..."
+                />
+                <div className="content">
+                  <h3 className="h4 mb-2 mb-md-3">{title3}</h3>
+                  <p className="mb-0">{text3}</p>
                 </div>
-                <div class="year">{year3}</div>
+                <div className="year">{year3}</div>
               </div>
-              <div class="timeline-box one-of-two">
-                <img class="mb-1-6 rounded img-fluid" src={img4} alt="..." />
-                <div class="content">
-                  <h3 class="h4 mb-2 mb-md-3">{title4}</h3>
-                  <p class="mb-0">{text4}</p>
+              <div className="timeline-box one-of-two">
+                <img
+                  className="mb-1-6 rounded img-fluid"
+                  src={img4}
+                  alt="..."
+                />
+                <div className="content">
+                  <h3 className="h4 mb-2 mb-md-3">{title4}</h3>
+                  <p className="mb-0">{text4}</p>
                 </div>
-                <div class="year">{year4}</div>
+                <div className="year">{year4}</div>
               </div>
             </div>
           </div>

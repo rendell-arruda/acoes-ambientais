@@ -2,7 +2,6 @@ import React from 'react';
 import './arqueologiaPage.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import CarouselHeader from '../../components/Carousels/CarouselHeader';
 import Container from '../../components/Containes';
 import ParallaxImage from '../../components/ParallaxImage';
 import Timeline from '../../components/Timeline';
