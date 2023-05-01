@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/auth';
+import './header.css';
 
 export default function Header() {
   async function handleLogout() {
@@ -9,10 +10,11 @@ export default function Header() {
   const { logout } = useContext(AuthContext);
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark"
+      className="navbar navbar-expand-lg navbar-dark bg-dark "
       data-bs-theme="dark"
       style={{
-        backgroundColor: 'var(--greenBg)'
+        // backgroundColor: 'var(--greenBg)',
+        boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'
       }}
     >
       <div className="container-fluid ">
@@ -38,10 +40,29 @@ export default function Header() {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/flora">
+
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Flora
-              </Link>
+              </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link className="dropdown-item" to="/flora">
+                    Flora Page
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/cadastroMatrizes">
+                    Cadastro de Matrizes
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/fauna">
@@ -66,7 +87,7 @@ export default function Header() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Viveiros
+                Viveiro
               </a>
               <ul className="dropdown-menu">
                 <li>
@@ -89,8 +110,9 @@ export default function Header() {
                 </li>
               </ul>
             </li>
-            <li className="nav-item ">
-              <a onClick={handleLogout} className="nav-link text-primary ">
+
+            <li className="nav-item">
+              <a onClick={handleLogout} className="nav-link btn btn-danger">
                 Sair
               </a>
             </li>

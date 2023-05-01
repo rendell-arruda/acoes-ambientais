@@ -12,6 +12,7 @@ import { toast } from 'react-toastify';
 export const AuthContext = createContext({});
 
 function AuthProvider({ children }) {
+  //salvar os dados do user
   const [user, setUser] = useState(null);
   //coloca um loading
   const [loadingAuth, setLoandingAuth] = useState(false);
@@ -90,10 +91,11 @@ function AuthProvider({ children }) {
       });
   }
 
+  //salvar os dados do user no localstorage
   function storageUser(data) {
     localStorage.setItem('@detailUser', JSON.stringify(data));
   }
-
+  //deslogar o user
   async function logout() {
     await signOut(auth);
     localStorage.removeItem('@detailUser');
@@ -105,9 +107,11 @@ function AuthProvider({ children }) {
       value={{
         signed: !!user, //false
         user,
+        setUser,
         signIn,
         signUp,
         logout,
+        storageUser,
         loadingAuth,
         loading
       }}

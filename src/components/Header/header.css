@@ -1,0 +1,16 @@
+.nav-item {
+  transition: ease-in-out 0.3s;
+}
+
+.nav-item:hover {
+  background-color: var(--greenBgContainer);
+  border-radius: 5px;
+}
+
+.nav-item a {
+  transition: all 0.3s;
+}
+
+.nav-item a:hover {
+  color: #fff;
+}
