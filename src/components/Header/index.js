@@ -10,7 +10,7 @@ export default function Header() {
   const { logout } = useContext(AuthContext);
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark bg-dark "
+      className="navbar navbar-expand-lg sticky-top navbar-dark bg-dark "
       data-bs-theme="dark"
       style={{
         // backgroundColor: 'var(--greenBg)',
