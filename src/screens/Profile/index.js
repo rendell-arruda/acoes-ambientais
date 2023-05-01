@@ -1,4 +1,5 @@
 import { useContext, useState } from 'react';
+import './profile.css';
 import { AuthContext } from '../../context/auth';
 import Sidebar from '../../components/Sidebar';
 import TitleRegis from '../../components/Texts/TitleRegis';
@@ -21,9 +22,9 @@ export default function Profile() {
         <div className="containerRegis">
           <form className="form-profile">
             <label className="label-avatar">
-              <label>
+              <span>
                 <FiUpload color="#FFF" size={25} />
-              </label>
+              </span>
               <input type="file" accept="image/*" /> <br />
               {avatarUrl === null ? (
                 <img
@@ -41,8 +42,16 @@ export default function Profile() {
                 />
               )}
             </label>
+            <label>Nome</label>
+            <input type="text" placeholder="Seu nome" />
+            <label>Email</label>
+            <input type="text" placeholder="teste@teste.com" disabled={true} />
+            <button type="Submit">Salvar</button>
           </form>
         </div>
+        {/* <div className="containerRegis">
+          <button className="logout-btn">Sair</button>
+        </div> */}
       </div>
     </div>
   );
