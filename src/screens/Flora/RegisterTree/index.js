@@ -19,6 +19,11 @@ export default function RegisterTree() {
   const [descArvore, setDescArvore] = useState('');
   const [descFlor, setDescFlor] = useState('');
 
+  function handleRegister(e) {
+    e.preventDefault();
+    alert('Cadastrado com sucesso!');
+  }
+
   return (
     <div>
       <Sidebar />
@@ -28,7 +33,7 @@ export default function RegisterTree() {
         </TitleRegis>
 
         <div className="containerRegis">
-          <form className="form-profile">
+          <form className="form-profile" onSubmit={handleRegister}>
             <label>Nome</label>
             <input
               type="text"
@@ -148,6 +153,7 @@ export default function RegisterTree() {
               //   value={descMuda}
               //   onChange={handleFile}
             />
+            <button type="submit">Cadastrar</button>
           </form>
         </div>
       </div>
