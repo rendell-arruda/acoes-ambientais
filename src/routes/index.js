@@ -17,7 +17,8 @@ import Copaiba from '../screens/Flora/Matrizes/Copaiba.js';
 
 import SignIn from '../screens/SignIn';
 import SignUp from '../screens/SignUp';
-import CadastroMatrizes from '../screens/Flora/CadastroMatrizes';
+import MatrizesArboreas from '../screens/Flora/MatrizesArboreas';
+import RegisterTree from '../screens/Flora/RegisterTree';
 import Profile from '../screens/Profile';
 
 export default function RoutesApp() {
@@ -59,10 +60,18 @@ export default function RoutesApp() {
           }
         />
         <Route
-          path="/cadastroMatrizes"
+          path="/matrizesArboreas"
           element={
             <Private>
-              <CadastroMatrizes />
+              <MatrizesArboreas />
+            </Private>
+          }
+        />
+        <Route
+          path="/registerTree"
+          element={
+            <Private>
+              <RegisterTree />
             </Private>
           }
         />

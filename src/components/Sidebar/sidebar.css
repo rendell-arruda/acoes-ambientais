@@ -1,5 +1,5 @@
 .sidebar {
-  width: 200px;
+  width: 260px;
   background-color: var(--greenBg);
   padding: 0;
   margin: 0;
@@ -47,7 +47,7 @@
 }
 
 .content {
-  margin-left: 200px;
+  margin-left: 260px;
   padding: 1px 16px;
 }
 

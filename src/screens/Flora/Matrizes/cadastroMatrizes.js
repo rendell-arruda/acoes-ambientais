@@ -2,8 +2,8 @@ const cadastroMatrizes = [
   {
     id: 1,
     nome: 'Açoita Cavalo',
-    matriz: 'M 2082',
     nomeCientifico: 'Luehea divaricata Mart & Zucc.',
+    matriz: 'M 2082',
     bioma: 'Cerrado, Mata Atlântica e Pampa',
     conservacao: ' Pouco preocupante',
     classe: 'Secundária',
@@ -23,8 +23,8 @@ const cadastroMatrizes = [
   {
     id: 2,
     nome: 'Amendoim Bravo',
-    matriz: 'M 909',
     nomeCientifico: 'Platypodium elegans Vog.',
+    matriz: 'M 909',
     bioma: 'Cerrado e Pantanal',
     conservacao: ' Pouco preocupante',
     classe: 'Secundária',
@@ -43,8 +43,8 @@ const cadastroMatrizes = [
   {
     id: 3,
     nome: 'Copaíba',
-    matriz: 'M 248',
     nomeCientifico: 'Copaifera IBngsdorlfii Oesf.',
+    matriz: 'M 248',
     bioma: 'Cerrado, Mata Atlântica.',
     conservacao: 'Pouco Preocupante',
     classe: 'Clímax',
@@ -63,8 +63,8 @@ const cadastroMatrizes = [
   {
     id: 4,
     nome: 'Jatobá',
-    matriz: 'M 262',
     nomeCientifico: 'Hymenaea courbaril.',
+    matriz: 'M 262',
     bioma: 'Cerrado, Mata Atlântica e Pampa',
     conservacao: 'Preocupante',
     classe: 'Secundária tardia',

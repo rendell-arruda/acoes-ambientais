@@ -3,7 +3,7 @@ import avatarImg from '../../assets/images/logos/avatar.png';
 import './sidebar.css';
 import { AuthContext } from '../../context/auth';
 import { Link } from 'react-router-dom';
-import { FcInspection, FcSettings } from 'react-icons/fc';
+import { FcInspection, FcSettings, FcPlus } from 'react-icons/fc';
 
 import { GoSignOut } from 'react-icons/go';
 import { TbTrees } from 'react-icons/tb';
@@ -19,8 +19,11 @@ export default function Sidebar() {
           alt="Foto do Usuário"
         />
       </div>
-      <Link to="/cadastroMatrizes">
-        <FcInspection size={25} /> Matrizes
+      <Link to="/matrizesArboreas">
+        <FcInspection size={25} /> Matrizes Arbóreas
+      </Link>
+      <Link to="/registerTree">
+        <FcPlus size={25} /> Cadastro
       </Link>
 
       <Link to="/flora">

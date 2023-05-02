@@ -108,7 +108,7 @@ export default function Profile() {
               <span>
                 <FiUpload color="#FFF" size={25} />
               </span>
-              <input type="file" accept="image/*" onChange={handleFile} />{' '}
+              <input type="file" accept="image/*" onChange={handleFile} />
               <br />
               {avatarUrl === null ? (
                 <img
