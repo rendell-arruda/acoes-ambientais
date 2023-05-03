@@ -38,8 +38,8 @@ export default function MatrizesArboreas() {
                   Secundária
                 </td>
 
-                <td data-label="Classe" scope="row">
-                  Secundária
+                <td data-label="Coleta" scope="row">
+                  Mai-Ago
                 </td>
                 <td data-label="Ficha Técnica" scope="row">
                   <Link to="/acoita">
@@ -47,19 +47,17 @@ export default function MatrizesArboreas() {
                   </Link>
                 </td>
                 <td data-label="#" scope="row">
-                  <button className="action">
-                    <FiSearch
-                      size={17}
-                      color="#fff"
-                      style={{ backgroundColor: '#3583f6' }}
-                    />
+                  <button
+                    className="action"
+                    style={{ backgroundColor: '#3583f6' }}
+                  >
+                    <FiSearch size={17} color="#fff" />
                   </button>
-                  <button className="action">
-                    <FiEdit2
-                      size={17}
-                      color="#fff"
-                      style={{ backgroundColor: '#f6a935' }}
-                    />
+                  <button
+                    className="action"
+                    style={{ backgroundColor: '#f6a935' }}
+                  >
+                    <FiEdit2 size={17} color="#fff" />
                   </button>
                 </td>
               </tr>

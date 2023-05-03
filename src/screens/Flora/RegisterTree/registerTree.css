@@ -1,0 +1,13 @@
+form input[type='radio'] {
+  margin: 5px 0 15px 0;
+}
+
+form input[type='radio']:not(:first-child) {
+  margin-left: 15px;
+}
+
+.conservacao span,
+.classe span {
+  padding-left: 5px;
+  font-size: 1em;
+}

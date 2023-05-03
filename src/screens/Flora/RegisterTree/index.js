@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './registerTree.css';
 import Sidebar from '../../../components/Sidebar';
 import TitleRegis from '../../../components/Texts/TitleRegis';
 import { FcPlus } from 'react-icons/fc';
@@ -13,8 +14,10 @@ export default function RegisterTree() {
   const [numero, setNumero] = useState('');
 
   const [bioma, setBioma] = useState('');
-  const [conservacao, setConservacao] = useState('');
-  const [classe, setClasse] = useState('');
+
+  const [conservacao, setConservacao] = useState('Preocupante');
+  const [classe, setClasse] = useState('Pioneira');
+
   const [coleta, setColeta] = useState('');
 
   const [link, setLink] = useState('');
@@ -100,6 +103,13 @@ export default function RegisterTree() {
     }
   }
 
+  function handleOptionChangeConvervacao(e) {
+    setConservacao(e.target.value);
+  }
+  function handleOptionChangeClasse(e) {
+    setClasse(e.target.value);
+  }
+
   return (
     <div>
       <Sidebar />
@@ -139,19 +149,101 @@ export default function RegisterTree() {
               onChange={e => setBioma(e.target.value)}
             />
             <label>Estado de Conservação</label>
-            <input
+            {/* <input
               type="text"
               placeholder="Informe o estado de conservação"
               value={conservacao}
               onChange={e => setConservacao(e.target.value)}
-            />
+            /> */}
+            <div className="conservacao">
+              <input
+                type="radio"
+                name="conservacao"
+                value="Pouco-Preocupante"
+                onChange={handleOptionChangeConvervacao}
+                checked={conservacao === 'Pouco-Preocupante'}
+              />
+              <span>Pouco Preocupante</span>
+              <input
+                type="radio"
+                name="conservacao"
+                value="QuaseAmeaçada"
+                onChange={handleOptionChangeConvervacao}
+                checked={conservacao === 'QuaseAmeaçada'}
+              />
+              <span>Quase Ameaçada</span>
+              <input
+                type="radio"
+                name="conservacao"
+                value="Emperigo"
+                onChange={handleOptionChangeConvervacao}
+                checked={conservacao === 'Emperigo'}
+              />
+              <span>Em perigo</span>
+              <input
+                type="radio"
+                name="conservacao"
+                value="CríticamentePerigo"
+                onChange={handleOptionChangeConvervacao}
+                checked={conservacao === 'CríticamentePerigo'}
+              />
+              <span>Críticamente em Perigo</span>
+              <input
+                type="radio"
+                name="conservacao"
+                value=" NaoAvaliado "
+                onChange={handleOptionChangeConvervacao}
+                checked={conservacao === 'NaoAvaliado'}
+              />
+              <span> Não avaliado </span>
+            </div>
             <label>Classe Sucessional</label>
-            <input
-              type="text"
-              placeholder="Informe a classe sucessional"
-              value={classe}
-              onChange={e => setClasse(e.target.value)}
-            />
+            <div className="classe">
+              {/* <input
+                type="text"
+                placeholder="Informe a classe sucessional"
+                value={classe}
+                onChange={e => setClasse(e.target.value)}
+              /> */}
+              <input
+                type="radio"
+                name="classe"
+                value="Pioneira"
+                onChange={handleOptionChangeClasse}
+                checked={classe === 'Pioneira'}
+              />
+              <span>Pioneira </span>
+              <input
+                type="radio"
+                name="classe"
+                value="PioneiraFrutifera"
+                onChange={handleOptionChangeClasse}
+                checked={classe === 'PioneiraFrutifera'}
+              />
+              <span>Pioneira-Frutífera </span>
+              <input
+                type="radio"
+                name="classe"
+                value="Secundaria"
+                onChange={handleOptionChangeClasse}
+              />
+              <span>Secundária </span>
+              <input
+                type="radio"
+                name="classe"
+                value="Climax"
+                onChange={handleOptionChangeClasse}
+              />
+              <span>Climáx </span>
+              <input
+                type="radio"
+                name="classe"
+                value="Frutifera"
+                onChange={handleOptionChangeClasse}
+              />
+              <span>Frutífera </span>
+            </div>
+
             <label>Coleta de Germoplasma</label>
             <input
               type="text"
