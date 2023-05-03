@@ -59,7 +59,7 @@ export default function RoutesApp() {
             </Private>
           }
         />
-        <Route
+        {/* <Route
           path="/matrizesArboreas"
           element={
             <Private>
@@ -74,7 +74,7 @@ export default function RoutesApp() {
               <RegisterTree />
             </Private>
           }
-        />
+        /> */}
 
         <Route
           path="/fauna"

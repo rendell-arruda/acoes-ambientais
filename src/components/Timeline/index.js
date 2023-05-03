@@ -37,7 +37,7 @@ export default function Timeline({
                   src={img1}
                   alt="..."
                 />
-                <div className="content">
+                <div className="contentTime">
                   <h3 className="h4 mb-2 mb-md-3">{title1}</h3>
                   <p className="mb-0">{text1}</p>
                 </div>
@@ -49,7 +49,7 @@ export default function Timeline({
                   src={img2}
                   alt="..."
                 />
-                <div className="content">
+                <div className="contentTime">
                   <h3 className="h4 mb-2 mb-md-3">{title2}</h3>
                   <p className="mb-0">{text2}</p>
                 </div>
@@ -61,7 +61,7 @@ export default function Timeline({
                   src={img3}
                   alt="..."
                 />
-                <div className="content">
+                <div className="contentTime">
                   <h3 className="h4 mb-2 mb-md-3">{title3}</h3>
                   <p className="mb-0">{text3}</p>
                 </div>
@@ -73,7 +73,7 @@ export default function Timeline({
                   src={img4}
                   alt="..."
                 />
-                <div className="content">
+                <div className="contentTime">
                   <h3 className="h4 mb-2 mb-md-3">{title4}</h3>
                   <p className="mb-0">{text4}</p>
                 </div>

@@ -194,7 +194,7 @@
   .history-wrapper .timeline-box:not(:last-child) {
     margin-bottom: 30px;
   }
-  .timeline-box .content {
+  .timeline-box .contentTime {
     text-align: center;
   }
   .timeline-box:nth-child(2n):after,

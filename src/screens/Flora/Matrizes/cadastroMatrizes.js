@@ -5,7 +5,7 @@ const cadastroMatrizes = [
     nomeCientifico: 'Luehea divaricata Mart & Zucc.',
     matriz: 'M 2082',
     bioma: 'Cerrado, Mata Atlântica e Pampa',
-    conservacao: ' Pouco preocupante',
+    conservacao: 'Pouco preocupante',
     classe: 'Secundária',
     coleta: 'Mai-Ago',
     link: '/acoita',
