@@ -48,9 +48,9 @@ form button {
   background-image: var(--gradient);
   color: #fff;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   transition: ease-in-out 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 form button:hover {

@@ -40,7 +40,7 @@ export default function Profile() {
 
   async function handleUpload() {
     const currentUid = user.uid; //id do usuario
-    const uploadRef = ref(storage, `images/${currentUid}/${imageAvatar.name}`);
+    const uploadRef = ref(storage, `images/${currentUid}/${imageAvatar.name}`); //referencia do arquivo no storage
     const uploadTask = uploadBytes(uploadRef, imageAvatar) //upload da imagem
       .then(snapshot => {
         getDownloadURL(snapshot.ref).then(async downloadURL => {

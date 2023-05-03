@@ -58,7 +58,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/cadastroMatrizes">
+                  <Link className="dropdown-item" to="/matrizesArboreas">
                     Cadastro de Matrizes
                   </Link>
                 </li>
