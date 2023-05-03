@@ -38,8 +38,6 @@ export default function Flora() {
                 col3="Coleta de Semente"
                 col4="Ficha Técnica"
               />
-
-              <Link to="/cadastroMatrizes">Cadastrar uma Matriz</Link>
             </div>
           </div>
         </Container>

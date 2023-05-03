@@ -6,8 +6,8 @@ import { FcInspection } from 'react-icons/fc';
 
 export default function TableMatrizes({ col1, col2, col3, col4 }) {
   return (
-    <table className="table table-hover ">
-      <thead className="font-2-s ">
+    <table className="table table-hover">
+      <thead className="font-2-s">
         <tr>
           <th scope="col">{col1}</th>
           <th scope="col">{col2}</th>
@@ -20,7 +20,7 @@ export default function TableMatrizes({ col1, col2, col3, col4 }) {
   );
 }
 
-export function TrMatrizes({ col1, col2, col3, col4 }) {
+export function TrMatrizes() {
   return (
     <>
       {cadastroMatrizes.map(item => {

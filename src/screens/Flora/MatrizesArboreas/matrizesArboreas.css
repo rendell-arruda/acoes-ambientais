@@ -1,0 +1,30 @@
+.btnNew {
+  float: right;
+  margin-bottom: 1.5em;
+  background-color: var(--greenBg);
+  padding: 0.5em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: ease-in-out 0.3s;
+}
+
+.btnNew svg {
+  margin-right: 5px;
+}
+
+.btnNew:hover {
+  background-color: var(--greenDetail);
+  transform: scale(1.1);
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
