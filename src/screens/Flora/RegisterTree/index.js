@@ -5,12 +5,31 @@ import Sidebar from '../../../components/Sidebar';
 import TitleRegis from '../../../components/Texts/TitleRegis';
 import { FcPlus } from 'react-icons/fc';
 import { db, storage } from '../../../firebase/firebaseConnection';
-import { addDoc, collection } from 'firebase/firestore';
+import {
+  addDoc,
+  getDoc,
+  doc,
+  collection,
+  getDocs,
+  orderBy,
+  limit,
+  query
+} from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'; //referencia do storage, upload da imagem, pega url da imagem
 import { toast } from 'react-toastify';
+import { useParams } from 'react-router-dom';
+import { async } from '@firebase/util';
+
+const listRef = collection(db, 'matrizes');
 
 export default function RegisterTree() {
   const { user } = useContext(AuthContext);
+  const { id } = useParams();
+  const [matrizList, setMatrizList] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [lastDocs, setLastDocs] = useState();
+  const [loadingMore, setLoadingMore] = useState(false);
+  const [isEmpty, setIsEmpty] = useState(false);
 
   const [nome, setNome] = useState('');
   const [nomeCientifico, setNomeCientifico] = useState('');
@@ -18,8 +37,8 @@ export default function RegisterTree() {
 
   const [bioma, setBioma] = useState('');
 
-  const [conservacao, setConservacao] = useState('Preocupante');
-  const [classe, setClasse] = useState('Pioneira');
+  const [conservacao, setConservacao] = useState('');
+  const [classe, setClasse] = useState('');
 
   const [coleta, setColeta] = useState('');
 
@@ -115,6 +134,80 @@ export default function RegisterTree() {
     setConservacao(e.target.value);
   }
 
+  useEffect(() => {
+    //carregando a lista de matrizes
+    async function loadMatriz() {
+      const q = query(listRef, orderBy('nome', 'asc'), limit(3));
+      //buscar os dados no firebase
+      const querySnapshot = await getDocs(q);
+      //atualizar o estado e montar a lista
+      setMatrizList([]);
+      await updateState(querySnapshot);
+      setLoading(false);
+    }
+
+    if (id) {
+      loadId(matrizList);
+      return () => {};
+    }
+    loadMatriz();
+  }, [id]);
+
+  async function loadId(matrizList) {
+    const docref = doc(db, 'matrizes', id);
+    await getDoc(docref)
+      .then(snapshot => {
+        setNome(snapshot.data().nome);
+        setNomeCientifico(snapshot.data().nomeCientifico);
+        setNumero(snapshot.data().numero);
+        setBioma(snapshot.data().bioma);
+        setConservacao(snapshot.data().conservacao);
+        setClasse(snapshot.data().classe);
+        setColeta(snapshot.data().coleta);
+        setLink(snapshot.data().link);
+        setGps(snapshot.data().gps);
+        setDescMuda(snapshot.data().descMuda);
+
+        setDescSemente(snapshot.data().descSemente);
+
+        setDescArvore(snapshot.data().descArvore);
+
+        setDescFlor(snapshot.data().descFlor);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
+
+  async function updateState(querySnapshot) {
+    const isCollectionEmpty = querySnapshot.size === 0;
+    //se a coleção não estiver vazia
+    if (!isCollectionEmpty) {
+      let lista = [];
+
+      querySnapshot.forEach(doc => {
+        lista.push({
+          id: doc.id,
+          nome: doc.data().nome,
+          classe: doc.data().classe,
+          coleta: doc.data().coleta,
+          link: doc.data().link
+        });
+      });
+
+      //pega o ultimo documento/item da lista
+      const lastDoc = querySnapshot.docs[querySnapshot.docs.length - 1];
+      //pega o ultimo documento e adiciona mais um chamado
+      setMatrizList(matrizList => [...matrizList, ...lista]);
+      //seta o ultimo documento
+      setLastDocs(lastDoc);
+    } else {
+      //se a lista estiver vazia
+      setIsEmpty(true);
+    }
+    setLoadingMore(false);
+  }
+
   return (
     <div>
       <Sidebar />
@@ -154,7 +247,6 @@ export default function RegisterTree() {
               onChange={e => setBioma(e.target.value)}
             />
             <label>Estado de Conservação</label>
-
             <div className="conservacao">
               <select value={conservacao} onChange={handleChangeSelect}>
                 <option value="#" disabled>

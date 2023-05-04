@@ -26,6 +26,11 @@ export default function Footer(props) {
                 </a>
               </li>
               <li className="nav-item mb-2">
+                <a href="/matrizesArboreas" className="nav-link p-0 font-2-xs">
+                  Cadastro de Matrizes
+                </a>
+              </li>
+              <li className="nav-item mb-2">
                 <a href="/fauna" className="nav-link p-0 font-2-xs">
                   Fauna
                 </a>

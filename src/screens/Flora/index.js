@@ -7,13 +7,11 @@ import Container from '../../components/Containes';
 import ImgBanner from '../../assets/images/flora/banner/img12.jpeg';
 import Title from '../../components/Texts/Title';
 import SubTitle from '../../components/Texts/SubTitle';
-import TableMatrizes from '../../components/TableMatrizes';
 import CardsFlora from './CardsFlora';
 import ContainerRow from '../../components/Containes/ContainerRow';
 import rustificacaoMap from '../../assets/images/flora/maps/rustificacaoMap.png';
 import sementeiraMap from '../../assets/images/flora/maps/sementeiraMap.png';
 import MapPlantio from '../../assets/images/flora/maps/mapa.png';
-// import MapPlantio from '../../assets/images/flora/maps/mapaPlantio.png';
 import identFolhas1 from '../../assets/images/flora/curiosidades/identArvores.png';
 import ParallaxImage from '../../components/ParallaxImage';
 import { Link } from 'react-router-dom';
@@ -28,17 +26,10 @@ export default function Flora() {
           <Title title="Cadastro de Matrizes" />
           <SubTitle desc="Matrizes em Destaque" />
           <CardsFlora />
-
-          <div className="tableMatrizes">
-            <SubTitle desc=" Tabela de Matrizes Cadastradas" />
-            <div className="container-md">
-              <TableMatrizes
-                col1="Nome"
-                col2="Classe"
-                col3="Coleta de Semente"
-                col4="Ficha Técnica"
-              />
-            </div>
+          <div className="align-self-center pt-4">
+            <Link className="uiverse" to="/matrizesArboreas">
+              Lista de Matrizes
+            </Link>
           </div>
         </Container>
       </div>

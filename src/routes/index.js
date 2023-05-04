@@ -75,6 +75,14 @@ export default function RoutesApp() {
             </Private>
           }
         />
+        <Route
+          path="/registerTree/:id"
+          element={
+            <Private>
+              <RegisterTree />
+            </Private>
+          }
+        />
 
         <Route
           path="/fauna"
