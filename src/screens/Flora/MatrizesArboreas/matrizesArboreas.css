@@ -1,7 +1,8 @@
 .btnNew {
   float: right;
   margin-bottom: 1.5em;
-  background-color: var(--greenBg);
+  /* background-color: var(--greenDetail); */
+  background-color: #83bf02;
   padding: 0.5em;
   border-radius: 5px;
   display: flex;
@@ -11,7 +12,7 @@
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  transition: ease-in-out 0.3s;
+  transition: all 0.3s;
 }
 
 .btnNew svg {
@@ -19,7 +20,7 @@
 }
 
 .btnNew:hover {
-  background-color: var(--greenDetail);
+  background-color: #5fd204;
   transform: scale(1.1);
 }
 
@@ -31,7 +32,7 @@
 
 table td .action {
   border: 0;
-  padding: 5px;
+  /* padding: 5px; */
   border-radius: 5px;
   display: inline-block;
   margin-right: 3px;
@@ -41,5 +42,19 @@ table td .action {
   vertical-align: middle;
 }
 
-table tr td {
+.btnMore {
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  background-color: #83bf02;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btnMore:hover {
+  background-color: #5fd204;
+  transform: scale(1.1);
 }

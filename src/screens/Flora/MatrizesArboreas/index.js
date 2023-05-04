@@ -14,6 +14,7 @@ import {
   query
 } from 'firebase/firestore';
 import { db } from '../../../firebase/firebaseConnection';
+import Loader from '../../../components/Loader';
 
 const listRef = collection(db, 'matrizes');
 
@@ -22,13 +23,15 @@ export default function MatrizesArboreas() {
   const [matrizList, setMatrizList] = useState([]);
   //carregando
   const [loading, setLoading] = useState(true);
-
   const [isEmpty, setIsEmpty] = useState(false);
+
+  const [lastDocs, setLastDocs] = useState();
+  const [loadingMore, setLoadingMore] = useState(false);
 
   useEffect(() => {
     //carregando a lista de matrizes
     async function loadMatriz() {
-      const q = query(listRef, orderBy('nome', 'asc'), limit(10));
+      const q = query(listRef, orderBy('nome', 'asc'), limit(3));
       //buscar os dados no firebase
       const querySnapshot = await getDocs(q);
       //atualizar o estado e montar a lista
@@ -56,13 +59,48 @@ export default function MatrizesArboreas() {
           link: doc.data().link
         });
       });
-      console.log(lista);
+
+      //pega o ultimo documento/item da lista
+      const lastDoc = querySnapshot.docs[querySnapshot.docs.length - 1];
       //pega o ultimo documento e adiciona mais um chamado
       setMatrizList(matrizList => [...matrizList, ...lista]);
+      //seta o ultimo documento
+      setLastDocs(lastDoc);
     } else {
       //se a lista estiver vazia
       setIsEmpty(true);
     }
+    setLoadingMore(false);
+  }
+
+  async function handleMore() {
+    setLoadingMore(true);
+    const q = query(
+      listRef,
+      orderBy('nome', 'asc'),
+      startAfter(lastDocs),
+      limit(3)
+    );
+    const querySnapshot = await getDocs(q);
+    //atualizar o estado e montar a lista
+    await updateState(querySnapshot);
+  }
+
+  if (loading) {
+    return (
+      <div>
+        <Sidebar />
+        <div className="content">
+          <TitleRegis name="Matrizes Arbóreas Cadastradas">
+            <FcInspection size={25} />
+          </TitleRegis>
+          <div className="containerRegis">
+            <span className="font-2-m-b"> Buscando Chamados...</span>
+            <Loader />
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -87,54 +125,62 @@ export default function MatrizesArboreas() {
                 </Link>
               </div>
             ) : (
-              <table className="table table-hover">
-                <thead className="font-2-s">
-                  <tr>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Classe</th>
-                    <th scope="col">Coleta</th>
-                    <th scope="col">Ficha Técnica</th>
-                    <th scope="col">#</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {matrizList.map((item, index) => {
-                    return (
-                      <tr className="font-2-xs" key={index}>
-                        <td data-label="Nome" scope="row">
-                          {item.nome}
-                        </td>
-                        <td data-label="Classe" scope="row">
-                          {item.classe}
-                        </td>
+              <>
+                <table className="table table-hover">
+                  <thead className="font-2-s">
+                    <tr>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Classe</th>
+                      <th scope="col">Coleta</th>
+                      <th scope="col">Ficha Técnica</th>
+                      <th scope="col">#</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {matrizList.map((item, index) => {
+                      return (
+                        <tr className="font-2-s" key={index}>
+                          <td data-label="Nome" scope="row">
+                            {item.nome}
+                          </td>
+                          <td data-label="Classe" scope="row">
+                            {item.classe}
+                          </td>
 
-                        <td data-label="Coleta" scope="row">
-                          {item.coleta}
-                        </td>
-                        <td data-label="Ficha Técnica" scope="row">
-                          <Link to={`${item.link}`}>
-                            <FcInspection size={25} />
-                          </Link>
-                        </td>
-                        <td data-label="#" scope="row">
-                          <button
-                            className="action"
-                            style={{ backgroundColor: '#3583f6' }}
-                          >
-                            <FiSearch size={17} color="#fff" />
-                          </button>
-                          <button
-                            className="action"
-                            style={{ backgroundColor: '#f6a935' }}
-                          >
-                            <FiEdit2 size={17} color="#fff" />
-                          </button>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+                          <td data-label="Coleta" scope="row">
+                            {item.coleta}
+                          </td>
+                          <td data-label="Ficha Técnica" scope="row">
+                            <Link to={`${item.link}`}>
+                              <FcInspection size={25} />
+                            </Link>
+                          </td>
+                          <td data-label="#" scope="row">
+                            <button
+                              className="action"
+                              style={{ backgroundColor: '#3583f6' }}
+                            >
+                              <FiSearch size={17} color="#fff" />
+                            </button>
+                            <button
+                              className="action"
+                              style={{ backgroundColor: '#f6a935' }}
+                            >
+                              <FiEdit2 size={17} color="#fff" />
+                            </button>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+                {loadingMore && <h4>Buscando dados...</h4>}
+                {!loadingMore && !isEmpty && (
+                  <button onClick={handleMore} className="btnMore">
+                    Buscar mais
+                  </button>
+                )}
+              </>
             )}
           </>
         </>
