@@ -103,11 +103,13 @@ export default function RegisterTree() {
     }
   }
 
-  function handleOptionChangeConvervacao(e) {
-    setConservacao(e.target.value);
-  }
   function handleOptionChangeClasse(e) {
     setClasse(e.target.value);
+  }
+
+  function handleChangeSelect(e) {
+    setConservacao(e.target.value);
+    console.log(e.target.value);
   }
 
   return (
@@ -149,54 +151,24 @@ export default function RegisterTree() {
               onChange={e => setBioma(e.target.value)}
             />
             <label>Estado de Conservação</label>
-            {/* <input
-              type="text"
-              placeholder="Informe o estado de conservação"
-              value={conservacao}
-              onChange={e => setConservacao(e.target.value)}
-            /> */}
+
             <div className="conservacao">
-              <input
-                type="radio"
-                name="conservacao"
-                value="Pouco-Preocupante"
-                onChange={handleOptionChangeConvervacao}
-                checked={conservacao === 'Pouco-Preocupante'}
-              />
-              <span>Pouco Preocupante</span>
-              <input
-                type="radio"
-                name="conservacao"
-                value="QuaseAmeaçada"
-                onChange={handleOptionChangeConvervacao}
-                checked={conservacao === 'QuaseAmeaçada'}
-              />
-              <span>Quase Ameaçada</span>
-              <input
-                type="radio"
-                name="conservacao"
-                value="Emperigo"
-                onChange={handleOptionChangeConvervacao}
-                checked={conservacao === 'Emperigo'}
-              />
-              <span>Em perigo</span>
-              <input
-                type="radio"
-                name="conservacao"
-                value="CríticamentePerigo"
-                onChange={handleOptionChangeConvervacao}
-                checked={conservacao === 'CríticamentePerigo'}
-              />
-              <span>Críticamente em Perigo</span>
-              <input
-                type="radio"
-                name="conservacao"
-                value=" NaoAvaliado "
-                onChange={handleOptionChangeConvervacao}
-                checked={conservacao === 'NaoAvaliado'}
-              />
-              <span> Não avaliado </span>
+              <select value={conservacao} onChange={handleChangeSelect}>
+                <option value="#" disabled>
+                  Escolha uma opção
+                </option>
+                <option value="Pouco-Preocupante">Pouco Preocupante</option>
+                <option value="Preocupante">Preocupante</option>
+                <option value="Quase-ameaçada">Quase Ameaçada</option>
+                <option value="Em-perigo">Em Perigo</option>
+                <option value="Criticamente-em-perigo">
+                  Criticamente em perigo
+                </option>
+                <option value="Extinta">Extinta na natureza</option>
+                <option value="nao-Avaliado">Não Avaliado</option>
+              </select>
             </div>
+
             <label>Classe Sucessional</label>
             <div className="classe">
               {/* <input
