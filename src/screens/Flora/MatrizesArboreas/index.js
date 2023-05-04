@@ -28,10 +28,11 @@ export default function MatrizesArboreas() {
   useEffect(() => {
     //carregando a lista de matrizes
     async function loadMatriz() {
-      const q = query(listRef, orderBy('nome', 'desc'), limit(10));
+      const q = query(listRef, orderBy('nome', 'asc'), limit(10));
       //buscar os dados no firebase
       const querySnapshot = await getDocs(q);
       //atualizar o estado e montar a lista
+      setMatrizList([]);
       await updateState(querySnapshot);
       setLoading(false);
     }
@@ -42,18 +43,20 @@ export default function MatrizesArboreas() {
   //
   async function updateState(querySnapshot) {
     const isCollectionEmpty = querySnapshot.size === 0;
+    //se a coleção não estiver vazia
     if (!isCollectionEmpty) {
       let lista = [];
 
       querySnapshot.forEach(doc => {
         lista.push({
           id: doc.id,
-          nome: doc.data().none,
+          nome: doc.data().nome,
           classe: doc.data().classe,
           coleta: doc.data().coleta,
           link: doc.data().link
         });
       });
+      console.log(lista);
       //pega o ultimo documento e adiciona mais um chamado
       setMatrizList(matrizList => [...matrizList, ...lista]);
     } else {
@@ -95,37 +98,41 @@ export default function MatrizesArboreas() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="font-2-xs">
-                    <td data-label="Nome" scope="row">
-                      Acoita Cav
-                    </td>
-                    <td data-label="Classe" scope="row">
-                      Secundária
-                    </td>
+                  {matrizList.map((item, index) => {
+                    return (
+                      <tr className="font-2-xs" key={index}>
+                        <td data-label="Nome" scope="row">
+                          {item.nome}
+                        </td>
+                        <td data-label="Classe" scope="row">
+                          {item.classe}
+                        </td>
 
-                    <td data-label="Coleta" scope="row">
-                      Mai-Ago
-                    </td>
-                    <td data-label="Ficha Técnica" scope="row">
-                      <Link to="/acoita">
-                        <FcInspection size={25} />
-                      </Link>
-                    </td>
-                    <td data-label="#" scope="row">
-                      <button
-                        className="action"
-                        style={{ backgroundColor: '#3583f6' }}
-                      >
-                        <FiSearch size={17} color="#fff" />
-                      </button>
-                      <button
-                        className="action"
-                        style={{ backgroundColor: '#f6a935' }}
-                      >
-                        <FiEdit2 size={17} color="#fff" />
-                      </button>
-                    </td>
-                  </tr>
+                        <td data-label="Coleta" scope="row">
+                          {item.coleta}
+                        </td>
+                        <td data-label="Ficha Técnica" scope="row">
+                          <Link to={`${item.link}`}>
+                            <FcInspection size={25} />
+                          </Link>
+                        </td>
+                        <td data-label="#" scope="row">
+                          <button
+                            className="action"
+                            style={{ backgroundColor: '#3583f6' }}
+                          >
+                            <FiSearch size={17} color="#fff" />
+                          </button>
+                          <button
+                            className="action"
+                            style={{ backgroundColor: '#f6a935' }}
+                          >
+                            <FiEdit2 size={17} color="#fff" />
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             )}
