@@ -79,7 +79,7 @@ export default function FloraSection() {
           title="Amendoim Bravo"
           img={CapaAmendoin}
           desc="Matriz : M 909"
-          link="/amendoin"
+          link="/amendoim"
         />
         <CardImgDesc
           title="Jatobá"

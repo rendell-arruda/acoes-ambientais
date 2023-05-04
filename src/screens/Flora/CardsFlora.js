@@ -25,7 +25,7 @@ export default function CardsFlora() {
         name="Amendoim Bravo"
         scientificName="Platypodium elegans Vog."
         reference="Fonte: Agrolink"
-        link="/amendoin"
+        link="/amendoim"
         linkTitle="Ver mais"
       >
         Originaria do Brasil, também conhecida como leiteira, essa espécie é

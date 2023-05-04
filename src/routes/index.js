@@ -11,7 +11,7 @@ import Erro from '../screens/Erro';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Acoita from '../screens/Flora/Matrizes/Acoita.js';
-import Amendoin from '../screens/Flora/Matrizes/Amendoin.js';
+import Amendoim from '../screens/Flora/Matrizes/Amendoim.js';
 import Jatoba from '../screens/Flora/Matrizes/Jatoba.js';
 import Copaiba from '../screens/Flora/Matrizes/Copaiba.js';
 
@@ -117,10 +117,10 @@ export default function RoutesApp() {
           }
         />
         <Route
-          path="/amendoin"
+          path="/amendoim"
           element={
             <Private>
-              <Amendoin />
+              <Amendoim />
             </Private>
           }
         />

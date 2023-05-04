@@ -10,7 +10,7 @@ import { TbTrees } from 'react-icons/tb';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 
-export default function Amendoin() {
+export default function Amendoim() {
   return (
     <>
       <Header />

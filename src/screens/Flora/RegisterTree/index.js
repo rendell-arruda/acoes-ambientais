@@ -9,6 +9,7 @@ import {
   addDoc,
   getDoc,
   doc,
+  updateDoc,
   collection,
   getDocs,
   orderBy,
@@ -37,7 +38,7 @@ export default function RegisterTree() {
 
   const [bioma, setBioma] = useState('');
 
-  const [conservacao, setConservacao] = useState('');
+  const [conservacao, setConservacao] = useState('#');
   const [classe, setClasse] = useState('');
 
   const [coleta, setColeta] = useState('');
@@ -47,12 +48,19 @@ export default function RegisterTree() {
 
   const [descMuda, setDescMuda] = useState('');
   const [imageMuda, setImageMuda] = useState(null);
+  const [urlMuda, setUrlMuda] = useState('');
+
   const [descSemente, setDescSemente] = useState('');
   const [imageSemente, setImageSemente] = useState(null);
+  const [urlSemente, setUrlSemente] = useState('');
+
   const [descArvore, setDescArvore] = useState('');
   const [imageArvore, setImageArvore] = useState(null);
+  const [urlArvore, setUrlArvore] = useState('');
+
   const [descFlor, setDescFlor] = useState('');
   const [imageFlor, setImageFlor] = useState(null);
+  const [urlFlor, setUrlFlor] = useState('');
 
   async function handleRegister(e) {
     e.preventDefault();
@@ -87,14 +95,19 @@ export default function RegisterTree() {
         coleta: coleta,
         link: link,
         gps: gps,
+
         descMuda: descMuda,
-        imageMuda: imageMuda,
+        // imageMuda: urlMuda,
+
         descSemente: descSemente,
-        imageSemente: imageSemente,
+        // imageSemente: urlSemente,
+
         descArvore: descArvore,
-        imageArvore: imageArvore,
+        // imageArvore: urlArvore,
+
         descFlor: descFlor,
-        imageFlor: imageFlor,
+        // imageFlor: urlFlor,
+
         userId: user.uid
       })
         .then(() => {
@@ -154,8 +167,8 @@ export default function RegisterTree() {
   }, [id]);
 
   async function loadId(matrizList) {
-    const docref = doc(db, 'matrizes', id);
-    await getDoc(docref)
+    const docRef = doc(db, 'matrizes', id);
+    await getDoc(docRef)
       .then(snapshot => {
         setNome(snapshot.data().nome);
         setNomeCientifico(snapshot.data().nomeCientifico);
@@ -208,6 +221,40 @@ export default function RegisterTree() {
     setLoadingMore(false);
   }
 
+  // function handleFile(e) {
+  //   if (e.target.files.length > 0) {
+  //     const imageMuda = e.target.files[0];
+  //     const imageSemente = e.target.files[1];
+  //     const imageArvore = e.target.files[2];
+  //     const imageFlor = e.target.files[3];
+  //     if (
+  //       (imageMuda.type &&
+  //         imageSemente.type &&
+  //         imageArvore.type &&
+  //         imageFlor.type === 'image/jpeg') ||
+  //       (imageMuda.type &&
+  //         imageSemente.type &&
+  //         imageArvore.type &&
+  //         imageFlor.type === 'image/png')
+  //     ) {
+  //       setImageMuda(imageMuda);
+  //       setUrlMuda(URL.createObjectURL(e.target.files[0]));
+  //       setImageSemente(imageSemente);
+  //       setUrlSemente(URL.createObjectURL(e.target.files[1]));
+  //       setImageArvore(imageArvore);
+  //       setUrlArvore(URL.createObjectURL(e.target.files[2]));
+  //       setImageFlor(imageFlor);
+  //       setUrlFlor(URL.createObjectURL(e.target.files[3]));
+  //     } else {
+  //       alert('Envie imagens nos formatos PNG ou JPEG');
+  //       setImageMuda(null);
+  //       setImageSemente(null);
+  //       setImageArvore(null);
+  //       setImageFlor(null);
+  //       return;
+  //     }
+  //   }
+  // }
   return (
     <div>
       <Sidebar />
@@ -339,12 +386,12 @@ export default function RegisterTree() {
               value={descMuda}
               onChange={e => setDescMuda(e.target.value)}
             />
-            {/* <label>Registro fotográfico da Muda</label> */}
-            {/* <input
+            {/* <label>Registro fotográfico da Muda</label>
+            <input
               type="file"
               accept="image/*"
-              //   value={descMuda}
-              //   onChange={handleFile}
+              // value={imageMuda}
+              onChange={handleFile}
             /> */}
             <label>Descrição da Semente</label>
             <input
@@ -353,12 +400,12 @@ export default function RegisterTree() {
               value={descSemente}
               onChange={e => setDescSemente(e.target.value)}
             />
-            {/* <label>Registro fotográfico da Semente</label> */}
-            {/* <input
+            {/* <label>Registro fotográfico da Semente</label>
+            <input
               type="file"
               accept="image/*"
-              //   value={descMuda}
-              //   onChange={handleFile}
+              // value={imageSemente}
+              onChange={handleFile}
             /> */}
             <label>Descrição da Árvore</label>
             <input
@@ -367,12 +414,12 @@ export default function RegisterTree() {
               value={descArvore}
               onChange={e => setDescArvore(e.target.value)}
             />
-            {/* <label>Registro fotográfico da Árvore</label> */}
-            {/* <input
+            {/* <label>Registro fotográfico da Árvore</label>
+            <input
               type="file"
               accept="image/*"
-              //   value={descMuda}
-              //   onChange={handleFile}
+              // value={imageArvore}
+              onChange={handleFile}
             /> */}
             <label>Descrição da Flor</label>
             <input
@@ -381,12 +428,12 @@ export default function RegisterTree() {
               value={descFlor}
               onChange={e => setDescFlor(e.target.value)}
             />
-            {/* <label>Registro fotográfico da flor</label> */}
-            {/* <input
+            {/* <label>Registro fotográfico da flor</label>
+            <input
               type="file"
               accept="image/*"
-              //   value={descMuda}
-              //   onChange={handleFile}
+              // value={imageFlor}
+              onChange={handleFile}
             /> */}
             <button type="submit">Cadastrar</button>
           </form>
