@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import './registerTree.css';
+import { AuthContext } from '../../../context/auth';
 import Sidebar from '../../../components/Sidebar';
 import TitleRegis from '../../../components/Texts/TitleRegis';
 import { FcPlus } from 'react-icons/fc';
@@ -9,6 +10,8 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'; //referenci
 import { toast } from 'react-toastify';
 
 export default function RegisterTree() {
+  const { user } = useContext(AuthContext);
+
   const [nome, setNome] = useState('');
   const [nomeCientifico, setNomeCientifico] = useState('');
   const [numero, setNumero] = useState('');
@@ -72,7 +75,8 @@ export default function RegisterTree() {
         descArvore: descArvore,
         imageArvore: imageArvore,
         descFlor: descFlor,
-        imageFlor: imageFlor
+        imageFlor: imageFlor,
+        userId: user.uid
       })
         .then(() => {
           setNome('');
@@ -109,7 +113,6 @@ export default function RegisterTree() {
 
   function handleChangeSelect(e) {
     setConservacao(e.target.value);
-    console.log(e.target.value);
   }
 
   return (
