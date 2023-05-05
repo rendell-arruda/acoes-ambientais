@@ -54,7 +54,7 @@ export default function Header() {
               <ul className="dropdown-menu">
                 <li>
                   <Link className="dropdown-item" to="/flora">
-                    Flora Page
+                    Página Flora
                   </Link>
                 </li>
                 <li>

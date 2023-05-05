@@ -39,7 +39,7 @@ export default function RegisterTree() {
   const [bioma, setBioma] = useState('');
 
   const [conservacao, setConservacao] = useState('#');
-  const [classe, setClasse] = useState('');
+  const [classe, setClasse] = useState('#');
 
   const [coleta, setColeta] = useState('');
 
@@ -87,7 +87,7 @@ export default function RegisterTree() {
       await addDoc(collection(db, 'matrizes'), {
         //dados que serão salvos no banco
         nome: nome,
-        nomeCientifico: nomeCientifico,
+        nomeCientifico: nomeCientifico.to,
         numero: numero,
         bioma: bioma,
         conservacao: conservacao,
@@ -137,14 +137,6 @@ export default function RegisterTree() {
     } else {
       toast.error('Preencha todos os campos!');
     }
-  }
-
-  function handleOptionChangeClasse(e) {
-    setClasse(e.target.value);
-  }
-
-  function handleChangeSelect(e) {
-    setConservacao(e.target.value);
   }
 
   useEffect(() => {
@@ -295,7 +287,10 @@ export default function RegisterTree() {
             />
             <label>Estado de Conservação</label>
             <div className="conservacao">
-              <select value={conservacao} onChange={handleChangeSelect}>
+              <select
+                value={conservacao}
+                onChange={e => setConservacao(e.target.value)}
+              >
                 <option value="#" disabled>
                   Escolha uma opção
                 </option>
@@ -313,49 +308,18 @@ export default function RegisterTree() {
 
             <label>Classe Sucessional</label>
             <div className="classe">
-              {/* <input
-                type="text"
-                placeholder="Informe a classe sucessional"
-                value={classe}
-                onChange={e => setClasse(e.target.value)}
-              /> */}
-              <input
-                type="radio"
-                name="classe"
-                value="Pioneira"
-                onChange={handleOptionChangeClasse}
-                checked={classe === 'Pioneira'}
-              />
-              <span>Pioneira </span>
-              <input
-                type="radio"
-                name="classe"
-                value="PioneiraFrutifera"
-                onChange={handleOptionChangeClasse}
-                checked={classe === 'PioneiraFrutifera'}
-              />
-              <span>Pioneira-Frutífera </span>
-              <input
-                type="radio"
-                name="classe"
-                value="Secundaria"
-                onChange={handleOptionChangeClasse}
-              />
-              <span>Secundária </span>
-              <input
-                type="radio"
-                name="classe"
-                value="Climax"
-                onChange={handleOptionChangeClasse}
-              />
-              <span>Climáx </span>
-              <input
-                type="radio"
-                name="classe"
-                value="Frutifera"
-                onChange={handleOptionChangeClasse}
-              />
-              <span>Frutífera </span>
+              <select value={classe} onChange={e => setClasse(e.target.value)}>
+                <option value="#" disabled>
+                  Escolha uma opção
+                </option>
+                <option value="Pioneira">Pioneira</option>
+                <option value="Pioneira-Frutifera">Pioneira Frutífera</option>
+                <option value="Secundaria">Secundária</option>
+                <option value="Secundaria-Tardia">Secundária Tardia</option>
+                <option value="Climax">Clímax</option>
+                <option value="Frutifera">Frutífera</option>
+                <option value="nao-Avaliado">Não Avaliado</option>
+              </select>
             </div>
 
             <label>Coleta de Germoplasma</label>

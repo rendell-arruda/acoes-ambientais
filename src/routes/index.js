@@ -8,8 +8,7 @@ import Flora from '../screens/Flora';
 import Arqueologia from '../screens/Arqueologia';
 import Aguas from '../screens/Aguas';
 import Erro from '../screens/Erro';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 import Acoita from '../screens/Flora/Matrizes/Acoita.js';
 import Amendoim from '../screens/Flora/Matrizes/Amendoim.js';
 import Jatoba from '../screens/Flora/Matrizes/Jatoba.js';

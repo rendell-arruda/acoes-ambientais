@@ -141,10 +141,14 @@ export default function MatrizesArboreas() {
                       return (
                         <tr className="font-2-s" key={index}>
                           <td data-label="Nome" scope="row">
-                            {item.nome}
+                            {`${item.nome[0].toUpperCase()}${item.nome
+                              .substring(1)
+                              .toLowerCase()}`}
                           </td>
                           <td data-label="Classe" scope="row">
-                            {item.classe}
+                            {`${item.classe[0].toUpperCase()}${item.classe
+                              .substring(1)
+                              .toLowerCase()}`}
                           </td>
 
                           <td data-label="Coleta" scope="row">
