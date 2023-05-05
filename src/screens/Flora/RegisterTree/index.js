@@ -18,19 +18,22 @@ import {
 } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'; //referencia do storage, upload da imagem, pega url da imagem
 import { toast } from 'react-toastify';
-import { useParams } from 'react-router-dom';
-import { async } from '@firebase/util';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const listRef = collection(db, 'matrizes');
 
 export default function RegisterTree() {
   const { user } = useContext(AuthContext);
   const { id } = useParams();
+  const navigate = useNavigate();
+
   const [matrizList, setMatrizList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [lastDocs, setLastDocs] = useState();
   const [loadingMore, setLoadingMore] = useState(false);
   const [isEmpty, setIsEmpty] = useState(false);
+
+  const [idMatrizCustomer, setIdMatrizCustomer] = useState(false);
 
   const [nome, setNome] = useState('');
   const [nomeCientifico, setNomeCientifico] = useState('');
@@ -64,6 +67,43 @@ export default function RegisterTree() {
 
   async function handleRegister(e) {
     e.preventDefault();
+
+    //atualizar os dados no firebase
+    if (idMatrizCustomer) {
+      const docRef = doc(db, 'matrizes', id);
+      await updateDoc(docRef, {
+        nome: nome,
+        nomeCientifico: nomeCientifico,
+        numero: numero,
+        bioma: bioma,
+        conservacao: conservacao,
+        classe: classe,
+        coleta: coleta,
+        link: link,
+        gps: gps,
+        descMuda: descMuda,
+        // imageMuda: urlMuda,
+        descSemente: descSemente,
+        // imageSemente: urlSemente,
+        descArvore: descArvore,
+        // imageArvore: urlArvore,
+        descFlor: descFlor,
+        // imageFlor: urlFlor,
+        userId: user.uid
+      })
+        .then(() => {
+          toast.info('Matriz atualizada com sucesso!');
+          setIdMatrizCustomer(false);
+          navigate('/matrizesArboreas');
+        })
+        .catch(error => {
+          toast.error('Erro ao atualizar a matriz!');
+          console.log(error);
+        });
+
+      return;
+    }
+
     if (
       nome !== '' &&
       nomeCientifico !== '' &&
@@ -87,7 +127,7 @@ export default function RegisterTree() {
       await addDoc(collection(db, 'matrizes'), {
         //dados que serão salvos no banco
         nome: nome,
-        nomeCientifico: nomeCientifico.to,
+        nomeCientifico: nomeCientifico,
         numero: numero,
         bioma: bioma,
         conservacao: conservacao,
@@ -151,6 +191,7 @@ export default function RegisterTree() {
       setLoading(false);
     }
 
+    //carregar id da matriz
     if (id) {
       loadId(matrizList);
       return () => {};
@@ -158,9 +199,12 @@ export default function RegisterTree() {
     loadMatriz();
   }, [id]);
 
+  //buscar matriz por id pra editar as states
   async function loadId(matrizList) {
+    //carregando uma matriz com o doc e o id
     const docRef = doc(db, 'matrizes', id);
     await getDoc(docRef)
+      //snapshot pega os items do doc
       .then(snapshot => {
         setNome(snapshot.data().nome);
         setNomeCientifico(snapshot.data().nomeCientifico);
@@ -172,15 +216,15 @@ export default function RegisterTree() {
         setLink(snapshot.data().link);
         setGps(snapshot.data().gps);
         setDescMuda(snapshot.data().descMuda);
-
         setDescSemente(snapshot.data().descSemente);
-
         setDescArvore(snapshot.data().descArvore);
-
         setDescFlor(snapshot.data().descFlor);
+
+        setIdMatrizCustomer(true);
       })
       .catch(error => {
         console.log(error);
+        setIdMatrizCustomer(false);
       });
   }
 
