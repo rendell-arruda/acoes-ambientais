@@ -295,7 +295,7 @@ export default function RegisterTree() {
     <div>
       <Sidebar />
       <div className="content">
-        <TitleRegis name="Cadastrar Matriz">
+        <TitleRegis name={id ? 'Editando matriz' : 'Cadastrar nova matriz'}>
           <FcPlus size={25} />
         </TitleRegis>
 

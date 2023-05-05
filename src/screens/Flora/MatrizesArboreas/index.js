@@ -16,6 +16,8 @@ import {
 import { db } from '../../../firebase/firebaseConnection';
 import Loader from '../../../components/Loader';
 
+import Modal from '../../../components/Modal';
+
 const listRef = collection(db, 'matrizes');
 
 export default function MatrizesArboreas() {
@@ -190,6 +192,7 @@ export default function MatrizesArboreas() {
           </>
         </>
       </div>
+      <Modal />
     </div>
   );
 }
