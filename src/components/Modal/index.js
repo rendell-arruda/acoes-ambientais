@@ -13,7 +13,7 @@ export default function Modal({ image }) {
         </button>
         <main>
           <div>
-            <h2>Detalhes da Matriz</h2>
+            <h3>Detalhes da Matriz</h3>
             <div className="row">
               <p>
                 Nome: <span>Peroba</span>
@@ -32,6 +32,11 @@ export default function Modal({ image }) {
             <div className="row">
               <p>
                 Matriz N°: <span>M 2088</span>
+              </p>
+            </div>
+            <div className="row">
+              <p>
+                Cadastrado em: <span>dd/mm/aaaa</span>
               </p>
             </div>
 
