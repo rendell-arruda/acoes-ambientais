@@ -30,6 +30,11 @@ export default function MatrizesArboreas() {
   const [lastDocs, setLastDocs] = useState();
   const [loadingMore, setLoadingMore] = useState(false);
 
+  //modal
+  const [showPostModal, setShowPostModal] = useState(false);
+  //detalhes da matriz
+  const [detail, setDetail] = useState([]);
+
   useEffect(() => {
     //carregando a lista de matrizes
     async function loadMatriz() {
@@ -56,6 +61,11 @@ export default function MatrizesArboreas() {
         lista.push({
           id: doc.id,
           nome: doc.data().nome,
+          nomeCientifico: doc.data().nomeCientifico,
+          numero: doc.data().numero,
+          cadastradoEm: doc.data().cadastradoEm,
+          bioma: doc.data().bioma,
+          conservacao: doc.data().conservacao,
           classe: doc.data().classe,
           coleta: doc.data().coleta,
           link: doc.data().link
@@ -86,6 +96,12 @@ export default function MatrizesArboreas() {
     const querySnapshot = await getDocs(q);
     //atualizar o estado e montar a lista
     await updateState(querySnapshot);
+  }
+
+  //abrir modal
+  function toggleModal(item) {
+    setShowPostModal(!showPostModal);
+    setDetail(item);
   }
 
   if (loading) {
@@ -165,6 +181,7 @@ export default function MatrizesArboreas() {
                             <button
                               className="action"
                               style={{ backgroundColor: '#3583f6' }}
+                              onClick={() => toggleModal(item)}
                             >
                               <FiSearch size={17} color="#fff" />
                             </button>
@@ -192,7 +209,12 @@ export default function MatrizesArboreas() {
           </>
         </>
       </div>
-      <Modal />
+      {showPostModal && (
+        <Modal
+          conteudo={detail}
+          close={() => setShowPostModal(!showPostModal)}
+        ></Modal>
+      )}
     </div>
   );
 }

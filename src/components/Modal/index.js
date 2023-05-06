@@ -3,11 +3,11 @@ import './modal.css';
 import { FiX } from 'react-icons/fi';
 import Img from '../../assets/images/flora/matrizes/acoita/acoitaArvore.jpg';
 
-export default function Modal({ image }) {
+export default function Modal({ conteudo, close }) {
   return (
     <div className="modalRegis">
       <div className="containerRegis">
-        <button className="close">
+        <button className="close" onClick={close}>
           <FiX size={25} color="#fff" />
           Fechar
         </button>
@@ -16,7 +16,7 @@ export default function Modal({ image }) {
             <h3>Detalhes da Matriz</h3>
             <div className="row">
               <p>
-                Nome: <span>Peroba</span>
+                Nome: <span>{conteudo.nome}</span>
               </p>
             </div>
 
@@ -24,43 +24,43 @@ export default function Modal({ image }) {
               <p>
                 Nome Científico:
                 <span>
-                  <i>Larala alaalatumn</i>
+                  <i>{conteudo.nomeCientifico}</i>
                 </span>
               </p>
             </div>
 
             <div className="row">
               <p>
-                Matriz N°: <span>M 2088</span>
+                Matriz N°: <span>{conteudo.numero}</span>
               </p>
             </div>
             <div className="row">
               <p>
-                Cadastrado em: <span>dd/mm/aaaa</span>
-              </p>
-            </div>
-
-            <div className="row">
-              <p>
-                Bioma: <span>Cerrado</span>
+                Cadastrado em: <span>{conteudo.cadastradoEm}</span>
               </p>
             </div>
 
             <div className="row">
               <p>
-                Estado de Convervação:<span>Preocupante</span>
+                Bioma: <span>{conteudo.bioma}</span>
               </p>
             </div>
 
             <div className="row">
               <p>
-                Classe Sucessional: <span>Pioneira</span>
+                Estado de Convervação:<span>{conteudo.conservacao}</span>
               </p>
             </div>
 
             <div className="row">
               <p>
-                Coleta de Semente: <span>Jun - Ago</span>
+                Classe Sucessional: <span>{conteudo.classe}</span>
+              </p>
+            </div>
+
+            <div className="row">
+              <p>
+                Coleta de Semente: <span>{conteudo.coleta}</span>
               </p>
             </div>
             <>

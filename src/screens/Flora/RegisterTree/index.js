@@ -38,6 +38,7 @@ export default function RegisterTree() {
   const [nome, setNome] = useState('');
   const [nomeCientifico, setNomeCientifico] = useState('');
   const [numero, setNumero] = useState('');
+  const [cadastradoEm, setCadastradoEm] = useState('');
 
   const [bioma, setBioma] = useState('');
 
@@ -46,24 +47,24 @@ export default function RegisterTree() {
 
   const [coleta, setColeta] = useState('');
 
-  const [link, setLink] = useState('');
+  // const [link, setLink] = useState('');
   const [gps, setGps] = useState('');
 
-  const [descMuda, setDescMuda] = useState('');
-  const [imageMuda, setImageMuda] = useState(null);
-  const [urlMuda, setUrlMuda] = useState('');
+  // const [descMuda, setDescMuda] = useState('');
+  // const [imageMuda, setImageMuda] = useState(null);
+  // const [urlMuda, setUrlMuda] = useState('');
 
-  const [descSemente, setDescSemente] = useState('');
-  const [imageSemente, setImageSemente] = useState(null);
-  const [urlSemente, setUrlSemente] = useState('');
+  // const [descSemente, setDescSemente] = useState('');
+  // const [imageSemente, setImageSemente] = useState(null);
+  // const [urlSemente, setUrlSemente] = useState('');
 
-  const [descArvore, setDescArvore] = useState('');
-  const [imageArvore, setImageArvore] = useState(null);
-  const [urlArvore, setUrlArvore] = useState('');
+  // const [descArvore, setDescArvore] = useState('');
+  // const [imageArvore, setImageArvore] = useState(null);
+  // const [urlArvore, setUrlArvore] = useState('');
 
-  const [descFlor, setDescFlor] = useState('');
-  const [imageFlor, setImageFlor] = useState(null);
-  const [urlFlor, setUrlFlor] = useState('');
+  // const [descFlor, setDescFlor] = useState('');
+  // const [imageFlor, setImageFlor] = useState(null);
+  // const [urlFlor, setUrlFlor] = useState('');
 
   async function handleRegister(e) {
     e.preventDefault();
@@ -75,20 +76,21 @@ export default function RegisterTree() {
         nome: nome,
         nomeCientifico: nomeCientifico,
         numero: numero,
+        cadastradoEm: cadastradoEm,
         bioma: bioma,
         conservacao: conservacao,
         classe: classe,
         coleta: coleta,
-        link: link,
+        // link: link,
         gps: gps,
-        descMuda: descMuda,
-        // imageMuda: urlMuda,
-        descSemente: descSemente,
-        // imageSemente: urlSemente,
-        descArvore: descArvore,
-        // imageArvore: urlArvore,
-        descFlor: descFlor,
-        // imageFlor: urlFlor,
+        // descMuda: descMuda,
+        // // imageMuda: urlMuda,
+        // descSemente: descSemente,
+        // // imageSemente: urlSemente,
+        // descArvore: descArvore,
+        // // imageArvore: urlArvore,
+        // descFlor: descFlor,
+        // // imageFlor: urlFlor,
         userId: user.uid
       })
         .then(() => {
@@ -108,20 +110,20 @@ export default function RegisterTree() {
       nome !== '' &&
       nomeCientifico !== '' &&
       numero !== '' &&
+      cadastradoEm !== '' &&
       bioma !== '' &&
       conservacao !== '' &&
       classe !== '' &&
       coleta !== '' &&
-      link !== '' &&
-      gps !== '' &&
-      descMuda !== '' &&
-      // imageMuda !== null &&
-      descSemente !== '' &&
-      // imageSemente !== null &&
-      descArvore !== '' &&
-      // imageArvore !== null &&
-      descFlor !== ''
-      // imageFlor !== null
+      gps !== ''
+      // descMuda !== '' &&
+      // // imageMuda !== null &&
+      // descSemente !== '' &&
+      // // imageSemente !== null &&
+      // descArvore !== '' &&
+      // // imageArvore !== null &&
+      // descFlor !== ''
+      // // imageFlor !== null
     ) {
       //primeiro passo é add um novo documento na coleção
       await addDoc(collection(db, 'matrizes'), {
@@ -129,24 +131,25 @@ export default function RegisterTree() {
         nome: nome,
         nomeCientifico: nomeCientifico,
         numero: numero,
+        cadastradoEm: cadastradoEm,
         bioma: bioma,
         conservacao: conservacao,
         classe: classe,
         coleta: coleta,
-        link: link,
+        // link: link,
         gps: gps,
 
-        descMuda: descMuda,
-        // imageMuda: urlMuda,
+        // descMuda: descMuda,
+        // // imageMuda: urlMuda,
 
-        descSemente: descSemente,
-        // imageSemente: urlSemente,
+        // descSemente: descSemente,
+        // // imageSemente: urlSemente,
 
-        descArvore: descArvore,
-        // imageArvore: urlArvore,
+        // descArvore: descArvore,
+        // // imageArvore: urlArvore,
 
-        descFlor: descFlor,
-        // imageFlor: urlFlor,
+        // descFlor: descFlor,
+        // // imageFlor: urlFlor,
 
         userId: user.uid
       })
@@ -154,20 +157,21 @@ export default function RegisterTree() {
           setNome('');
           setNomeCientifico('');
           setNumero('');
+          setCadastradoEm('');
           setBioma('');
           setConservacao('');
           setClasse('');
           setColeta('');
-          setLink('');
+          // setLink('');
           setGps('');
-          setDescMuda('');
-          // setImageMuda(null);
-          setDescSemente('');
-          // setImageSemente(null);
-          setDescArvore('');
-          // setImageArvore(null);
-          setDescFlor('');
-          // setImageFlor(null);
+          // setDescMuda('');
+          // // setImageMuda(null);
+          // setDescSemente('');
+          // // setImageSemente(null);
+          // setDescArvore('');
+          // // setImageArvore(null);
+          // setDescFlor('');
+          // // setImageFlor(null);
           toast.success('Matriz cadastrada com sucesso!');
         })
         .catch(error => {
@@ -209,16 +213,17 @@ export default function RegisterTree() {
         setNome(snapshot.data().nome);
         setNomeCientifico(snapshot.data().nomeCientifico);
         setNumero(snapshot.data().numero);
+        setCadastradoEm(snapshot.data().cadastradoEm);
         setBioma(snapshot.data().bioma);
         setConservacao(snapshot.data().conservacao);
         setClasse(snapshot.data().classe);
         setColeta(snapshot.data().coleta);
-        setLink(snapshot.data().link);
+        // setLink(snapshot.data().link);
         setGps(snapshot.data().gps);
-        setDescMuda(snapshot.data().descMuda);
-        setDescSemente(snapshot.data().descSemente);
-        setDescArvore(snapshot.data().descArvore);
-        setDescFlor(snapshot.data().descFlor);
+        // setDescMuda(snapshot.data().descMuda);
+        // setDescSemente(snapshot.data().descSemente);
+        // setDescArvore(snapshot.data().descArvore);
+        // setDescFlor(snapshot.data().descFlor);
 
         setIdMatrizCustomer(true);
       })
@@ -238,9 +243,14 @@ export default function RegisterTree() {
         lista.push({
           id: doc.id,
           nome: doc.data().nome,
+          nomeCientifico: doc.data().nomeCientifico,
+          numero: doc.data().numero,
+          cadastradoEm: doc.data().cadastradoEm,
+          bioma: doc.data().bioma,
+          conservacao: doc.data().conservacao,
           classe: doc.data().classe,
-          coleta: doc.data().coleta,
-          link: doc.data().link
+          coleta: doc.data().coleta
+          // link: doc.data().link
         });
       });
 
@@ -322,6 +332,13 @@ export default function RegisterTree() {
               value={numero}
               onChange={e => setNumero(e.target.value)}
             />
+            <label>Cadastrado em</label>
+            <input
+              type="date"
+              placeholder="dd/mm/aaaa"
+              value={cadastradoEm}
+              onChange={e => setCadastradoEm(e.target.value)}
+            />
             <label>Bioma</label>
             <input
               type="text"
@@ -373,13 +390,13 @@ export default function RegisterTree() {
               value={coleta}
               onChange={e => setColeta(e.target.value)}
             />
-            <label>Link interno</label>
+            {/* <label>Link interno</label>
             <input
               type="text"
               placeholder={`Exemplo: /${nome.toLowerCase().substring(0, 6)}`}
               value={link}
               onChange={e => setLink(e.target.value)}
-            />
+            /> */}
             <label>Coordenadas de GPS</label>
             <input
               type="text"
@@ -387,13 +404,13 @@ export default function RegisterTree() {
               value={gps}
               onChange={e => setGps(e.target.value)}
             />
-            <label>Descrição da Muda</label>
+            {/* <label>Descrição da Muda</label>
             <input
               type="text"
               placeholder="A muda estará pronta para plantio em 1 ano."
               value={descMuda}
               onChange={e => setDescMuda(e.target.value)}
-            />
+            /> */}
             {/* <label>Registro fotográfico da Muda</label>
             <input
               type="file"
@@ -401,13 +418,13 @@ export default function RegisterTree() {
               // value={imageMuda}
               onChange={handleFile}
             /> */}
-            <label>Descrição da Semente</label>
+            {/* <label>Descrição da Semente</label>
             <input
               type="text"
               placeholder="A semente poderá ser plantada em 1 ano"
               value={descSemente}
               onChange={e => setDescSemente(e.target.value)}
-            />
+            /> */}
             {/* <label>Registro fotográfico da Semente</label>
             <input
               type="file"
@@ -415,13 +432,13 @@ export default function RegisterTree() {
               // value={imageSemente}
               onChange={handleFile}
             /> */}
-            <label>Descrição da Árvore</label>
+            {/* <label>Descrição da Árvore</label>
             <input
               type="text"
               placeholder="A árvore pode chegar a 30 metros de altura."
               value={descArvore}
               onChange={e => setDescArvore(e.target.value)}
-            />
+            /> */}
             {/* <label>Registro fotográfico da Árvore</label>
             <input
               type="file"
@@ -429,13 +446,13 @@ export default function RegisterTree() {
               // value={imageArvore}
               onChange={handleFile}
             /> */}
-            <label>Descrição da Flor</label>
+            {/* <label>Descrição da Flor</label>
             <input
               type="text"
               placeholder="A espécie floresce em setembro."
               value={descFlor}
               onChange={e => setDescFlor(e.target.value)}
-            />
+            /> */}
             {/* <label>Registro fotográfico da flor</label>
             <input
               type="file"
