@@ -59,7 +59,7 @@ export default function FaunaSection(props) {
           >
             Aparece principalmente no norte e centro do Brasil. Alimenta-se de
             néctar, insetos e frutas. Vive aos pares ou em pequenos grupos
-            procurando alimento. .
+            procurando alimento.
           </CardImgBack>
         </div>
         <div className=" align-self-center">
