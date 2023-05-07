@@ -71,10 +71,20 @@ export default function RegisterTree() {
   async function handleUpload() {
     const matrizId = id;
     const uploadRef = ref(storage, `matrizes/${matrizId}/${image.name}`);
-    const uploadTask = uploadBytes(uploadRef, image).then(async snapshot => {
-      //snapshot é o retorno do upload
-      const downloadURL = await getDownloadURL(snapshot.ref);
-      setUrlImage(downloadURL);
+
+    const uploadTask = uploadBytes(uploadRef, image).then(snapshot => {
+      //snapshot é o retorno do upload da imagem
+
+      getDownloadURL(snapshot.ref).then(async downloadURL => {
+        let urlFoto = downloadURL;
+        const docRef = doc(db, 'matrizes', matrizId);
+        await updateDoc(docRef, {
+          image: urlFoto
+        }).then(() => {
+          setUrlImage(urlFoto);
+          toast.success('Foto atualizada com sucesso!');
+        });
+      });
     });
   }
 
@@ -98,7 +108,6 @@ export default function RegisterTree() {
     if (idMatrizCustomer) {
       // atualizar foto
       handleUpload();
-      // handleFiles(e.target.files);
       const docRef = doc(db, 'matrizes', id);
       await updateDoc(docRef, {
         nome: nome,
