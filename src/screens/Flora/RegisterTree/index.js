@@ -89,8 +89,6 @@ export default function RegisterTree() {
     setColeta('');
     setLink('');
     setGps('');
-    setUrlImage();
-    setImage();
   }
 
   async function handleRegister(e) {

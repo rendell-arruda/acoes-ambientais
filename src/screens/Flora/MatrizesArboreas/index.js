@@ -101,6 +101,7 @@ export default function MatrizesArboreas() {
 
   //abrir modal
   function toggleModal(item) {
+    console.log(item);
     setShowPostModal(!showPostModal);
     setDetail(item);
   }

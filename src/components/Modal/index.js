@@ -95,6 +95,7 @@ export default function Modal({ conteudo, close }) {
             src={conteudo.image}
             width={170}
             height={210}
+            alt="imagem"
           />
         </main>
       </div>
