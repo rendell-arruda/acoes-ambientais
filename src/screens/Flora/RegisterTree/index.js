@@ -50,14 +50,57 @@ export default function RegisterTree() {
   const [link, setLink] = useState('');
   const [gps, setGps] = useState('');
 
-  const [image, setImage] = useState();
-  const [urlImage, setUrlImage] = useState('');
+  const [image, setImage] = useState(null);
+  const [urlImage, setUrlImage] = useState(null);
+
+  function handleFile(e) {
+    if (e.target.files[0]) {
+      const image = e.target.files[0];
+
+      if (image.type === 'image/jpeg' || image.type === 'image/png') {
+        setImage(image);
+        setUrlImage(URL.createObjectURL(image));
+      } else {
+        toast.error('Envie uma imagem do tipo PNG ou JPEG');
+        setImage(null);
+        return null;
+      }
+    }
+  }
+
+  async function handleUpload() {
+    const matrizId = id;
+    const uploadRef = ref(storage, `matrizes/${matrizId}/${image.name}`);
+    const uploadTask = uploadBytes(uploadRef, image).then(async snapshot => {
+      //snapshot é o retorno do upload
+      const downloadURL = await getDownloadURL(snapshot.ref);
+      setUrlImage(downloadURL);
+    });
+  }
+
+  function clear() {
+    setNome('');
+    setNomeCientifico('');
+    setNumero('');
+    setCadastradoEm('');
+    setBioma('');
+    setConservacao('');
+    setClasse('');
+    setColeta('');
+    setLink('');
+    setGps('');
+    setUrlImage();
+    setImage();
+  }
 
   async function handleRegister(e) {
     e.preventDefault();
 
     //atualizar os dados no firebase
     if (idMatrizCustomer) {
+      // atualizar foto
+      handleUpload();
+      // handleFiles(e.target.files);
       const docRef = doc(db, 'matrizes', id);
       await updateDoc(docRef, {
         nome: nome,
@@ -115,18 +158,7 @@ export default function RegisterTree() {
         userId: user.uid
       })
         .then(() => {
-          setNome('');
-          setNomeCientifico('');
-          setNumero('');
-          setCadastradoEm('');
-          setBioma('');
-          setConservacao('');
-          setClasse('');
-          setColeta('');
-          setLink('');
-          setGps('');
-          setImage();
-
+          clear();
           toast.success('Matriz cadastrada com sucesso!');
         })
         .catch(error => {
@@ -327,7 +359,7 @@ export default function RegisterTree() {
             {idMatrizCustomer && (
               <>
                 <label>Registros Fotográficos</label>
-                <input type="file" multiple value={image} />
+                <input type="file" accept="image/*" onChange={handleFile} />
               </>
             )}
             <button type="submit">Cadastrar</button>
