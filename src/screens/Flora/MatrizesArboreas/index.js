@@ -68,7 +68,8 @@ export default function MatrizesArboreas() {
           conservacao: doc.data().conservacao,
           classe: doc.data().classe,
           coleta: doc.data().coleta,
-          link: doc.data().link
+          link: doc.data().link,
+          image: doc.data().image
         });
       });
 
@@ -100,6 +101,7 @@ export default function MatrizesArboreas() {
 
   //abrir modal
   function toggleModal(item) {
+    console.log(item);
     setShowPostModal(!showPostModal);
     setDetail(item);
   }

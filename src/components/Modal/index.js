@@ -1,7 +1,6 @@
 import React from 'react';
 import './modal.css';
 import { FiX } from 'react-icons/fi';
-import Img from '../../assets/images/flora/matrizes/acoita/acoitaArvore.jpg';
 
 export default function Modal({ conteudo, close }) {
   return (
@@ -91,7 +90,13 @@ export default function Modal({ conteudo, close }) {
             </div> */}
             </>
           </div>
-          <img className="img-perfil" src={Img} width={170} height={210} />
+          <img
+            className="img-perfil"
+            src={conteudo.image}
+            width={170}
+            height={210}
+            alt="imagem"
+          />
         </main>
       </div>
     </div>
