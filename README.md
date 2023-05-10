@@ -1,4 +1,4 @@
-## Ações Ambientais RMB
+<h1 id='acoes'>Ações Ambientais RMB</h1>
 
 > A plataforma é uma ferramenta desenvolvida para auxiliar as atividades da GI no Sítio RMB relacionadas a manutentção dos Planos Ambientais.
 
@@ -6,12 +6,12 @@
 
 <br/>
 <h3> 📁 Páginas:</h3>
-Abaixo você encontrará informações sobre cada página disponível no site.
+Abaixo você encontrará informações sobre cada página disponível na plataforma.
 
 <h4> 🏠 Pagina Home</h4>
 
+> 🔒 Antes de acessar a plataforma o usuário deve confirmar suas credenciais .
 > <img src='./capaLogin.jpg'/>
-> Antes de acessar a plataforma o usuário deve confirmar suas credenciais.
 
 > Seções:
 
@@ -44,7 +44,7 @@ Abaixo você encontrará informações sobre cada página disponível no site.
 4.  Dicas sobre identificação de Matrizes;
 
    <br/>
-<h4 id='cadastro'>📗 Cadastro de Matrizes</h4>
+<h4 id='cadastro'>📗 Página de Cadastro de Matrizes</h4>
 
 > Adicionalmente a página Flora, a plataforma conta com uma área para cadastro de Matrizes arbóreas.
 > <img src='./capaCadastroArboreo.jpg'/>
@@ -56,10 +56,10 @@ Abaixo você encontrará informações sobre cada página disponível no site.
 3.  Área de perfil do usuário.
 
 <br/>
-<br/>
 <h4 id='fauna'>📗 Página Fauna</h4>
 
 > Avistamento de fauna na ADA e AID do Sítio RMB e Matriz de avistamento do Projeto FLONA
+> <img src='./capaFauna.jpg'/>
 
 <b>Em construção 🚧</b>
 <br/>
@@ -77,9 +77,18 @@ Abaixo você encontrará informações sobre cada página disponível no site.
 <br/>
 <h4 id='aguas'>📗 Página Águas Subterrâneas e Superficiais</h4>
 
-> Mostrará pontos de coleta de amostragem de águas do sítio -
+> Mostrará pontos de coleta de amostragem de águas do sítio
+> <img src='./capaAguas.jpg'/>
 
 <b>Em construção 🚧</b>
 <br/>
 
-> O portal ainda está em desenvolvimento e as próximas atualizações viram conforme a solicitação de inclusão de seções.
+<h3>🔧 Ajustes e Melhorias</h3>
+
+> ⚠️ O portal ainda está em desenvolvimento e as próximas features serão implementadas conforme a solicitação e demanda da Gerência de implatação.
+
+<h3>📝 Licença de Uso</h3>
+
+> Esse projeto está sob licença e cuidados da Gerência de Implatação da Amazul. Para solicitar acesso ou sugerir melhoria favor contatar a GI.
+
+[⬆ Voltar ao topo](#acoes)<br>
