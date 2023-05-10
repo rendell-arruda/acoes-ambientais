@@ -8,7 +8,7 @@
 <h2> 📁 Páginas:</h2>
 Abaixo você encontrará informações sobre cada página disponível na plataforma.
 
-<h4> 🏠 Pagina Home</h4>
+<h3> 🏠 Pagina Home</h3>
 
 > 🔒 Antes de acessar a plataforma o usuário deve confirmar suas credenciais .
 > <img src='./capaLogin.jpg'/>
@@ -23,7 +23,7 @@ Abaixo você encontrará informações sobre cada página disponível na platafo
 6. <a href='#aguas'>Águas Subterrâneas e Superficiais</a>
 7. RMB informa - Links importantes e parceiros técnicos.
 
-<h4 id='flora'>📗 Página Flora</h4>
+<h3 id='flora'>📗 Página Flora</h3>
 
 > Apresentação das atividades desenvolvidas pela GI no ambito da Gestão dos planos ambientais referentes a Flora;
 
@@ -43,7 +43,7 @@ Abaixo você encontrará informações sobre cada página disponível na platafo
 
 4.  Dicas sobre identificação de Matrizes;
 
-<h4 id='cadastro'>📗 Página de Cadastro de Matrizes</h4>
+<h3 id='cadastro'>📗 Página de Cadastro de Matrizes</h3>
 
 > Adicionalmente a página Flora, a plataforma conta com uma área para cadastro de Matrizes arbóreas.
 > <img src='./capaCadastroArboreo.jpg'/>
@@ -54,14 +54,14 @@ Abaixo você encontrará informações sobre cada página disponível na platafo
 2.  Área de Cadastro de Matrizes no Banco de Dados:
 3.  Área de perfil do usuário.
 
-<h4 id='fauna'>📗 Página Fauna</h4>
+<h3 id='fauna'>📗 Página Fauna</h3>
 
 > Avistamento de fauna na ADA e AID do Sítio RMB e Matriz de avistamento do Projeto FLONA
 > <img src='./capaFauna.jpg'/>
 
 <b>Em construção 🚧</b>
 
-<h4>📗 Página Arqueologia</h4>
+<h3>📗 Página Arqueologia</h3>
 
 > Breve histórico sobre a prospecção da área e diretrizes para caso encontre um possível artefato.
 > <img src='./capaArqueologia.jpg'/>
@@ -71,7 +71,7 @@ Abaixo você encontrará informações sobre cada página disponível na platafo
 1. Timelime da Prospecção Arqueológica.
 2. O que fazer ao encontrar um artefato.
 
-<h4 id='aguas'>📗 Página Águas Subterrâneas e Superficiais</h4>
+<h3 id='aguas'>📗 Página Águas Subterrâneas e Superficiais</h3>
 
 > Mostrará pontos de coleta de amostragem de águas do sítio
 > <img src='./capaAguas.jpg'/>
@@ -79,11 +79,11 @@ Abaixo você encontrará informações sobre cada página disponível na platafo
 <b>Em construção 🚧</b>
 <br/>
 
-<h3>🔧 Ajustes e Melhorias</h3>
+<h2>🔧 Ajustes e Melhorias</h2>
 
 > ⚠️ O portal ainda está em desenvolvimento e as próximas features serão implementadas conforme a solicitação e demanda da Gerência de implatação.
 
-<h3>📝 Licença de Uso</h3>
+<h2>📝 Licença de Uso</h2>
 
 > Esse projeto está sob licença e cuidados da Gerência de Implatação da Amazul. Para solicitar acesso ou sugerir melhoria favor contatar a GI.
 
