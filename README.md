@@ -1,89 +1,85 @@
-<h2> Ações Ambientais RMB</h2>
+## Ações Ambientais RMB
 
-> Este repositório contém o projeto desenvolvido para documentar e disponibilizar de fácil acesso as atividades exercídas no sítio rmb.
+> A plataforma é uma ferramenta desenvolvida para auxiliar as atividades da GI no Sítio RMB relacionadas a manutentção dos Planos Ambientais.
 
-<img src=".\capaParaReadme.jpg" alt="Page inicial">
-<h3> 📁 Conteúdo</h3>
+> <img src=".\capaParaReadme.jpg" alt="Page inicial"> visão da página Home
 
-O portal ainda está em desenvolvimento e as próximas atualizações viram conforme a solicitação de inclusão de seções.
+<br/>
+<h3> 📁 Páginas:</h3>
+Abaixo você encontrará informações sobre cada página disponível no site.
 
-- [x] Section - Apresentação Inicial e logo;
-- [x] Section - Viveiro de mudas e espécies catalogadas;
-- [x] Section - Avistamento de fauna no entorno do sítio;
-- [x] Section - Links importantes para o empreendimento e textos explicativos;
-- [x] Section - Adição dos mapas dos viveiros;
-- [ ] Section - Seção Sítio arqueológico;
-- [ ] Section - Mapa das matrizes;
+<h4> 🏠 Pagina Home</h4>
 
-//
+> <img src='./capaLogin.jpg'/>
+> Antes de acessar a plataforma o usuário deve confirmar suas credenciais.
 
-# Getting Started with Create React App
+> Seções:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Área de Login;
+2. Banner Inicial - Aqui é apresentado o título da ferramenta e os stakeholders;
+3. <a href='#flora'>Flora</a>
+4. <a href='#fauna'>Fauna</a>
+5. <a href='arqueologia'>Sítio Arqueologia</a>;
+6. <a href='#aguas'>Águas Subterrâneas e Superficiais</a>
+7. RMB informa - Links importantes e parceiros técnicos.
+   <br/>
 
-## Available Scripts
+<h4 id='flora'>📗 Página Flora</h4>
 
-In the project directory, you can run:
+> Apresentação das atividades desenvolvidas pela GI no ambito da Gestão dos planos ambientais referentes a Flora;
+> <img src='./capaFlora.jpg'/>
 
-### `npm start`
+> Seções:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1.  Matrizes Cadastradas em destaque.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2.  Áreas de plantio com :
 
-### `npm test`
+    - Mapas das 20 áreas de plantio.
+    - Mapa do Viveiro Piloto de produção de mudas.
+    - Mapa da Área de Rustificação de mudas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3.  Link do GoogleMaps com o Bosque dos Pioneiros em tempo real.
 
-### `npm run build`
+4.  Dicas sobre identificação de Matrizes;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   <br/>
+<h4 id='cadastro'>📗 Cadastro de Matrizes</h4>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Adicionalmente a página Flora, a plataforma conta com uma área para cadastro de Matrizes arbóreas.
+> <img src='./capaCadastroArboreo.jpg'/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> Seções:
 
-### `npm run eject`
+1.  Lista de Matrizes Cadastradas.
+2.  Área de Cadastro de Matrizes no Banco de Dados:
+3.  Área de perfil do usuário.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br/>
+<br/>
+<h4 id='fauna'>📗 Página Fauna</h4>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Avistamento de fauna na ADA e AID do Sítio RMB e Matriz de avistamento do Projeto FLONA
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<b>Em construção 🚧</b>
+<br/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h4>📗 Página Arqueologia</h4>
 
-## Learn More
+> Breve histórico sobre a prospecção da área e diretrizes para caso encontre um possível artefato.
+> <img src='./capaArqueologia.jpg'/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Seções:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Timelime da Prospecção Arqueológica.
+2. O que fazer ao encontrar um artefato.
 
-### Code Splitting
+<br/>
+<h4 id='aguas'>📗 Página Águas Subterrâneas e Superficiais</h4>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+> Mostrará pontos de coleta de amostragem de águas do sítio -
 
-### Analyzing the Bundle Size
+<b>Em construção 🚧</b>
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> O portal ainda está em desenvolvimento e as próximas atualizações viram conforme a solicitação de inclusão de seções.
