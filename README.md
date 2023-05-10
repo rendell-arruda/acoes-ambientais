@@ -3,6 +3,7 @@
 > A plataforma é uma ferramenta desenvolvida para auxiliar as atividades da GI no Sítio RMB relacionadas a manutentção dos Planos Ambientais.
 
 > <img src=".\capaParaReadme.jpg" alt="Page inicial">
+> 
 > visão da página Home
 
 <h2> 📁 Páginas:</h2>
