@@ -1,11 +1,11 @@
-<h1 id='acoes'>Ações Ambientais RMB</h1>
+<h1 id='acoes'>🌱 Ações Ambientais RMB</h1>
 
 > A plataforma é uma ferramenta desenvolvida para auxiliar as atividades da GI no Sítio RMB relacionadas a manutentção dos Planos Ambientais.
 
-> <img src=".\capaParaReadme.jpg" alt="Page inicial"> visão da página Home
+> <img src=".\capaParaReadme.jpg" alt="Page inicial">
+> visão da página Home
 
-<br/>
-<h3> 📁 Páginas:</h3>
+<h2> 📁 Páginas:</h2>
 Abaixo você encontrará informações sobre cada página disponível na plataforma.
 
 <h4> 🏠 Pagina Home</h4>
@@ -22,11 +22,11 @@ Abaixo você encontrará informações sobre cada página disponível na platafo
 5. <a href='arqueologia'>Sítio Arqueologia</a>;
 6. <a href='#aguas'>Águas Subterrâneas e Superficiais</a>
 7. RMB informa - Links importantes e parceiros técnicos.
-   <br/>
 
 <h4 id='flora'>📗 Página Flora</h4>
 
 > Apresentação das atividades desenvolvidas pela GI no ambito da Gestão dos planos ambientais referentes a Flora;
+
 > <img src='./capaFlora.jpg'/>
 
 > Seções:
@@ -43,7 +43,6 @@ Abaixo você encontrará informações sobre cada página disponível na platafo
 
 4.  Dicas sobre identificação de Matrizes;
 
-   <br/>
 <h4 id='cadastro'>📗 Página de Cadastro de Matrizes</h4>
 
 > Adicionalmente a página Flora, a plataforma conta com uma área para cadastro de Matrizes arbóreas.
@@ -55,14 +54,12 @@ Abaixo você encontrará informações sobre cada página disponível na platafo
 2.  Área de Cadastro de Matrizes no Banco de Dados:
 3.  Área de perfil do usuário.
 
-<br/>
 <h4 id='fauna'>📗 Página Fauna</h4>
 
 > Avistamento de fauna na ADA e AID do Sítio RMB e Matriz de avistamento do Projeto FLONA
 > <img src='./capaFauna.jpg'/>
 
 <b>Em construção 🚧</b>
-<br/>
 
 <h4>📗 Página Arqueologia</h4>
 
@@ -74,7 +71,6 @@ Abaixo você encontrará informações sobre cada página disponível na platafo
 1. Timelime da Prospecção Arqueológica.
 2. O que fazer ao encontrar um artefato.
 
-<br/>
 <h4 id='aguas'>📗 Página Águas Subterrâneas e Superficiais</h4>
 
 > Mostrará pontos de coleta de amostragem de águas do sítio
