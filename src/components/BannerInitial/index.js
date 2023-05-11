@@ -7,8 +7,6 @@ import logoamazul from '../../assets/images/banners/amazul248.png';
 import logocnen from '../../assets/images/banners/cnen248.png';
 import logormb from '../../assets/images/banners/rmb248.png';
 
-import Container from '../Containes';
-import ParallaxImage from '../ParallaxImage';
 export default function BannerInitial() {
   return (
     <>

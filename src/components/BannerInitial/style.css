@@ -1,9 +1,9 @@
 .intro-conteudo {
-  background-image: url('../../assets/images/banners/banner-perobaGrande.png');
+  background-image: url('../../assets/images/banners/banner-perobaGrande2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 450px;
+  min-height: 480px;
 }
 
 .intro-conteudo div h1 {

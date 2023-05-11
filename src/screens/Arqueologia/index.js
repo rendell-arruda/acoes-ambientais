@@ -23,7 +23,7 @@ export default function Arqueologia() {
   return (
     <div>
       <Header />
-      <ParallaxImage img={Capa}>Sítio Arqueologico</ParallaxImage>
+      <ParallaxImage img={Capa}>Sítio Arqueológico</ParallaxImage>
       <Container>
         <Timeline
           year1="2013"
