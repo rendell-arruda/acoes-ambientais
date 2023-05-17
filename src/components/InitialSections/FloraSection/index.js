@@ -31,10 +31,9 @@ export default function FloraSection() {
             </div>
             <p className="font-2-xs">
               Mapeamento e resgate de Germoplasma (matrizes arbóreas e coleta de
-              sementes) em áreas previstas para intervenção florestal. Para
-              retratar melhor a vegetação presente no RMB, toda a extensão do
-              território do sítio foi considerada. Essas atividades estão
-              previstas no Subprograma de salvamento de Germoplasma.
+              sementes) em áreas previstas para intervenção florestal.
+              Atividades previstas previstas no Subprograma de salvamento de
+              Germoplasma.
             </p>
           </div>
           <div className="col-md-4">
@@ -45,10 +44,7 @@ export default function FloraSection() {
             <p className="font-2-xs">
               Objetivando a produção de mudas nativas para o reflorestamento,
               recuperação de áreas degradadas e atividades do Programa de
-              Conservação de Flora. O espaço tem tomado forma com a experiência
-              de reprodução de espécies cadastradas no sítio do RMB além de
-              sementes coletadas no entorno próximo, em especial as cercanias da
-              floresta nacional de Ipanema.
+              Conservação de Flora.
             </p>
           </div>
           <div className="col-md-4">
@@ -57,11 +53,10 @@ export default function FloraSection() {
               <h5 className="font-2-m m-0">Áreas de Plantio</h5>
             </div>
             <p className="font-2-xs">
-              No período entre 2020 e início de 2022 foi realizado um plantio de
-              quase 9000 mudas de árvores nativas. Nessa primeira abordagem
-              foram executadas medidas para recomposição das Matas Ciliares do
-              ribeirão do Ferro, de acordo com PMCF – Programa de Manejo e
-              Conservação da Flora.
+              Entre 2020 e 2022 foi realizado um plantio de quase 9000 mudas de
+              árvores nativas para recomposição das Matas Ciliares do ribeirão
+              do Ferro, de acordo com o Programa de Manejo e Conservação da
+              Flora.
             </p>
           </div>
         </div>

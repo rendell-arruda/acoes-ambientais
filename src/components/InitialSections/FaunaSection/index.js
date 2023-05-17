@@ -8,6 +8,8 @@ import ImgFimFim from '../../../assets/images/fauna/fimfimMacho.png';
 import ImgCuica from '../../../assets/images/fauna/cuica.jpg';
 import ImgTamandua from '../../../assets/images/fauna/tamandua.jpg';
 import ImgSaiAzul from '../../../assets/images/fauna/saiAzul.jpg';
+import { FcInspection, FcBiomass } from 'react-icons/fc';
+import { FaMapMarkedAlt } from 'react-icons/fa';
 
 export default function FaunaSection(props) {
   return (
@@ -17,6 +19,48 @@ export default function FaunaSection(props) {
           Atividades desenvolvidas no âmbito dos programas de Monitoramento e
           Conservação de Fauna.
         </Title>
+
+        <div className="tasksFlora">
+          <div className="row pt-4">
+            <div className="col-md-4">
+              <div className="d-flex gap-1 align-items-center pb-2">
+                <FcInspection size={25} color={'#9da65d'} />
+                <h5 className="font-2-m m-0">Registro de Avistamento XXXXXX</h5>
+              </div>
+              <p className="font-2-xs">
+                XXXXXX XXXXXX XXXXXX XXXXXX Entre 2020 e 2022 foi realizado um
+                plantio de quase 9000 mudas de árvores nativas para recomposição
+                das Matas Ciliares do ribeirão do Ferro, de acordo com o
+                Programa de Manejo e Conservação da Flora.
+              </p>
+            </div>
+            <div className="col-md-4">
+              <div className="d-flex gap-2 align-items-center pb-2">
+                <FcBiomass size={25} color={'#9da65d'} />
+                <h5 className="font-2-m m-0">Viveiro Piloto XXX</h5>
+              </div>
+              <p className="font-2-xs">
+                XXXXXX XXXXXX XXXXXX XXXXXX Entre 2020 e 2022 foi realizado um
+                plantio de quase 9000 mudas de árvores nativas para recomposição
+                das Matas Ciliares do ribeirão do Ferro, de acordo com o
+                Programa de Manejo e Conservação da Flora.
+              </p>
+            </div>
+            <div className="col-md-4">
+              <div className="d-flex gap-2 align-items-center pb-2">
+                <FaMapMarkedAlt size={25} color={'#9da65d'} />
+                <h5 className="font-2-m m-0">Mapas de Monito XXXXXXX</h5>
+              </div>
+              <p className="font-2-xs">
+                XXXXXX XXXXXX XXXXXX XXXXXX Entre 2020 e 2022 foi realizado um
+                plantio de quase 9000 mudas de árvores nativas para recomposição
+                das Matas Ciliares do ribeirão do Ferro, de acordo com o
+                Programa de Manejo e Conservação da Flora.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <SubTitle desc="População de animais do sítio" />
         <div className="container-xl py-2 d-flex flex-wrap gap-1 align-items-center justify-content-around">
           <CardImgBack
