@@ -55,7 +55,7 @@ export default function FloraSection() {
             <p className="font-2-xs">
               Entre 2020 e 2022 foi realizado um plantio de quase 9000 mudas de
               árvores nativas para recomposição das Matas Ciliares do ribeirão
-              do Ferro, de acordo com PMCF – Programa de Manejo e Conservação da
+              do Ferro, de acordo com o Programa de Manejo e Conservação da
               Flora.
             </p>
           </div>
