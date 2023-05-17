@@ -25,7 +25,7 @@ export default function RoutesApp() {
     <>
       <Routes>
         <Route path="/" element={<SignIn />} />
-        {/* <Route
+        <Route
           path="/register"
           element={
             <Private>
@@ -33,7 +33,7 @@ export default function RoutesApp() {
               //
             </Private>
           }
-        /> */}
+        />
         <Route
           path="/home"
           element={

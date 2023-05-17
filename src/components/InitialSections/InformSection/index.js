@@ -5,6 +5,8 @@ import Img1 from '../../../assets/images/banners/O-RMB.png';
 import Img2 from '../../../assets/images/banners/O-RMB2.png';
 import Img3 from '../../../assets/images/banners/O-RMB3.png';
 
+import CarouselInterval from '../../Carousels/CarouselInterval';
+
 export default function InformSection(props) {
   return (
     <div className="">
@@ -12,62 +14,16 @@ export default function InformSection(props) {
         <Title title="RMB Informa">Curiosidades e links</Title>
 
         <div className="row align-items-center pt-4">
-          <div
-            id="carouselExampleInterval"
-            className="carousel slide col-md-7"
-            data-bs-ride="carousel"
-          >
-            <div className="carousel-inner">
-              <a href="https://www.gov.br/cnen/pt-br/rmb" target="_blanck">
-                <div className="carousel-item active" data-bs-interval="3000">
-                  <img
-                    src={Img1}
-                    className="d-block w-100"
-                    alt="O que é o RMB"
-                  />
-                </div>
-              </a>
-              <a
-                href="https://www.youtube.com/watch?v=0fAJ6R4BFp8"
-                target="_blank"
-              >
-                <div className="carousel-item" data-bs-interval="1400">
-                  <img src={Img2} className="d-block w-100" alt="..." />
-                </div>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.google.com/maps/place/RMB+-+Bosque+dos+Pioneiros/@-23.3881376,-47.6198094,350m/data=!3m1!1e3!4m15!1m8!3m7!1s0x94c5efc7ecda2e37:0x862df6ca25dd3926!2sRMB+-+Bosque+dos+Pioneiros!8m2!3d-23.3879129!4d-47.6179379!10e5!16s%2Fg%2F11sgvvq__v!3m5!1s0x94c5efc7ecda2e37:0x862df6ca25dd3926!8m2!3d-23.3879129!4d-47.6179379!16s%2Fg%2F11sgvvq__v"
-              >
-                <div className="carousel-item">
-                  <img src={Img3} className="d-block w-100" alt="..." />
-                </div>
-              </a>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
+          {/* CAROUSEL INTERVAL */}
+          <div className="col-md-7">
+            <CarouselInterval
+              carouselImg1={Img1}
+              link1="https://www.gov.br/cnen/pt-br/rmb"
+              carouselImg2={Img2}
+              link2="https://www.youtube.com/watch?v=0fAJ6R4BFp8"
+              carouselImg3={Img3}
+              link3="https://www.google.com/maps/place/RMB+-+Bosque+dos+Pioneiros/@-23.3881376,-47.6198094,350m/"
+            />
           </div>
           <div className="col-md-5 py-4">
             <p>
