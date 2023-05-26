@@ -5,6 +5,7 @@ import Footer from '../../components/Footer';
 import ParallaxImage from '../../components/ParallaxImage';
 import Container from '../../components/Containes';
 import BtnTooltip from '../../components/Buttons/BtnTooltip';
+import Loader from '../../components/Loader';
 import Mapherpetofauna from '../../assets/images/fauna/capaHerpetofauna.png';
 import MapAvifauna from '../../assets/images/fauna/capaAvifauna.png';
 import Title from '../../components/Texts/Title';
@@ -20,6 +21,7 @@ import {
   startAfter,
   query
 } from 'firebase/firestore';
+import { set } from 'date-fns';
 const listRef = collection(db, 'avistamentoFauna');
 
 export default function Fauna() {
@@ -33,6 +35,7 @@ export default function Fauna() {
       //buscar os dados no firebase
       const q = query(listRef, orderBy('nome', 'asc'), limit(3));
       const querySnapshot = await getDocs(q);
+      setFaunaList([]);
       //atualizar o estado e montar a lista
       await updateState(querySnapshot);
       setLoading(false);
@@ -62,6 +65,20 @@ export default function Fauna() {
     }
   }
 
+  if (loading) {
+    return (
+      <div>
+        <Header />
+        <div className="bg-gray">
+          <ParallaxImage img={Img1}> Fauna RMB</ParallaxImage>
+        </div>
+        <div className="containerRegis text-center">
+          <span className="font-2-m-b text-center"> Buscando Fauna...</span>
+          <Loader />
+        </div>
+      </div>
+    );
+  }
   return (
     <>
       <Header />
@@ -145,26 +162,30 @@ export default function Fauna() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="font-2-s td-fauna">
-                  <td data-label="Nome" scope="row">
-                    Fim fim
-                  </td>
-                  <td data-label="Nome do táxon" scope="row">
-                    Euphonia chlorotica
-                  </td>
-                  <td data-label="Avistado em" scope="row">
-                    12/12/2020
-                  </td>
-                  <td data-label="Registro" scope="row">
-                    <button
-                      className="action"
-                      style={{ backgroundColor: '#3583f6' }}
-                      // onClick={() => toggleModal(item)}
-                    >
-                      <FiSearch size={20} color="#fff" />
-                    </button>
-                  </td>
-                </tr>
+                {faunaList.map((item, index) => {
+                  return (
+                    <tr key={index} className="font-2-s td-fauna">
+                      <td data-label="Nome" scope="row">
+                        {item.nome}
+                      </td>
+                      <td data-label="Nome do táxon" scope="row">
+                        {item.taxon}
+                      </td>
+                      <td data-label="Avistado em" scope="row">
+                        {item.avistado}
+                      </td>
+                      <td data-label="Registro" scope="row">
+                        <button
+                          className="action"
+                          style={{ backgroundColor: '#3583f6' }}
+                          // onClick={() => toggleModal(item)}
+                        >
+                          <FiSearch size={20} color="#fff" />
+                        </button>
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </>

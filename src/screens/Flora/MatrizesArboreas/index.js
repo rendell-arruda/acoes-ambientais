@@ -18,6 +18,9 @@ import Loader from '../../../components/Loader';
 
 import Modal from '../../../components/Modal';
 
+import { BiLinkExternal } from 'react-icons/bi';
+import { format } from 'date-fns';
+
 const listRef = collection(db, 'matrizes');
 
 export default function MatrizesArboreas() {
@@ -64,6 +67,7 @@ export default function MatrizesArboreas() {
           nomeCientifico: doc.data().nomeCientifico,
           numero: doc.data().numero,
           cadastradoEm: doc.data().cadastradoEm,
+          // createdFormat: format(doc.data().cadastradoEm.toDate(), 'dd/MM/yyyy'),
           bioma: doc.data().bioma,
           conservacao: doc.data().conservacao,
           classe: doc.data().classe,
@@ -115,7 +119,7 @@ export default function MatrizesArboreas() {
             <FcInspection size={25} />
           </TitleRegis>
           <div className="containerRegis">
-            <span className="font-2-m-b"> Buscando Chamados...</span>
+            <span className="font-2-m-b"> Buscando Matrizes...</span>
             <Loader />
           </div>
         </div>
