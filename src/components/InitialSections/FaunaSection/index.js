@@ -8,7 +8,7 @@ import ImgFimFim from '../../../assets/images/fauna/fimfimMacho.png';
 import ImgCuica from '../../../assets/images/fauna/cuica.jpg';
 import ImgTamandua from '../../../assets/images/fauna/tamandua.jpg';
 import ImgSaiAzul from '../../../assets/images/fauna/saiAzul.jpg';
-import { FcInspection, FcBiomass } from 'react-icons/fc';
+import { FcBinoculars, FcBiomass, FcLandscape } from 'react-icons/fc';
 import { FaMapMarkedAlt } from 'react-icons/fa';
 
 export default function FaunaSection(props) {
@@ -24,38 +24,59 @@ export default function FaunaSection(props) {
           <div className="row pt-4">
             <div className="col-md-4">
               <div className="d-flex gap-1 align-items-center pb-2">
-                <FcInspection size={25} color={'#9da65d'} />
-                <h5 className="font-2-m m-0">Registro de Avistamento XXXXXX</h5>
+                <FcLandscape size={25} color={'#9da65d'} />
+                <h5 className="font-2-m m-0">Corredores ecológicos</h5>
               </div>
               <p className="font-2-xs">
-                XXXXXX XXXXXX XXXXXX XXXXXX Entre 2020 e 2022 foi realizado um
-                plantio de quase 9000 mudas de árvores nativas para recomposição
-                das Matas Ciliares do ribeirão do Ferro, de acordo com o
-                Programa de Manejo e Conservação da Flora.
+                Monitorar a fauna presente na ADA – Área Diretamente Afetada
+                pelo empreendimento, fortalece a preservação de espécies e a
+                conservação da biodiversidade. Os fragmentos de floresta
+                estacional semidecidual presentes no local constituem um
+                “corredor ecológico” vital com especial conectividade com a
+                FLONA – Florestal Nacional de Ipanema. Conhecer a vida selvagem
+                local ajuda a tomar medidas de proteção ambiental adequadas,
+                essas atividades estão previstas no PRMCFTA - Programa de
+                Resgate, Monitoramento e Conservação de Fauna Terrestre e
+                Aquática.
               </p>
             </div>
             <div className="col-md-4">
               <div className="d-flex gap-2 align-items-center pb-2">
                 <FcBiomass size={25} color={'#9da65d'} />
-                <h5 className="font-2-m m-0">Viveiro Piloto XXX</h5>
+                <h5 className="font-2-m m-0">Impactos previstos</h5>
               </div>
               <p className="font-2-xs">
-                XXXXXX XXXXXX XXXXXX XXXXXX Entre 2020 e 2022 foi realizado um
-                plantio de quase 9000 mudas de árvores nativas para recomposição
-                das Matas Ciliares do ribeirão do Ferro, de acordo com o
-                Programa de Manejo e Conservação da Flora.
+                O monitoramento é uma ferramenta essencial para verificar
+                possíveis interferências e impactos decorrentes da implantação e
+                operação do empreendimento sobre os grupos faunísticos da área.
+                Nesse contexto, esse acompanhamento assume um papel fundamental
+                como componente das estratégias de proteção e conservação da
+                fauna. Os parâmetros e índices ecológicos começaram a ser
+                coletados antes do início das obras e devem ser constantemente
+                analisados.
               </p>
             </div>
             <div className="col-md-4">
               <div className="d-flex gap-2 align-items-center pb-2">
-                <FaMapMarkedAlt size={25} color={'#9da65d'} />
-                <h5 className="font-2-m m-0">Mapas de Monito XXXXXXX</h5>
+                <FcBinoculars size={25} />
+                <h5 className="font-2-m m-0">Observações recentes</h5>
               </div>
               <p className="font-2-xs">
-                XXXXXX XXXXXX XXXXXX XXXXXX Entre 2020 e 2022 foi realizado um
-                plantio de quase 9000 mudas de árvores nativas para recomposição
-                das Matas Ciliares do ribeirão do Ferro, de acordo com o
-                Programa de Manejo e Conservação da Flora.
+                Apesar de fragmentada e alterada, a vegetação presente na região
+                serve de abrigo e recurso para importantes representantes da
+                biodiversidade faunística da Mata Atlântica e cerrado.
+                Levantamentos realizados na FLONA de Ipanema apontaram a
+                ocorrência de 39 espécies da herpetofauna, 349 espécies de aves
+                e 70 de mamíferos. Os primeiros estudos do licenciamento
+                ambiental do RMB mostraram uma riqueza de espécies reduzida,
+                sendo 36 espécies da herpetofauna, 69 espécies de aves e 13
+                espécies de mamíferos. Porém entre elas foram registradas
+                espécies ameaçadas de extinção como a perdiz (Rhynchotus
+                rufescens) e a jaguatirica (Leopardus pardalis). A última
+                campanha realizada em 2021, reafirmam a presença de animais
+                ameaçados de extinção como o tamanduá-bandeira (Myrmecophaga
+                tridactyla), novamente a jaguatirita e o veado-catingueiro
+                (Mazama gouazouobira).
               </p>
             </div>
           </div>

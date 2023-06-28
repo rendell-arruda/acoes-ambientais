@@ -33,7 +33,7 @@ export default function Fauna() {
     //percorrer a lista de fauna no banco de dados
     async function loadFauna() {
       //buscar os dados no firebase
-      const q = query(listRef, orderBy('nome', 'asc'), limit(3));
+      const q = query(listRef, orderBy('nome', 'asc'), limit(4));
       const querySnapshot = await getDocs(q);
       setFaunaList([]);
       //atualizar o estado e montar a lista
@@ -100,8 +100,10 @@ export default function Fauna() {
                   {/* <h3 class="mb-0"> Herpetofauna e Mastofauna</h3> */}
                   {/* <div class="mb-1 text-muted">Nov 12</div> */}
                   <p class="card-text mb-auto">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content.
+                    Mapa com o grupo composto por répteis, anfíbios e o conjunto
+                    de mamíferos, apesar de possuírem taxonomia e filogenia
+                    distintas, apresentam similaridade em muitos aspectos
+                    ecológicos e biológicos.
                   </p>
 
                   <BtnTooltip
@@ -125,8 +127,11 @@ export default function Fauna() {
                   {/* <h3 class="mb-0"> Avifauna </h3> */}
                   {/* <div class="mb-1 text-muted">Nov 11</div> */}
                   <p class="mb-auto">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content.
+                    Conjunto de aves presentes em uma determinada
+                    região/ecossistema. Abrange uma grande diversidade de
+                    espécies de aves, incluindo aves aquáticas, aves de rapina,
+                    aves terrestres, aves migratórias, aves endêmicas, entre
+                    outras.
                   </p>
 
                   <BtnTooltip

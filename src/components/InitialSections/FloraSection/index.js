@@ -8,7 +8,7 @@ import CapaAcoita from '../../../assets/images/flora/matrizes/acoita/acoitaCapa.
 import CapaAmendoin from '../../../assets/images/flora/matrizes/amendoinBravo/amendoinBravoSemente.jpg';
 import CapaJatoba from '../../../assets/images/flora/matrizes/jatoba/jatobaArvore.JPG';
 import CapaCopaiba from '../../../assets/images/flora/matrizes/copaiba/copaibaArvore.jpg';
-import { FcInspection, FcBiomass } from 'react-icons/fc';
+import { FcInspection, FcBiomass, FcCloseUpMode } from 'react-icons/fc';
 import { FaMapMarkedAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -38,7 +38,7 @@ export default function FloraSection() {
           </div>
           <div className="col-md-4">
             <div className="d-flex gap-2 align-items-center pb-2">
-              <FcBiomass size={25} color={'#9da65d'} />
+              <FcCloseUpMode size={25} color={'#9da65d'} />
               <h5 className="font-2-m m-0">Viveiro Piloto</h5>
             </div>
             <p className="font-2-xs">
